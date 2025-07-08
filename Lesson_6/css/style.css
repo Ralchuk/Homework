@@ -118,7 +118,6 @@ li {
 
 .content {
   display: flex;
-  justify-content: space-between;
 
   background-color: #f5f5f580;
 }
@@ -127,8 +126,7 @@ li {
   display: flex;
   flex-direction: column;
 
-  width: 100%;
-  max-width: 580px;
+  padding: 68px 210px 85px 41px;
 }
 
 h1 {
