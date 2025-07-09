@@ -51,21 +51,13 @@
   font-style: normal;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-}
-
 .main {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  width: 100%;
 
-  max-width: 1440px;
-
-  padding: 30px 119.999px 52px 120px;
-  margin-top: 100px;
+  padding: 30px 120px;
+  
 }
 
 .header {
@@ -138,28 +130,18 @@ li {
 
 .content {
   display: flex;
-<<<<<<< HEAD
   justify-content: space-between;
   gap: 97px;
-  width: 100%;
-  max-width: 1200px;
-=======
 
->>>>>>> 22d82e97da08de9abba0104cbaeae48e4a40673f
   background-color: #f5f5f580;
 }
 
 .body {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-  padding: 68px 0 85px 40px;
-  width: 100%;
-  /* max-width: 600px; */
-=======
+  padding: 68px 93PX 93px 40px;
 
-  padding: 68px 210px 85px 41px;
->>>>>>> 22d82e97da08de9abba0104cbaeae48e4a40673f
+  /* max-width: 600px; */
 }
 
 h1 {
@@ -183,6 +165,7 @@ h2 {
   line-height: 70px; /* 100% */
   text-transform: uppercase;
   margin-bottom: 5px;
+  max-width: 530px;
 }
 
 h2 span {
@@ -203,6 +186,7 @@ h3 {
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 44px;
+  max-width: 557px;
 }
 
 .body button {
@@ -225,9 +209,8 @@ h3 {
 .images {
   display: flex;
   width: 100%;
-
   max-width: 507px;
-
+  
   position: relative;
   background-image: url(../img/4575e3df52fa214db1f3ce519277860c13b11e21.png);
   background-size: 100% 100%;
