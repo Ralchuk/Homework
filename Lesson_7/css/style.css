@@ -40,7 +40,6 @@
   font-style: normal;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -50,4 +49,28 @@
   font-style: normal;
   box-sizing: border-box;
   list-style: none;
+}
+
+.main {
+  display: flex;
+  padding: 171px 109px 82px 106px;
+  gap: 50px;
+}
+
+/* sidebar */
+
+.sidebar {
+  display: flex;
+  border: 1px solid black;
+  background-color: brown;
+  width: 100%;
+  max-width: 310px;
+  height: 774px;
+}
+
+.content {
+  display: flex;
+  border: 1px solid black;
+  width: 100%;
+  height: 774px;
 }
