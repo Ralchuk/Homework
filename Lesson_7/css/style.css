@@ -134,6 +134,18 @@
   max-width: 310px;
 }
 
+.img span {
+  color: #3d3d3d;
+  text-align: center;
+  font-family: "Cera Pro";
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  margin-top: 11px;
+  margin-bottom: -6px;
+}
+
 .content {
   display: flex;
   border: 1px solid black;
