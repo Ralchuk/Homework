@@ -144,10 +144,13 @@
   width: 100%;
 }
 
+/* header */
+
 .header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 38px;
 }
 
 .header ul {
@@ -159,3 +162,6 @@
 .header ul li {
   text-wrap: nowrap;
 }
+
+/* catalog */
+
