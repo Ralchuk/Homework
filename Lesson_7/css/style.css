@@ -68,6 +68,7 @@
 
 .nav {
   display: flex;
+
   flex-direction: column;
   background: #fbfbfb;
 
@@ -89,6 +90,7 @@
 }
 
 .nav ul li {
+  text-wrap: nowrap;
   color: #3d3d3d;
   font-family: "Cera Pro";
   font-size: 15px;
@@ -111,8 +113,7 @@
 .img {
   display: flex;
   flex-direction: column;
-  align-items: center;
-
+  flex-shrink: 0;
   background: linear-gradient(
     180deg,
     rgba(70, 163, 88, 0.1) 0%,
@@ -120,18 +121,8 @@
   );
 }
 
-.img-plant {
-  padding: 0 22px;
-  width: 100%;
-  height: auto;
-  max-width: 310px;
-}
-
 .img-SuperSale {
-  padding: 0 22px;
-  width: 100%;
-  height: auto;
-  max-width: 310px;
+  margin: 0 22px;
 }
 
 .img span {
@@ -142,11 +133,29 @@
   font-style: normal;
   font-weight: 700;
   line-height: 16px;
-  margin-top: 11px;
-  margin-bottom: -6px;
+  margin: 11px 50px -6px;
 }
+
+/* content */
 
 .content {
   display: flex;
-  border: 1px solid black;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header ul {
+  display: flex;
+  flex-direction: row;
+  gap: 37px;
+}
+
+.header ul li {
+  text-wrap: nowrap;
 }
