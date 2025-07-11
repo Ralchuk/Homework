@@ -148,7 +148,7 @@
 
 .header {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   margin-bottom: 38px;
 }
@@ -159,9 +159,83 @@
   gap: 37px;
 }
 
+.header ul li:first-child {
+  color: #46a358;
+  font-family: "Cera Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  border-bottom: 2px solid #46a358; 
+}
+
 .header ul li {
   text-wrap: nowrap;
+  padding-bottom: 7px;
+}
+
+.header span {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+
+#Shortby {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#select {
+  cursor: pointer;
+}
+
+#select:hover {
+  color: #3d3d3d;
 }
 
 /* catalog */
 
+.catalog {
+  display: flex;
+  justify-content: space-between;
+  gap: 3%;
+}
+
+/* cart */
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.cart img {
+  max-width: 100%;
+  height: auto;
+  padding: 31px 9px;
+}
+
+.info-cart {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.name {
+  color: #3d3d3d;
+  font-family: "Cera Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.price {
+  color: #46a358;
+  font-family: "Cera Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+}
