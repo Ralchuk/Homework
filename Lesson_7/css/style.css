@@ -170,6 +170,12 @@
 }
 
 .header ul li {
+  color: #3d3d3d;
+  font-family: "Cera Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 106.667% */
   text-wrap: nowrap;
   padding-bottom: 7px;
 }
@@ -183,9 +189,21 @@
 #Shortby {
   display: flex;
   flex-wrap: nowrap;
+  color: #3d3d3d;
+  font-family: "Cera Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 106.667% */
 }
 
 #select {
+  color: #3d3d3d;
+  font-family: "Cera Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 106.667% */
   cursor: pointer;
 }
 
@@ -216,7 +234,7 @@
 .cart {
   display: flex;
   flex-direction: column;
-  
+
   width: 100%;
   /* border: 1px solid black; */
 }
