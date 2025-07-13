@@ -223,8 +223,8 @@
 .catalog-row {
   display: flex;
   justify-content: space-between;
-
-  align-items: end;
+  align-content: stretch;
+  /* align-items: end; */
   gap: 3%;
   width: 100%;
 }
@@ -234,15 +234,25 @@
 .cart {
   display: flex;
   flex-direction: column;
-
+  justify-content: end;
   width: 100%;
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 
-.cart img {
+.cart_img {
+  display: flex;
+  flex-grow: 1;
   max-width: 100%;
-  height: auto;
+  max-height: 300px;
   padding: 31px 9px;
+  background-color: #fbfbfb;
+}
+
+.cart_img img {
+  width: 100%;
+  object-fit: contain;
+  background-color: url(<path-to-image>) lightgray 50% / cover no-repeat;
+  mix-blend-mode: multiply;
 }
 
 .info-cart {
