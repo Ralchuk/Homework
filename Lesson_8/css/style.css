@@ -178,7 +178,8 @@
 .banner {
   display: flex;
   justify-content: space-between;
-  gap: 97px;
+  flex-wrap: wrap;
+  /* gap: 97px; */
 
   background-color: #f5f5f580;
 }
@@ -255,22 +256,25 @@ h3 {
 
 .images {
   display: flex;
-  width: 100%;
-  max-width: 507px;
 
   position: relative;
-  background-image: url(../img/4575e3df52fa214db1f3ce519277860c13b11e21.png);
-  background-size: 100% 100%;
-  background-position: center;
 }
 
-.Small_plant {
+.big_plant {
   width: 100%;
+  max-width: 507px;
+  height: auto;
 
+  object-fit: contain;
+}
+
+.small_plant {
+  width: 100%;
   max-width: 135px;
 
   flex-shrink: 0;
   position: absolute;
+  /* z-index: 1; */
   left: 11%;
   bottom: 17px;
 }
