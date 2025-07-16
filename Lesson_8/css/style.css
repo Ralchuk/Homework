@@ -638,10 +638,9 @@ input[type="range"]::-moz-range-thumb {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 16px; 
-  background-color: #46A358;
+  line-height: 16px;
+  background-color: #46a358;
   padding: 6px 9px;
-
 }
 
 .hidden_cart_img {
@@ -755,4 +754,101 @@ input[type="range"]::-moz-range-thumb {
   font-weight: 700;
   line-height: 16px; /* 88.889% */
   background-color: #46a358;
+}
+
+/* Block preposition */
+
+.preposition {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-flow: column wrap;
+  padding: 69px 120px 68px;
+  border: 1px solid #3d3d3d;
+  gap: 138px;
+}
+
+.action {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.action-cart {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+
+.action-cart img {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  
+  width: 287px;
+  height: 292px;
+  flex-shrink: 0;
+  background-color: url(<path-to-image>) lightgray -5px 0px / 101.742% 100% no-repeat;
+  mix-blend-mode: multiply;
+}
+
+.action-cart-content {
+  display: flex;
+  width: 100%;
+  flex-flow: column wrap;
+  align-items: end;
+  text-align: end;
+  padding: 59px 30px 37px 0;
+
+  background-color: #fbfbfb;
+}
+
+.action-cart-content h2 {
+  color: #3d3d3d;
+  text-align: right;
+  font-family: "Cera Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 24px; /* 133.333% */
+  text-transform: uppercase;
+  max-width: 150px;
+  height: fit-content;
+  margin-bottom: 9px ;
+}
+
+.action-cart-content h3 {
+  color: #727272;
+  text-align: right;
+  font-family: "Cera Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  max-width: 292px;
+  margin-bottom: 25px;
+  
+}
+
+.action-cart button {
+  display: flex;
+  color: #fff;
+  font-family: "Cera Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  background-color: #46a358;
+  gap: 5px;
+  padding: 11px 27px;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.action-cart button img {
+  width: 14px;
+  height: 14px;
+
+  flex-shrink: 0;
 }
