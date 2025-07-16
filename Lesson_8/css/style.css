@@ -57,7 +57,6 @@
   flex-direction: column;
 
   padding: 25px 120px 30px;
-  
 }
 
 .header {
@@ -72,7 +71,9 @@
 .header .nav-header {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  justify-content: space-between;
+  padding: 0 20%;
+  flex-grow: 1;
 }
 
 .nav-header li {
@@ -84,6 +85,7 @@
   font-weight: 400;
   line-height: normal;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .nav-act {
@@ -140,7 +142,7 @@
 .body {
   display: flex;
   flex-direction: column;
-  padding: 68px 93PX 93px 40px;
+  padding: 68px 93px 93px 40px;
 
   /* max-width: 600px; */
 }
@@ -211,7 +213,7 @@ h3 {
   display: flex;
   width: 100%;
   max-width: 507px;
-  
+
   position: relative;
   background-image: url(../img/4575e3df52fa214db1f3ce519277860c13b11e21.png);
   background-size: 100% 100%;
@@ -228,7 +230,6 @@ h3 {
   left: 11%;
   bottom: 17px;
 }
-
 
 .main {
   display: flex;
@@ -397,7 +398,7 @@ h3 {
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: stretch;
-  
+
   width: 100%;
   gap: 30px 70px;
   margin-bottom: 90px;
@@ -496,6 +497,7 @@ h3 {
   font-style: normal;
   font-weight: 300;
   line-height: 16px; /* 88.889% */
+  cursor: pointer;
 }
 
 .navigation li:first-child {
