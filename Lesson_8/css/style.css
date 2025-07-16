@@ -764,7 +764,7 @@ input[type="range"]::-moz-range-thumb {
   height: auto;
   flex-flow: column wrap;
   padding: 69px 120px 68px;
-  border: 1px solid #3d3d3d;
+  /* border: 1px solid #3d3d3d; */
   gap: 138px;
 }
 
@@ -784,7 +784,6 @@ input[type="range"]::-moz-range-thumb {
   position: relative;
   z-index: -1;
   background-color: #fbfbfb;
-  
 }
 
 .action-cart img {
@@ -835,7 +834,6 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .action-cart button {
-  
   display: flex;
   flex-direction: row;
   color: #fff;
@@ -849,5 +847,106 @@ input[type="range"]::-moz-range-thumb {
   padding: 11px 27px;
   align-items: center;
   border-radius: 6px;
+  cursor: pointer;
 }
 
+/* Blog */
+
+.blog {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.blog h2 {
+  color: #3d3d3d;
+  text-align: center;
+  font-family: "Cera Pro";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px; /* 53.333% */
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.blog h3 {
+  color: #727272;
+  text-align: center;
+  font-family: "Cera Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+.blog-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.blog-cart img {
+  width: 100%;
+  max-height: 195.174px;
+  flex-shrink: 0;
+  margin-bottom: 8px;
+}
+
+.blog-cart {
+  display: flex;
+  flex-direction: column;
+  max-width: 268px;
+  align-items: start;
+  background-color: #fbfbfb;
+  margin-top: 35px;
+}
+
+.blog-cart h4 {
+  color: #46a358;
+  font-family: "Cera Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
+  padding-left: 15px;
+  margin-bottom: 4px;
+}
+
+.blog-cart h5 {
+  color: #3d3d3d;
+  font-family: "Cera Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 130% */
+  padding-left: 15px;
+  margin-bottom: 4px;
+}
+
+.blog-cart h6 {
+  color: #727272;
+  font-family: "Cera Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  padding-left: 15px;
+  margin-bottom: 4px;
+}
+
+.blog-cart button {
+  display: flex;
+  flex-direction: row;
+  color: #3d3d3d;
+  font-family: "Cera Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
+  padding-left: 15px;
+  background-color: #fff;
+  margin-bottom: 13px;
+  cursor: pointer;
+}
