@@ -63,7 +63,7 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
-
+  
   margin-bottom: 12px;
   border-bottom: 1px solid #c5dfca;
 }
@@ -275,8 +275,8 @@ h3 {
   flex-shrink: 0;
   position: absolute;
   /* z-index: 1; */
-  left: 55px;
-  bottom: 37px;
+  left: 11%;
+  bottom: 8%;
 }
 
 .main {
