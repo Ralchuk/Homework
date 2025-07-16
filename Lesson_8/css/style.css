@@ -771,23 +771,29 @@ input[type="range"]::-moz-range-thumb {
 .action {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .action-cart {
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
-  justify-content: space-between;
+  max-width: 586px;
+  min-height: 250px;
+  height: 100%;
   position: relative;
+  z-index: -1;
+  background-color: #fbfbfb;
+  
 }
 
 .action-cart img {
   position: absolute;
   bottom: 0;
   z-index: 2;
-  
-  width: 287px;
-  height: 292px;
+
+  max-width: 287px;
+  max-height: 292px;
   flex-shrink: 0;
   background-color: url(<path-to-image>) lightgray -5px 0px / 101.742% 100% no-repeat;
   mix-blend-mode: multiply;
@@ -796,12 +802,10 @@ input[type="range"]::-moz-range-thumb {
 .action-cart-content {
   display: flex;
   width: 100%;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   align-items: end;
   text-align: end;
-  padding: 59px 30px 37px 0;
-
-  background-color: #fbfbfb;
+  padding: 59px 30px 37px 264px;
 }
 
 .action-cart-content h2 {
@@ -815,7 +819,7 @@ input[type="range"]::-moz-range-thumb {
   text-transform: uppercase;
   max-width: 150px;
   height: fit-content;
-  margin-bottom: 9px ;
+  margin-bottom: 9px;
 }
 
 .action-cart-content h3 {
@@ -828,11 +832,12 @@ input[type="range"]::-moz-range-thumb {
   line-height: 24px; /* 171.429% */
   max-width: 292px;
   margin-bottom: 25px;
-  
 }
 
 .action-cart button {
+  
   display: flex;
+  flex-direction: row;
   color: #fff;
   font-family: "Cera Pro";
   font-size: 14px;
@@ -846,9 +851,3 @@ input[type="range"]::-moz-range-thumb {
   border-radius: 6px;
 }
 
-.action-cart button img {
-  width: 14px;
-  height: 14px;
-
-  flex-shrink: 0;
-}
