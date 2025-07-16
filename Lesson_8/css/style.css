@@ -612,14 +612,14 @@ input[type="range"]::-moz-range-thumb {
 
   height: 300px;
   width: 258px;
-  padding: 27px 4px;
+  padding: 20px 4px;
   position: relative;
   background-color: #fbfbfb;
 }
 
 .cart_img img {
-  width: 250px;
-  height: 250px;
+  width: 240px;
+  height: 240px;
 
   position: absolute;
 
