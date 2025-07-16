@@ -262,7 +262,7 @@ h3 {
 
 .big_plant {
   width: 100%;
-  max-width: 507px;
+  max-width: 518px;
   height: auto;
 
   object-fit: contain;
@@ -275,8 +275,8 @@ h3 {
   flex-shrink: 0;
   position: absolute;
   /* z-index: 1; */
-  left: 11%;
-  bottom: 17px;
+  left: 55px;
+  bottom: 37px;
 }
 
 .main {
