@@ -69,12 +69,13 @@
   border-bottom: 1px solid #c5dfca;
 }
 
-.nav {
+.header .nav-header {
   display: flex;
+  flex-direction: row;
   gap: 50px;
 }
 
-.nav li {
+.nav-header li {
   padding: 8px 0 25px;
 
   font-family: "Cera Pro";
@@ -463,6 +464,7 @@ h3 {
 .navigation {
   display: flex;
   justify-content: end;
+  padding: 0 120px;
 }
 
 .navigation ul {
