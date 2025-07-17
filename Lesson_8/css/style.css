@@ -945,6 +945,7 @@ input[type="range"]::-moz-range-thumb {
 .blog-cart button {
   display: flex;
   flex-direction: row;
+  align-items:  end;
   color: #3d3d3d;
   font-family: "Cera Pro";
   font-size: 14px;
@@ -955,4 +956,9 @@ input[type="range"]::-moz-range-thumb {
   background-color: #fff;
 
   cursor: pointer;
+}
+
+.blog-cart button span {
+  display: flex;
+  margin-bottom: 1px;
 }
