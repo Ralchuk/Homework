@@ -780,14 +780,14 @@ body {
   min-height: 250px;
   height: 100%;
   position: relative;
-  z-index: -1;
-  background-color: #fbfbfb;
+  
+  ;
 }
 
 .action-cart img {
   position: absolute;
-  bottom: 0;
-  z-index: 2;
+  bottom: 10px;
+  z-index: 1;
 
   max-width: 287px;
   max-height: 292px;
@@ -802,7 +802,9 @@ body {
   flex-flow: column nowrap;
   align-items: end;
   text-align: end;
-  padding: 59px 30px 37px 264px;
+  padding: 29px 30px 37px 264px;
+  background-color: #fbfbfb;
+  /* border: 1px solid ; */
 }
 
 .action-cart-content h2 {
