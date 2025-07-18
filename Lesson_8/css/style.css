@@ -299,6 +299,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 14px 24px 0 18px;
+  background: #fbfbfb;
 }
 
 /* navigation */
@@ -307,7 +308,7 @@ body {
   display: flex;
 
   flex-direction: column;
-  background: #fbfbfb;
+  
   margin-bottom: 36px;
   
   gap: 7px;
@@ -447,7 +448,7 @@ body {
   display: flex;
 
   flex-direction: column;
-  background: #fbfbfb;
+  
   margin-bottom: 18px;
   
   gap: 7px;
