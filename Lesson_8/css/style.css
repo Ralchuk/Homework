@@ -72,7 +72,6 @@ body {
   padding: 26px 0 12px;
   border-bottom: 1px solid #c5dfca;
   background-color: #fff;
-  
 }
 
 .header .nav-header {
@@ -120,7 +119,6 @@ body {
   flex-flow: row nowrap;
   align-items: center;
   gap: 30px;
- 
 }
 
 .lupa {
@@ -133,7 +131,6 @@ body {
   flex-flow: row nowrap;
   position: relative;
   padding: 2px 5px 0 2px;
-  
 }
 
 .basket img {
@@ -159,9 +156,8 @@ body {
   font-weight: 500;
   line-height: normal;
   background-color: #46a358;
-  
+
   border: #fff solid 2px;
-  
 }
 
 .Login {
@@ -194,8 +190,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 46px;
-  /* gap: 97px; */
-  
+
   background-color: #f5f5f580;
 }
 
@@ -203,8 +198,6 @@ body {
   display: flex;
   flex-direction: column;
   padding: 68px 93px 93px 40px;
-
-  /* max-width: 600px; */
 }
 
 .body h1 {
@@ -296,7 +289,7 @@ body {
 
 .main {
   display: flex;
-  
+  margin-bottom: 90px;
   gap: 50px;
 }
 
@@ -530,20 +523,20 @@ input[type="range"]::-moz-range-thumb {
 
 /* main - content -  header */
 
- .header-content {
+.header-content {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   margin-bottom: 38px;
 }
 
- .header-content ul {
+.header-content ul {
   display: flex;
   flex-direction: row;
   gap: 37px;
 }
 
- .header-content ul li:first-child {
+.header-content ul li:first-child {
   color: #46a358;
   font-family: "Cera Pro";
   font-size: 15px;
@@ -553,7 +546,7 @@ input[type="range"]::-moz-range-thumb {
   border-bottom: 2px solid #46a358;
 }
 
- .header-content ul li {
+.header-content ul li {
   color: #3d3d3d;
   font-family: "Cera Pro";
   font-size: 15px;
@@ -605,7 +598,6 @@ input[type="range"]::-moz-range-thumb {
 
   width: 100%;
   gap: 30px 70px;
-  margin-bottom: 90px;
 }
 
 /* cart */
@@ -620,24 +612,22 @@ input[type="range"]::-moz-range-thumb {
 
 .cart_img {
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-content: center;
 
   flex-grow: 1;
 
   height: 300px;
   width: 258px;
-  padding: 20px 4px;
+
+  padding-inline: 4px;
   position: relative;
   background-color: #fbfbfb;
 }
 
 .cart_img img {
-  width: 240px;
-  height: 240px;
-
-  position: absolute;
-
+  width: 100%;
+  height: auto;
   object-fit: contain;
   background-color: url(<path-to-image>) lightgray 50% / cover no-repeat;
   mix-blend-mode: multiply;
@@ -659,6 +649,9 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .hidden_cart_img {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
   opacity: 0;
   object-fit: contain;
   border-top: 2px solid #46a358;
@@ -666,26 +659,23 @@ input[type="range"]::-moz-range-thumb {
   z-index: 1;
   width: 100%;
   height: 100%;
-  align-content: end;
-
-  padding-bottom: 60px;
+  align-items: end;
+  gap: 26px;
+  padding-bottom: 7px;
 }
 
 #basket {
-  left: 70px;
   width: 20px;
   height: 20px;
   color: #46a358;
 }
 
 #heart {
-  right: 119px;
   width: 20px;
   height: 20px;
 }
 
 #frame {
-  right: 70px;
   width: 20px;
   height: 20px;
 }
@@ -726,7 +716,7 @@ input[type="range"]::-moz-range-thumb {
 .navigation {
   display: flex;
   justify-content: end;
-  
+  margin-bottom: 101px;
 }
 
 .navigation ul {
@@ -778,7 +768,7 @@ input[type="range"]::-moz-range-thumb {
   width: 100%;
   height: auto;
   flex-flow: column wrap;
-  
+
   /* border: 1px solid #3d3d3d; */
   gap: 138px;
 }
@@ -960,7 +950,7 @@ input[type="range"]::-moz-range-thumb {
 .blog-cart button {
   display: flex;
   flex-direction: row;
-  align-items:  end;
+  align-items: end;
   color: #3d3d3d;
   font-family: "Cera Pro";
   font-size: 14px;
@@ -975,5 +965,5 @@ input[type="range"]::-moz-range-thumb {
 
 .blog-cart button span {
   display: flex;
-  margin-bottom: 1px;
+  margin-bottom: 2px;
 }
