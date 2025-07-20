@@ -86,7 +86,7 @@ body {
 
 .nav-header li {
   padding: 8px 0 25px;
-
+  text-wrap: nowrap;
   font-family: "Cera Pro";
   font-size: 16px;
   font-style: normal;
@@ -130,6 +130,7 @@ body {
 .menu > li {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   background-color: #edf6ee;
   padding: 7px 17px 8px 14px;
   color: #3d3d3d;
