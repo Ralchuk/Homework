@@ -118,6 +118,36 @@ body {
         top: 12px;
         right: 20px;
       }
+
+      ul {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: -105px;
+        left: 178px;
+        padding-left: 5px;
+
+        li {
+          background-color: $menu_color;
+          color: #3d3d3d;
+          font-family: "Cera Pro";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          padding: 7px 14px 8px 14px;
+        }
+
+        li:hover {
+          color: $body_color;
+          font-family: "Cera Pro";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          background-color: $element_color;
+        }
+      }
     }
 
     li:nth-child(4):hover {
@@ -136,138 +166,88 @@ body {
       svg {
         opacity: 1;
       }
+
+      ul {
+        display: block;
+      }
     }
   }
-}
 
+  .green_line {
+    background-color: $element_color;
+    width: max-content;
+    height: 3px;
+  }
 
+  .but {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 30px;
 
+    .lupa {
+      width: 20px;
+      height: 20px;
+    }
 
+    .basket {
+      display: flex;
+      flex-flow: row nowrap;
+      position: relative;
+      padding: 2px 5px 0 2px;
 
-.nav-header .menu > li:nth-child(4):hover > ul {
-  display: block;
-}
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
 
-.nav-header .menu > li:nth-child(4) > ul {
-  display: none;
-  position: absolute;
-  width: 100%;
-  top: -105px;
-  left: 178px;
-  padding-left: 5px;
-}
+    .basket-number {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      position: absolute;
+      top: 1px;
+      right: -5px;
+      box-sizing: content-box;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      color: $body_color;
+      font-family: "Cera Pro";
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      background-color: $element_color;
 
-.menu > li:nth-child(4) > ul > li {
-  background-color: $menu_color;
-  color: #3d3d3d;
-  font-family: "Cera Pro";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  padding: 7px 14px 8px 14px;
-}
+      border: $body_color solid 2px;
+    }
 
-.menu > li:nth-child(4) > ul > li:hover {
+    .Login {
+      display: flex;
+      align-items: center;
+      height: fit-content;
+      padding: 8px 17px;
+      gap: 4px;
+      border-radius: 6px;
+      background: $element_color;
+      color: $body_color;
+      font-family: "Cera Pro";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      cursor: pointer;
+    }
+    
+    #logout {
+      width: 16.278px;
+      height: 15.417px;
+      flex-shrink: 0;
+    }
+  }
 
-  color: $body_color;
-  font-family: "Cera Pro";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  background-color: $element_color;
-}
-
-
-
-/* .nav-act {
-  padding: 8px 0 25px;
-
-  font-family: "Cera Pro";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
-  text-decoration: none;
-  border-bottom: 3px solid $element_color;
-} */
-
-.green_line {
-  background-color: $element_color;
-  width: max-content;
-  height: 3px;
-}
-
-/* Buttons group */
-
-.but {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  gap: 30px;
-}
-
-.lupa {
-  width: 20px;
-  height: 20px;
-}
-
-.basket {
-  display: flex;
-  flex-flow: row nowrap;
-  position: relative;
-  padding: 2px 5px 0 2px;
-}
-
-.basket img {
-  width: 24px;
-  height: 24px;
-}
-
-.basket-number {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  position: absolute;
-  top: 1px;
-  right: -5px;
-  box-sizing: content-box;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  color: $body_color;
-  font-family: "Cera Pro";
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  background-color: $element_color;
-
-  border: $body_color solid 2px;
-}
-
-.Login {
-  display: flex;
-  align-items: center;
-  height: fit-content;
-  padding: 8px 17px;
-  gap: 4px;
-  border-radius: 6px;
-  background: $element_color;
-  color: $body_color;
-  font-family: "Cera Pro";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  cursor: pointer;
-}
-
-#logout {
-  width: 16.278px;
-  height: 15.417px;
-  flex-shrink: 0;
 }
 
 /* banner */
@@ -277,102 +257,108 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom: 46px;
-
   background-color: #f5f5f580;
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    padding: 68px 93px 93px 40px;
+
+    h1 {
+      color: #3d3d3d;
+      font-family: "Cera Pro";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px; /* 114.286% */
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+    }
+
+    h2 {
+      color: #3d3d3d;
+      font-family: "Cera Pro";
+      font-size: 70px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 70px; /* 100% */
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      max-width: 530px;
+
+      span {
+        color: $element_color;
+        font-family: "Cera Pro";
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 70px;
+        text-transform: uppercase;
+      }
+    }
+
+    h3 {
+      color: #727272;
+      font-family: "Cera Pro";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 44px;
+      max-width: 557px;
+    }
+
+    button {
+      width: fit-content;
+      padding: 10px 27px;
+      color: $body_color;
+      font-family: "Cera Pro";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px; /* 125% */
+      text-transform: uppercase;
+      border-radius: 6px;
+      background: $element_color;
+      cursor: pointer;
+    }
+
+
+  }
+
+  .images {
+    display: flex;
+    position: relative;
+
+    .big_plant {
+      width: 100%;
+      max-width: 518px;
+      height: auto;
+
+      object-fit: contain;
+    }
+
+    .small_plant {
+      width: 100%;
+      max-width: 135px;
+
+      flex-shrink: 0;
+      position: absolute;
+      /* z-index: 1; */
+      left: 11%;
+      bottom: 8%;
+    }
+  }
 }
 
-.body {
-  display: flex;
-  flex-direction: column;
-  padding: 68px 93px 93px 40px;
-}
 
-.body h1 {
-  color: #3d3d3d;
-  font-family: "Cera Pro";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 16px; /* 114.286% */
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  margin-bottom: 7px;
-}
 
-.body h2 {
-  color: #3d3d3d;
-  font-family: "Cera Pro";
-  font-size: 70px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 70px; /* 100% */
-  text-transform: uppercase;
-  margin-bottom: 5px;
-  max-width: 530px;
-}
-
-.body h2 span {
-  color: $element_color;
-  font-family: "Cera Pro";
-  font-size: 70px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 70px;
-  text-transform: uppercase;
-}
-
-.body h3 {
-  color: #727272;
-  font-family: "Cera Pro";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  margin-bottom: 44px;
-  max-width: 557px;
-}
-
-.body button {
-  width: fit-content;
-  padding: 10px 27px;
-  color: $body_color;
-  font-family: "Cera Pro";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px; /* 125% */
-  text-transform: uppercase;
-  border-radius: 6px;
-  background: $element_color;
-  cursor: pointer;
-}
 
 /* Images */
 
-.images {
-  display: flex;
 
-  position: relative;
-}
 
-.big_plant {
-  width: 100%;
-  max-width: 518px;
-  height: auto;
-
-  object-fit: contain;
-}
-
-.small_plant {
-  width: 100%;
-  max-width: 135px;
-
-  flex-shrink: 0;
-  position: absolute;
-  /* z-index: 1; */
-  left: 11%;
-  bottom: 8%;
-}
 
 .main {
   display: flex;

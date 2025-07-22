@@ -185,6 +185,33 @@ body {
   top: 12px;
   right: 20px;
 }
+.header .nav-header li:nth-child(4) ul {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: -105px;
+  left: 178px;
+  padding-left: 5px;
+}
+.header .nav-header li:nth-child(4) ul li {
+  background-color: #EDF6EE;
+  color: #3d3d3d;
+  font-family: "Cera Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 7px 14px 8px 14px;
+}
+.header .nav-header li:nth-child(4) ul li:hover {
+  color: #FFFFFF;
+  font-family: "Cera Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: #46A358;
+}
 .header .nav-header li:nth-child(4):hover {
   color: #FFFFFF;
   font-family: "Cera Pro";
@@ -200,85 +227,36 @@ body {
 .header .nav-header li:nth-child(4):hover svg {
   opacity: 1;
 }
-
-.nav-header .menu > li:nth-child(4):hover > ul {
+.header .nav-header li:nth-child(4):hover ul {
   display: block;
 }
-
-.nav-header .menu > li:nth-child(4) > ul {
-  display: none;
-  position: absolute;
-  width: 100%;
-  top: -105px;
-  left: 178px;
-  padding-left: 5px;
-}
-
-.menu > li:nth-child(4) > ul > li {
-  background-color: #EDF6EE;
-  color: #3d3d3d;
-  font-family: "Cera Pro";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  padding: 7px 14px 8px 14px;
-}
-
-.menu > li:nth-child(4) > ul > li:hover {
-  color: #FFFFFF;
-  font-family: "Cera Pro";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  background-color: #46A358;
-}
-
-/* .nav-act {
-  padding: 8px 0 25px;
-
-  font-family: "Cera Pro";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
-  text-decoration: none;
-  border-bottom: 3px solid $element_color;
-} */
-.green_line {
+.header .green_line {
   background-color: #46A358;
   width: -moz-max-content;
   width: max-content;
   height: 3px;
 }
-
-/* Buttons group */
-.but {
+.header .but {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   gap: 30px;
 }
-
-.lupa {
+.header .but .lupa {
   width: 20px;
   height: 20px;
 }
-
-.basket {
+.header .but .basket {
   display: flex;
   flex-flow: row nowrap;
   position: relative;
   padding: 2px 5px 0 2px;
 }
-
-.basket img {
+.header .but .basket img {
   width: 24px;
   height: 24px;
 }
-
-.basket-number {
+.header .but .basket-number {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -298,8 +276,7 @@ body {
   background-color: #46A358;
   border: #FFFFFF solid 2px;
 }
-
-.Login {
+.header .but .Login {
   display: flex;
   align-items: center;
   height: -moz-fit-content;
@@ -316,8 +293,7 @@ body {
   line-height: normal;
   cursor: pointer;
 }
-
-#logout {
+.header .but #logout {
   width: 16.278px;
   height: 15.417px;
   flex-shrink: 0;
@@ -331,14 +307,12 @@ body {
   margin-bottom: 46px;
   background-color: rgba(245, 245, 245, 0.5019607843);
 }
-
-.body {
+.banner .body {
   display: flex;
   flex-direction: column;
   padding: 68px 93px 93px 40px;
 }
-
-.body h1 {
+.banner .body h1 {
   color: #3d3d3d;
   font-family: "Cera Pro";
   font-size: 14px;
@@ -349,8 +323,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 7px;
 }
-
-.body h2 {
+.banner .body h2 {
   color: #3d3d3d;
   font-family: "Cera Pro";
   font-size: 70px;
@@ -361,8 +334,7 @@ body {
   margin-bottom: 5px;
   max-width: 530px;
 }
-
-.body h2 span {
+.banner .body h2 span {
   color: #46A358;
   font-family: "Cera Pro";
   font-size: 70px;
@@ -371,8 +343,7 @@ body {
   line-height: 70px;
   text-transform: uppercase;
 }
-
-.body h3 {
+.banner .body h3 {
   color: #727272;
   font-family: "Cera Pro";
   font-size: 14px;
@@ -382,8 +353,7 @@ body {
   margin-bottom: 44px;
   max-width: 557px;
 }
-
-.body button {
+.banner .body button {
   width: -moz-fit-content;
   width: fit-content;
   padding: 10px 27px;
@@ -398,22 +368,18 @@ body {
   background: #46A358;
   cursor: pointer;
 }
-
-/* Images */
-.images {
+.banner .images {
   display: flex;
   position: relative;
 }
-
-.big_plant {
+.banner .images .big_plant {
   width: 100%;
   max-width: 518px;
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
 }
-
-.small_plant {
+.banner .images .small_plant {
   width: 100%;
   max-width: 135px;
   flex-shrink: 0;
@@ -423,6 +389,7 @@ body {
   bottom: 8%;
 }
 
+/* Images */
 .main {
   display: flex;
   margin-bottom: 90px;
