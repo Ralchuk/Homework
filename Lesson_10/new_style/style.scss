@@ -83,17 +83,13 @@ body {
       flex-wrap: nowrap;
       background-color: $menu_color;
       padding: 7px 17px 8px 14px;
-      color: #3d3d3d;
+      color: $text_color;
       @include font-face ($regular);
     }
 
     li:hover {
       color: $body_color;
-      font-family: "Cera Pro";
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
+      @include font-face($bold);
       background-color: $element_color;
     }
 
@@ -106,12 +102,8 @@ body {
 
       justify-content: space-between;
       padding: 7px 17px 8px 14px;
-      color: #3d3d3d;
-      font-family: "Cera Pro";
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
+      color: $text_color;
+      @include font-face ($regular);
 
       svg {
         opacity: 0;
@@ -130,22 +122,14 @@ body {
 
         li {
           background-color: $menu_color;
-          color: #3d3d3d;
-          font-family: "Cera Pro";
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
+          color: $text_color;
+          @include font-face($regular);
           padding: 7px 14px 8px 14px;
         }
 
         li:hover {
           color: $body_color;
-          font-family: "Cera Pro";
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
+          @include font-face($bold);
           background-color: $element_color;
         }
       }
@@ -153,11 +137,7 @@ body {
 
     li:nth-child(4):hover {
       color: $body_color;
-      font-family: "Cera Pro";
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
+      @include font-face($bold);
       background-color: $element_color;
 
       img {
@@ -218,11 +198,7 @@ body {
       height: 14px;
       border-radius: 50%;
       color: $body_color;
-      font-family: "Cera Pro";
-      font-size: 10px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
+      @include font-face($medium);
       background-color: $element_color;
 
       border: $body_color solid 2px;
@@ -237,11 +213,7 @@ body {
       border-radius: 6px;
       background: $element_color;
       color: $body_color;
-      font-family: "Cera Pro";
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
+      @include font-face($medium);
       cursor: pointer;
     }
     

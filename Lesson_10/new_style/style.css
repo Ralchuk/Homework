@@ -162,10 +162,9 @@ body {
 .header .nav-header .menu li:hover {
   color: #FFFFFF;
   font-family: "Cera Pro";
-  font-size: 16px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 700;
-  line-height: normal;
+  font-style: normal;
   background-color: #46A358;
 }
 .header .nav-header .menu li:nth-child(4) {
@@ -178,10 +177,9 @@ body {
   padding: 7px 17px 8px 14px;
   color: #3d3d3d;
   font-family: "Cera Pro";
-  font-size: 16px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 400;
-  line-height: normal;
+  font-style: normal;
 }
 .header .nav-header .menu li:nth-child(4) svg {
   opacity: 0;
@@ -201,28 +199,25 @@ body {
   background-color: #EDF6EE;
   color: #3d3d3d;
   font-family: "Cera Pro";
-  font-size: 16px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 400;
-  line-height: normal;
+  font-style: normal;
   padding: 7px 14px 8px 14px;
 }
 .header .nav-header .menu li:nth-child(4) ul li:hover {
   color: #FFFFFF;
   font-family: "Cera Pro";
-  font-size: 16px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 700;
-  line-height: normal;
+  font-style: normal;
   background-color: #46A358;
 }
 .header .nav-header .menu li:nth-child(4):hover {
   color: #FFFFFF;
   font-family: "Cera Pro";
-  font-size: 16px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 700;
-  line-height: normal;
+  font-style: normal;
   background-color: #46A358;
 }
 .header .nav-header .menu li:nth-child(4):hover img {
@@ -273,10 +268,9 @@ body {
   border-radius: 50%;
   color: #FFFFFF;
   font-family: "Cera Pro";
-  font-size: 10px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 500;
-  line-height: normal;
+  font-style: normal;
   background-color: #46A358;
   border: #FFFFFF solid 2px;
 }
@@ -291,10 +285,9 @@ body {
   background: #46A358;
   color: #FFFFFF;
   font-family: "Cera Pro";
-  font-size: 16px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 500;
-  line-height: normal;
+  font-style: normal;
   cursor: pointer;
 }
 .header .but #logout {
