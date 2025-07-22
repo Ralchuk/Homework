@@ -42,7 +42,7 @@ body {
     li {
       padding: 8px 0 25px;
       text-wrap: nowrap;
-      @include font-face($light);
+      @include font-face($light, 16px);
       
       text-decoration: none;
       cursor: pointer;
@@ -50,7 +50,7 @@ body {
 
     li:hover {
       padding: 8px 0 22px;
-      @include font-face($bold);
+      @include font-face($bold, 16px);
       border-bottom: 3px solid $element_color;
       opacity: 1;
     }
@@ -199,7 +199,7 @@ body {
       height: 14px;
       border-radius: 50%;
       color: $body_color;
-      @include font-face($medium);
+      @include font-face($medium, 10px);
       background-color: $element_color;
 
       border: $body_color solid 2px;
@@ -960,5 +960,6 @@ body {
     }
   }
 }
+
 
 
