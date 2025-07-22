@@ -2,14 +2,16 @@
         'font';
 
 
-@mixin flex { 
+@mixin flex ($fd: row, $wr: nowrap, $jc: center, $ac: center ){ 
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: center;
-    padding: 0;
+    flex-direction: $fd;
+    flex-wrap: $wr;
+    justify-content: $jc;
+    align-content: $ac;
+    
 }
+
+
 
 @mixin font-face ($weight: $bold) {
   font-family: "Cera Pro";

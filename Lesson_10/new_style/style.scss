@@ -17,6 +17,7 @@ body {
 /* header */
 
 .header {
+  // @include flex (column, wrap, end, center);
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -241,7 +242,7 @@ body {
     padding: 68px 93px 93px 40px;
 
     h1 {
-      color: #3d3d3d;
+      color: $text_color;
       font-family: "Cera Pro";
       font-size: 14px;
       font-style: normal;
@@ -253,34 +254,22 @@ body {
     }
 
     h2 {
-      color: #3d3d3d;
-      font-family: "Cera Pro";
-      font-size: 70px;
-      font-style: normal;
-      font-weight: 900;
-      line-height: 70px; /* 100% */
+      color: $text_color;
+      @include font-face($black);
       text-transform: uppercase;
       margin-bottom: 5px;
       max-width: 530px;
 
       span {
         color: $element_color;
-        font-family: "Cera Pro";
-        font-size: 70px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: 70px;
+        @include font-face($black);
         text-transform: uppercase;
       }
     }
 
     h3 {
-      color: #727272;
-      font-family: "Cera Pro";
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 24px;
+      color: $text_color;
+      @include font-face($regular);
       margin-bottom: 44px;
       max-width: 557px;
     }
@@ -289,11 +278,7 @@ body {
       width: fit-content;
       padding: 10px 27px;
       color: $body_color;
-      font-family: "Cera Pro";
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 20px; /* 125% */
+      @include font-face($bold);
       text-transform: uppercase;
       border-radius: 6px;
       background: $element_color;
@@ -777,6 +762,7 @@ body {
 /* Block preposition */
 
 .preposition {
+  
   display: flex;
   width: 100%;
   height: auto;
