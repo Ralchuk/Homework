@@ -785,14 +785,12 @@ body {
   /* border: 1px solid #3d3d3d; */
   gap: 138px;
 }
-
-.action {
+.preposition .action {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
-
-.action-cart {
+.preposition .action .action-cart {
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
@@ -801,8 +799,7 @@ body {
   height: 100%;
   position: relative;
 }
-
-.action-cart img {
+.preposition .action .action-cart img {
   position: absolute;
   bottom: 10px;
   z-index: 1;
@@ -812,8 +809,7 @@ body {
   background-color: url(<path-to-image>) lightgray -5px 0px/101.742% 100% no-repeat;
   mix-blend-mode: multiply;
 }
-
-.action-cart-content {
+.preposition .action .action-cart .action-cart-content {
   display: flex;
   width: 100%;
   flex-flow: column nowrap;
@@ -823,8 +819,7 @@ body {
   background-color: #FBFBFB;
   /* border: 1px solid ; */
 }
-
-.action-cart-content h2 {
+.preposition .action .action-cart .action-cart-content h2 {
   color: #3d3d3d;
   text-align: right;
   font-family: "Cera Pro";
@@ -838,8 +833,7 @@ body {
   height: fit-content;
   margin-bottom: 9px;
 }
-
-.action-cart-content h3 {
+.preposition .action .action-cart .action-cart-content h3 {
   color: #727272;
   text-align: right;
   font-family: "Cera Pro";
@@ -850,8 +844,7 @@ body {
   max-width: 292px;
   margin-bottom: 25px;
 }
-
-.action-cart button {
+.preposition .action .action-cart .action-cart-content button {
   display: flex;
   flex-direction: row;
   color: #FFFFFF;
@@ -867,15 +860,12 @@ body {
   border-radius: 6px;
   cursor: pointer;
 }
-
-/* Blog */
-.blog {
+.preposition .blog {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
 }
-
-.blog h2 {
+.preposition .blog h2 {
   color: #3d3d3d;
   text-align: center;
   font-family: "Cera Pro";
@@ -886,8 +876,7 @@ body {
   margin-bottom: 15px;
   text-transform: capitalize;
 }
-
-.blog h3 {
+.preposition .blog h3 {
   color: #727272;
   text-align: center;
   font-family: "Cera Pro";
@@ -896,22 +885,13 @@ body {
   font-weight: 400;
   line-height: 24px; /* 171.429% */
 }
-
-.blog-list {
+.preposition .blog .blog-list {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   width: 100%;
 }
-
-.blog-cart img {
-  width: 100%;
-  max-height: 195.174px;
-  flex-shrink: 0;
-  margin-bottom: 8px;
-}
-
-.blog-cart {
+.preposition .blog .blog-list .blog-cart {
   display: flex;
   flex-direction: column;
   max-width: 268px;
@@ -919,14 +899,18 @@ body {
   background-color: #FBFBFB;
   margin-top: 35px;
 }
-
-.blog-cart-content {
+.preposition .blog .blog-list .blog-cart .blog-cart img {
+  width: 100%;
+  max-height: 195.174px;
+  flex-shrink: 0;
+  margin-bottom: 8px;
+}
+.preposition .blog .blog-list .blog-cart .blog-cart-content {
   display: flex;
   flex-direction: column;
   padding: 9px 31px 12px 15px;
 }
-
-.blog-cart h4 {
+.preposition .blog .blog-list .blog-cart .blog-cart-content h4 {
   color: #46A358;
   font-family: "Cera Pro";
   font-size: 14px;
@@ -935,8 +919,7 @@ body {
   line-height: 16px; /* 114.286% */
   margin-bottom: 4px;
 }
-
-.blog-cart h5 {
+.preposition .blog .blog-list .blog-cart .blog-cart-content h5 {
   color: #3d3d3d;
   font-family: "Cera Pro";
   font-size: 20px;
@@ -945,8 +928,7 @@ body {
   line-height: 26px; /* 130% */
   margin-bottom: 4px;
 }
-
-.blog-cart h6 {
+.preposition .blog .blog-list .blog-cart .blog-cart-content h6 {
   color: #727272;
   font-family: "Cera Pro";
   font-size: 14px;
@@ -955,8 +937,7 @@ body {
   line-height: 22px; /* 157.143% */
   margin-bottom: 4px;
 }
-
-.blog-cart button {
+.preposition .blog .blog-list .blog-cart .blog-cart-content button {
   display: flex;
   flex-direction: row;
   align-items: end;
@@ -969,8 +950,7 @@ body {
   background-color: #FFFFFF;
   cursor: pointer;
 }
-
-.blog-cart button span {
+.preposition .blog .blog-list .blog-cart .blog-cart-content button span {
   display: flex;
   margin-bottom: 2px;
 }/*# sourceMappingURL=style.css.map */

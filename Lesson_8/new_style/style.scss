@@ -807,196 +807,196 @@ body {
   flex-flow: column wrap;
   /* border: 1px solid #3d3d3d; */
   gap: 138px;
+
+  .action {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .action-cart {
+      display: flex;
+      flex-flow: row nowrap;
+      width: 100%;
+      max-width: 586px;
+      min-height: 250px;
+      height: 100%;
+      position: relative;
+
+      img {
+        position: absolute;
+        bottom: 10px;
+        z-index: 1;
+
+        max-width: 287px;
+        max-height: 292px;
+        flex-shrink: 0;
+        background-color: url(<path-to-image>) lightgray -5px 0px / 101.742% 100% no-repeat;
+        mix-blend-mode: multiply;
+      }
+
+      .action-cart-content {
+        display: flex;
+        width: 100%;
+        flex-flow: column nowrap;
+        align-items: end;
+        text-align: end;
+        padding: 29px 30px 37px 264px;
+        background-color: $main_color;
+        /* border: 1px solid ; */
+
+        h2 {
+          color: #3d3d3d;
+          text-align: right;
+          font-family: "Cera Pro";
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 24px; /* 133.333% */
+          text-transform: uppercase;
+          max-width: 150px;
+          height: fit-content;
+          margin-bottom: 9px;
+        }
+
+        h3 {
+          color: #727272;
+          text-align: right;
+          font-family: "Cera Pro";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px; /* 171.429% */
+          max-width: 292px;
+          margin-bottom: 25px;
+        }
+
+        button {
+          display: flex;
+          flex-direction: row;
+          color: $body_color;
+          font-family: "Cera Pro";
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px; /* 142.857% */
+          background-color: $element_color;
+          gap: 5px;
+          padding: 11px 27px;
+          align-items: center;
+          border-radius: 6px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .blog {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    h2 {
+      color: #3d3d3d;
+      text-align: center;
+      font-family: "Cera Pro";
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 16px; /* 53.333% */
+      margin-bottom: 15px;
+      text-transform: capitalize;
+    }
+
+    h3 {
+      color: #727272;
+      text-align: center;
+      font-family: "Cera Pro";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 171.429% */
+    }
+
+    .blog-list {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      width: 100%;
+
+      .blog-cart {
+        display: flex;
+        flex-direction: column;
+        max-width: 268px;
+        align-items: start;
+        background-color: $main_color;
+        margin-top: 35px;
+
+        .blog-cart img {
+          width: 100%;
+          max-height: 195.174px;
+          flex-shrink: 0;
+          margin-bottom: 8px;
+        }
+
+        .blog-cart-content {
+          display: flex;
+          flex-direction: column;
+          padding: 9px 31px 12px 15px;
+
+          h4 {
+            color: $element_color;
+            font-family: "Cera Pro";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px; /* 114.286% */
+            margin-bottom: 4px;
+          }
+
+          h5 {
+            color: #3d3d3d;
+            font-family: "Cera Pro";
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26px; /* 130% */
+            margin-bottom: 4px;
+          }
+
+          h6 {
+            color: #727272;
+            font-family: "Cera Pro";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px; /* 157.143% */
+            margin-bottom: 4px;
+          }
+
+          button {
+            display: flex;
+            flex-direction: row;
+            align-items: end;
+            color: #3d3d3d;
+            font-family: "Cera Pro";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px; /* 114.286% */
+
+            background-color: $body_color;
+
+            cursor: pointer;
+
+            span {
+              display: flex;
+              margin-bottom: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-.action {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
 
-.action-cart {
-  display: flex;
-  flex-flow: row nowrap;
-  width: 100%;
-  max-width: 586px;
-  min-height: 250px;
-  height: 100%;
-  position: relative;
-}
-
-.action-cart img {
-  position: absolute;
-  bottom: 10px;
-  z-index: 1;
-
-  max-width: 287px;
-  max-height: 292px;
-  flex-shrink: 0;
-  background-color: url(<path-to-image>) lightgray -5px 0px / 101.742% 100% no-repeat;
-  mix-blend-mode: multiply;
-}
-
-.action-cart-content {
-  display: flex;
-  width: 100%;
-  flex-flow: column nowrap;
-  align-items: end;
-  text-align: end;
-  padding: 29px 30px 37px 264px;
-  background-color: $main_color;
-  /* border: 1px solid ; */
-}
-
-.action-cart-content h2 {
-  color: #3d3d3d;
-  text-align: right;
-  font-family: "Cera Pro";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 24px; /* 133.333% */
-  text-transform: uppercase;
-  max-width: 150px;
-  height: fit-content;
-  margin-bottom: 9px;
-}
-
-.action-cart-content h3 {
-  color: #727272;
-  text-align: right;
-  font-family: "Cera Pro";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 171.429% */
-  max-width: 292px;
-  margin-bottom: 25px;
-}
-
-.action-cart button {
-  display: flex;
-  flex-direction: row;
-  color: $body_color;
-  font-family: "Cera Pro";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px; /* 142.857% */
-  background-color: $element_color;
-  gap: 5px;
-  padding: 11px 27px;
-  align-items: center;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-/* Blog */
-
-.blog {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-}
-
-.blog h2 {
-  color: #3d3d3d;
-  text-align: center;
-  font-family: "Cera Pro";
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px; /* 53.333% */
-  margin-bottom: 15px;
-  text-transform: capitalize;
-}
-
-.blog h3 {
-  color: #727272;
-  text-align: center;
-  font-family: "Cera Pro";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 171.429% */
-}
-
-.blog-list {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.blog-cart img {
-  width: 100%;
-  max-height: 195.174px;
-  flex-shrink: 0;
-  margin-bottom: 8px;
-}
-
-.blog-cart {
-  display: flex;
-  flex-direction: column;
-  max-width: 268px;
-  align-items: start;
-  background-color: $main_color;
-  margin-top: 35px;
-}
-
-.blog-cart-content {
-  display: flex;
-  flex-direction: column;
-  padding: 9px 31px 12px 15px;
-}
-
-.blog-cart h4 {
-  color: $element_color;
-  font-family: "Cera Pro";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 16px; /* 114.286% */
-  margin-bottom: 4px;
-}
-
-.blog-cart h5 {
-  color: #3d3d3d;
-  font-family: "Cera Pro";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 26px; /* 130% */
-  margin-bottom: 4px;
-}
-
-.blog-cart h6 {
-  color: #727272;
-  font-family: "Cera Pro";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px; /* 157.143% */
-  margin-bottom: 4px;
-}
-
-.blog-cart button {
-  display: flex;
-  flex-direction: row;
-  align-items: end;
-  color: #3d3d3d;
-  font-family: "Cera Pro";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 16px; /* 114.286% */
-
-  background-color: $body_color;
-
-  cursor: pointer;
-}
-
-.blog-cart button span {
-  display: flex;
-  margin-bottom: 2px;
-}
