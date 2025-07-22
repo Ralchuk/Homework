@@ -389,30 +389,24 @@ body {
   bottom: 8%;
 }
 
-/* Images */
 .main {
   display: flex;
   margin-bottom: 90px;
   gap: 50px;
 }
-
-/* sidebar */
-.sidebar {
+.main .sidebar {
   display: flex;
   flex-direction: column;
   padding: 14px 24px 0 18px;
   background: #FBFBFB;
 }
-
-/* navigation */
-.nav2 {
+.main .sidebar .nav2 {
   display: flex;
   flex-direction: column;
   margin-bottom: 36px;
   gap: 7px;
 }
-
-.nav2 h2 {
+.main .sidebar .nav2 h2 {
   color: #3d3d3d;
   font-family: "Cera Pro";
   font-size: 18px;
@@ -420,12 +414,10 @@ body {
   font-weight: 700;
   line-height: 16px;
 }
-
-.nav2 ul {
+.main .sidebar .nav2 ul {
   margin-left: 12px;
 }
-
-.nav2 ul li {
+.main .sidebar .nav2 ul li {
   display: flex;
   justify-content: space-between;
   text-wrap: nowrap;
@@ -436,8 +428,7 @@ body {
   font-weight: 400;
   line-height: 40px;
 }
-
-.nav2 ul li:first-of-type {
+.main .sidebar .nav2 ul li:first-of-type {
   color: #46A358;
   font-family: "Cera Pro";
   font-size: 15px;
@@ -445,15 +436,12 @@ body {
   font-weight: 700;
   line-height: 40px;
 }
-
-/* Price range */
-.price {
+.main .sidebar .price {
   display: flex;
   flex-flow: column wrap;
   margin-bottom: 46px;
 }
-
-.range-title {
+.main .sidebar .price .range-title {
   color: #3d3d3d;
   font-family: "Cera Pro";
   font-size: 18px;
@@ -462,15 +450,13 @@ body {
   line-height: 16px;
   margin-bottom: 20px;
 }
-
-.range-slider {
+.main .sidebar .price .range-slider {
   display: flex;
   position: relative;
   height: -moz-fit-content;
   height: fit-content;
 }
-
-.range-slider input {
+.main .sidebar .price .range-slider input {
   width: 100%;
   max-width: 200px;
   height: 5px;
@@ -481,8 +467,7 @@ body {
           appearance: none;
   margin-bottom: 15px;
 }
-
-.range-slider input::-webkit-slider-thumb {
+.main .sidebar .price .range-slider input::-webkit-slider-thumb {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -492,8 +477,7 @@ body {
   -webkit-appearance: none;
           appearance: none;
 }
-
-.round {
+.main .sidebar .price .range-slider .round {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -503,8 +487,7 @@ body {
   position: absolute;
   top: -7px;
 }
-
-.price h4 {
+.main .sidebar .price h4 {
   color: #3d3d3d;
   font-family: "Cera Pro";
   font-size: 15px;
@@ -512,8 +495,7 @@ body {
   font-weight: 400;
   line-height: 16px; /* 106.667% */
 }
-
-.price h4 span {
+.main .sidebar .price h4 span {
   color: #46A358;
   font-family: "Cera Pro";
   font-size: 15px;
@@ -521,9 +503,7 @@ body {
   font-weight: 700;
   line-height: 16px;
 }
-
-/* button Filter */
-.price button {
+.main .sidebar .price button {
   display: flex;
   margin-top: 20px;
   color: #FFFFFF;
@@ -539,16 +519,13 @@ body {
   width: fit-content;
   background-color: #46A358;
 }
-
-/* Size */
-.nav3 {
+.main .sidebar .nav3 {
   display: flex;
   flex-direction: column;
   margin-bottom: 18px;
   gap: 7px;
 }
-
-.nav3 h2 {
+.main .sidebar .nav3 h2 {
   color: #3d3d3d;
   font-family: "Cera Pro";
   font-size: 18px;
@@ -556,12 +533,10 @@ body {
   font-weight: 700;
   line-height: 16px;
 }
-
-.nav3 ul {
+.main .sidebar .nav3 ul {
   margin-left: 12px;
 }
-
-.nav3 ul li {
+.main .sidebar .nav3 ul li {
   display: flex;
   justify-content: space-between;
   text-wrap: nowrap;
@@ -572,20 +547,16 @@ body {
   font-weight: 400;
   line-height: 40px;
 }
-
-/* block images */
-.img {
+.main .sidebar .img {
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
   background: linear-gradient(180deg, rgba(70, 163, 88, 0.1) 0%, rgba(70, 163, 88, 0.03) 100%);
 }
-
-.img-SuperSale {
+.main .sidebar .img .img-SuperSale {
   margin: 0 22px;
 }
-
-.img span {
+.main .sidebar .img span {
   color: #3d3d3d;
   text-align: center;
   font-family: "Cera Pro";
@@ -595,39 +566,23 @@ body {
   line-height: 16px;
   margin: 11px 50px -6px;
 }
-
-/* main - content */
-.content {
+.main .content {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-
-/* main - content -  header */
-.header-content {
+.main .content .header-content {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   margin-bottom: 38px;
 }
-
-.header-content ul {
+.main .content .header-content ul {
   display: flex;
   flex-direction: row;
   gap: 37px;
 }
-
-.header-content ul li:first-child {
-  color: #46A358;
-  font-family: "Cera Pro";
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 16px;
-  border-bottom: 2px solid #46A358;
-}
-
-.header-content ul li {
+.main .content .header-content ul li {
   color: #3d3d3d;
   font-family: "Cera Pro";
   font-size: 15px;
@@ -637,14 +592,21 @@ body {
   text-wrap: nowrap;
   padding-bottom: 7px;
 }
-
-.header-content span {
+.main .content .header-content ul li:first-child {
+  color: #46A358;
+  font-family: "Cera Pro";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  border-bottom: 2px solid #46A358;
+}
+.main .content .header-content span {
   display: flex;
   flex-wrap: nowrap;
   align-items: baseline;
 }
-
-#Shortby {
+.main .content .header-content #Shortby {
   display: flex;
   flex-wrap: nowrap;
   color: #3d3d3d;
@@ -654,8 +616,7 @@ body {
   font-weight: 400;
   line-height: 16px; /* 106.667% */
 }
-
-#select {
+.main .content .header-content #select {
   color: #3d3d3d;
   font-family: "Cera Pro";
   font-size: 15px;
@@ -664,13 +625,10 @@ body {
   line-height: 16px; /* 106.667% */
   cursor: pointer;
 }
-
-#select:hover {
+.main .content .header-content #select:hover {
   color: #3d3d3d;
 }
-
-/* catalog */
-.catalog {
+.main .content .catalog {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -678,16 +636,13 @@ body {
   width: 100%;
   gap: 30px 70px;
 }
-
-/* cart */
-.cart {
+.main .content .catalog .cart {
   display: flex;
   flex-direction: column;
   justify-content: end;
   /* border: 1px solid black; */
 }
-
-.cart_img {
+.main .content .catalog .cart .cart_img {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -698,8 +653,7 @@ body {
   position: relative;
   background-color: #FBFBFB;
 }
-
-.cart_img img {
+.main .content .catalog .cart .cart_img img {
   width: 100%;
   height: auto;
   -o-object-fit: contain;
@@ -707,8 +661,7 @@ body {
   background-color: url(<path-to-image>) lightgray 50%/cover no-repeat;
   mix-blend-mode: multiply;
 }
-
-.cart_img .sale {
+.main .content .catalog .cart .cart_img .sale {
   position: absolute;
   z-index: 2;
   left: 4px;
@@ -722,8 +675,7 @@ body {
   background-color: #46A358;
   padding: 6px 9px;
 }
-
-.hidden_cart_img {
+.main .content .catalog .cart .cart_img .hidden_cart_img {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -739,36 +691,30 @@ body {
   gap: 26px;
   padding-bottom: 7px;
 }
-
-#basket {
+.main .content .catalog .cart .cart_img .hidden_cart_img #basket {
   width: 20px;
   height: 20px;
   color: #46A358;
 }
-
-#heart {
+.main .content .catalog .cart .cart_img .hidden_cart_img #heart {
   width: 20px;
   height: 20px;
 }
-
-#frame {
+.main .content .catalog .cart .cart_img .hidden_cart_img #frame {
   width: 20px;
   height: 20px;
 }
-
-.hidden_cart_img:hover {
+.main .content .catalog .cart .cart_img .hidden_cart_img:hover {
   opacity: 1;
 }
-
-.info-cart {
+.main .content .catalog .cart .info-cart {
   display: flex;
   flex-direction: column;
   margin-bottom: 0;
   padding: 0;
   gap: 6px;
 }
-
-.name {
+.main .content .catalog .cart .info-cart .name {
   color: #3d3d3d;
   font-family: "Cera Pro";
   font-size: 16px;
@@ -776,8 +722,7 @@ body {
   font-weight: 400;
   line-height: 16px;
 }
-
-.price {
+.main .content .catalog .cart .info-cart .price {
   color: #46A358;
   font-family: "Cera Pro";
   font-size: 18px;
@@ -793,14 +738,12 @@ body {
   justify-content: end;
   margin-bottom: 101px;
 }
-
 .navigation ul {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
-
-.navigation li {
+.navigation ul li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -823,8 +766,7 @@ body {
   line-height: 16px; /* 88.889% */
   cursor: pointer;
 }
-
-.navigation li:first-child {
+.navigation ul li:first-child {
   color: #FFFFFF;
   font-family: "Cera Pro";
   font-size: 18px;
