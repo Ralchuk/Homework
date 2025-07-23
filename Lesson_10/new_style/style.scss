@@ -1,11 +1,4 @@
-
-
-@import 'variables',
-        'reset',
-        'mixin',
-        'font';
-
-
+@import "variables", "reset", "mixin", "font";
 
 body {
   display: flex;
@@ -43,7 +36,7 @@ body {
       padding: 8px 0 25px;
       text-wrap: nowrap;
       @include font-face($light, 16px);
-      
+
       text-decoration: none;
       cursor: pointer;
     }
@@ -63,8 +56,6 @@ body {
 
     li:nth-child(3):hover > .menu {
       display: block;
-
-      
     }
 
     .menu {
@@ -79,83 +70,81 @@ body {
       /* border: 1px solid black; */
 
       li {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      background-color: $menu_color;
-      padding: 7px 17px 8px 14px;
-      color: $text_color;
-      @include font-face ($regular);
-    }
-
-    li:hover {
-      color: $body_color;
-      @include font-face($bold);
-      background-color: $element_color;
-    }
-
-    li:nth-child(4) {
-      display: flex;
-      flex-direction: row;
-      position: relative;
-      height: 100%;
-      gap: 82px;
-
-      justify-content: space-between;
-      padding: 7px 17px 8px 14px;
-      color: $text_color;
-      @include font-face ($regular);
-
-      svg {
-        opacity: 0;
-        position: absolute;
-        top: 12px;
-        right: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background-color: $menu_color;
+        padding: 7px 17px 8px 14px;
+        color: $text_color;
+        @include font-face($regular);
       }
 
-      ul {
-        display: none;
-        position: absolute;
-        width: 100%;
-        top: -105px;
-        left: 178px;
-        padding-left: 5px;
+      li:hover {
+        color: $body_color;
+        @include font-face($bold);
+        background-color: $element_color;
+      }
 
-        li {
-          background-color: $menu_color;
-          color: $text_color;
-          @include font-face($regular);
-          padding: 7px 14px 8px 14px;
+      li:nth-child(4) {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        height: 100%;
+        gap: 82px;
+
+        justify-content: space-between;
+        padding: 7px 17px 8px 14px;
+        color: $text_color;
+        @include font-face($regular);
+
+        svg {
+          opacity: 0;
+          position: absolute;
+          top: 12px;
+          right: 20px;
         }
 
-        li:hover {
-          color: $body_color;
-          @include font-face($bold);
-          background-color: $element_color;
+        ul {
+          display: none;
+          position: absolute;
+          width: 100%;
+          top: -105px;
+          left: 178px;
+          padding-left: 5px;
+
+          li {
+            background-color: $menu_color;
+            color: $text_color;
+            @include font-face($regular);
+            padding: 7px 14px 8px 14px;
+          }
+
+          li:hover {
+            color: $body_color;
+            @include font-face($bold);
+            background-color: $element_color;
+          }
+        }
+      }
+
+      li:nth-child(4):hover {
+        color: $body_color;
+        @include font-face($bold);
+        background-color: $element_color;
+
+        img {
+          opacity: 0;
+        }
+
+        svg {
+          opacity: 1;
+        }
+
+        ul {
+          display: block;
         }
       }
     }
-
-    li:nth-child(4):hover {
-      color: $body_color;
-      @include font-face($bold);
-      background-color: $element_color;
-
-      img {
-        opacity: 0;
-      }
-
-      svg {
-        opacity: 1;
-      }
-
-      ul {
-        display: block;
-      }
-    }
-    }
-
-    
   }
 
   .green_line {
@@ -217,14 +206,13 @@ body {
       @include font-face($medium);
       cursor: pointer;
     }
-    
+
     #logout {
       width: 16.278px;
       height: 15.417px;
       flex-shrink: 0;
     }
   }
-
 }
 
 /* banner */
@@ -280,8 +268,6 @@ body {
       background: $element_color;
       cursor: pointer;
     }
-
-
   }
 
   .images {
@@ -347,10 +333,7 @@ body {
           color: $element_color;
           @include font-face($bold, 15px, 40px);
         }
-
-
       }
-
     }
 
     .price {
@@ -468,173 +451,174 @@ body {
       span {
         color: #3d3d3d;
         text-align: center;
-       @include font-face($regular, 23px, 16px);
+        @include font-face($regular, 23px, 16px);
         margin: 11px 50px -6px;
       }
     }
- }
+  }
 
- .content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-  .header-content {
+  .content {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin-bottom: 38px;
+    flex-direction: column;
+    width: 100%;
 
-    ul {
+    .header-content {
       display: flex;
-      flex-direction: row;
-      gap: 37px;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      margin-bottom: 38px;
 
-      li {
+      ul {
+        display: flex;
+        flex-direction: row;
+        gap: 37px;
+
+        li {
+          color: $text_color;
+          @include font-face($regular, 15px, 16px);
+          text-wrap: nowrap;
+          padding-bottom: 7px;
+        }
+
+        li:first-child {
+          color: $element_color;
+          @include font-face($bold, 15px, 16px);
+          border-bottom: 2px solid $element_color;
+        }
+      }
+
+      span {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: baseline;
+      }
+
+      #Shortby {
+        display: flex;
+        flex-wrap: nowrap;
         color: $text_color;
         @include font-face($regular, 15px, 16px);
-        text-wrap: nowrap;
-        padding-bottom: 7px;
       }
 
-      li:first-child {
-        color: $element_color;
-       @include font-face($bold, 15px, 16px);
-        border-bottom: 2px solid $element_color;
+      #select {
+        color: $text_color;
+        @include font-face($regular, 15px, 16px);
+        cursor: pointer;
+      }
+
+      #select:hover {
+        color: #3d3d3d;
       }
     }
 
-    span {
+    .catalog {
       display: flex;
-      flex-wrap: nowrap;
-      align-items: baseline;
-    }
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-items: stretch;
 
-    #Shortby {
-      display: flex;
-      flex-wrap: nowrap;
-      color: $text_color;
-      @include font-face($regular, 15px, 16px);
-    }
+      width: 100%;
+      gap: 30px 70px;
 
-    #select {
-      color: $text_color;
-      @include font-face($regular, 15px, 16px);
-      cursor: pointer;
-    }
-
-    #select:hover {
-      color: #3d3d3d;
-    }
-  }
-
-  .catalog {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: stretch;
-
-    width: 100%;
-    gap: 30px 70px;
-
-    .cart {
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-
-      /* border: 1px solid black; */
-
-      .cart_img {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-
-        flex-grow: 1;
-
-        height: 300px;
-        width: 258px;
-
-        padding-inline: 4px;
-        position: relative;
-        background-color: $main_color;
-
-        img {
-          width: 100%;
-          height: auto;
-          object-fit: contain;
-          background-color: url(<path-to-image>) lightgray 50% / cover no-repeat;
-          mix-blend-mode: multiply;
-        }
-
-        .sale {
-          position: absolute;
-          z-index: 2;
-          left: 4px;
-          top: 34px;
-          color: $body_color;
-          @include font-face($medium, 16px, 16px);
-          background-color: $element_color;
-          padding: 6px 9px;
-        }
-
-        .hidden_cart_img {
-          display: flex;
-          flex-flow: row nowrap;
-          justify-content: center;
-          opacity: 0;
-          object-fit: contain;
-          border-top: 2px solid $element_color;
-          position: absolute;
-          z-index: 1;
-          width: 100%;
-          height: 100%;
-          align-items: end;
-          gap: 26px;
-          padding-bottom: 7px;
-
-          #basket {
-            width: 20px;
-            height: 20px;
-            color: $element_color;
-          }
-
-          #heart {
-            width: 20px;
-            height: 20px;
-          }
-
-          #frame {
-            width: 20px;
-            height: 20px;
-          }
-        }
-
-        .hidden_cart_img:hover {
-          opacity: 1;
-        }
-      }
-
-      .info-cart {
+      .cart {
         display: flex;
         flex-direction: column;
-        margin-bottom: 0;
-        padding: 0;
-        gap: 6px;
+        justify-content: end;
 
-        .name {
-          color: $text_color;
-          @include font-face($regular, 16px, 16px);
+        /* border: 1px solid black; */
+
+        .cart_img {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+
+          flex-grow: 1;
+
+          height: 300px;
+          width: 258px;
+
+          padding-inline: 4px;
+          position: relative;
+          background-color: $main_color;
+
+          img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            background-color: url(<path-to-image>) lightgray 50% / cover
+              no-repeat;
+            mix-blend-mode: multiply;
+          }
+
+          .sale {
+            position: absolute;
+            z-index: 2;
+            left: 4px;
+            top: 34px;
+            color: $body_color;
+            @include font-face($medium, 16px, 16px);
+            background-color: $element_color;
+            padding: 6px 9px;
+          }
+
+          .hidden_cart_img {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            opacity: 0;
+            object-fit: contain;
+            border-top: 2px solid $element_color;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            align-items: end;
+            gap: 26px;
+            padding-bottom: 7px;
+
+            #basket {
+              width: 20px;
+              height: 20px;
+              color: $element_color;
+            }
+
+            #heart {
+              width: 20px;
+              height: 20px;
+            }
+
+            #frame {
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+          .hidden_cart_img:hover {
+            opacity: 1;
+          }
         }
 
-        .price {
-          color: $element_color;
-          @include font-face($regular, 18px, 16px);
+        .info-cart {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 0;
           padding: 0;
+          gap: 6px;
+
+          .name {
+            color: $text_color;
+            @include font-face($regular, 16px, 16px);
+          }
+
+          .price {
+            color: $element_color;
+            @include font-face($regular, 18px, 16px);
+            padding: 0;
+          }
         }
       }
     }
   }
-}
 }
 
 /* Navigation */
@@ -675,11 +659,9 @@ body {
   }
 }
 
-
 /* Block preposition */
 
 .preposition {
-  
   display: flex;
   width: 100%;
   height: auto;
@@ -709,7 +691,8 @@ body {
         max-width: 287px;
         max-height: 292px;
         flex-shrink: 0;
-        background-color: url(<path-to-image>) lightgray -5px 0px / 101.742% 100% no-repeat;
+        background-color: url(<path-to-image>) lightgray -5px 0px / 101.742% 100%
+          no-repeat;
         mix-blend-mode: multiply;
       }
 
@@ -773,7 +756,7 @@ body {
     h3 {
       color: #727272;
       text-align: center;
-     @include font-face($regular, 14px, 24px);
+      @include font-face($regular, 14px, 24px);
       line-height: 24px; /* 171.429% */
     }
 
@@ -843,5 +826,95 @@ body {
   }
 }
 
+/* background */
 
+.background {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 300px;
+  padding: 91px 0 22px;
 
+  .upper-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: end;
+
+    .icons {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      
+      align-items: stretch;
+      max-width: 204px;
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        gap: 17px;
+        // border: 1px solid;
+
+        .img {
+          display: flex;
+          justify-content: start;
+          height: fit-content;
+          position: relative;
+
+          & > img {
+            width: 74px;
+            height: 74.368px;
+            flex-shrink: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+
+          .svg-block {
+            display: flex;
+            flex-direction: column-reverse;
+            align-content: space-between ;
+            padding-left: 16px;
+            
+            
+            left: 18px;
+            bottom: 2px;
+
+            .svg-top {
+              margin-bottom: -3px;
+              width: 61px;
+              height: 46.229px;
+              flex-shrink: 0;
+            }
+
+            .svg-bottom {
+              width: 55px;
+              height: 48.239px;
+              flex-shrink: 0;
+            }
+          }
+        }
+      }
+
+      .icons-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 9px;
+        text-align: start ;
+
+        .icons-content-h1 {
+          color: $text_color;
+          @include font-face($bold, 17px, 16px);
+        }
+
+        .icons-content-h2 {
+          color: #727272;
+          @include font-face($regular, 14px, 22px);
+        }
+      }
+    }
+  }
+}
