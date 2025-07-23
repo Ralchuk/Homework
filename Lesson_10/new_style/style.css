@@ -118,6 +118,7 @@ body {
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 300;
   font-size: 16px;
+  line-height: 16px;
   font-style: normal;
   text-decoration: none;
   cursor: pointer;
@@ -128,6 +129,7 @@ body {
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 700;
   font-size: 16px;
+  line-height: 16px;
   font-style: normal;
   border-bottom: 3px solid #46A358;
   opacity: 1;
@@ -160,6 +162,7 @@ body {
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 400;
   font-size: 16px;
+  line-height: 16px;
   font-style: normal;
 }
 .header .nav-header .menu li:hover {
@@ -168,6 +171,7 @@ body {
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 700;
   font-size: 16px;
+  line-height: 16px;
   font-style: normal;
   background-color: #46A358;
 }
@@ -184,6 +188,7 @@ body {
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 400;
   font-size: 16px;
+  line-height: 16px;
   font-style: normal;
 }
 .header .nav-header .menu li:nth-child(4) svg {
@@ -207,6 +212,7 @@ body {
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 400;
   font-size: 16px;
+  line-height: 16px;
   font-style: normal;
   padding: 7px 14px 8px 14px;
 }
@@ -216,6 +222,7 @@ body {
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 700;
   font-size: 16px;
+  line-height: 16px;
   font-style: normal;
   background-color: #46A358;
 }
@@ -225,6 +232,7 @@ body {
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 700;
   font-size: 16px;
+  line-height: 16px;
   font-style: normal;
   background-color: #46A358;
 }
@@ -279,6 +287,7 @@ body {
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 500;
   font-size: 10px;
+  line-height: 16px;
   font-style: normal;
   background-color: #46A358;
   border: #FFFFFF solid 2px;
@@ -297,6 +306,7 @@ body {
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 500;
   font-size: 16px;
+  line-height: 16px;
   font-style: normal;
   cursor: pointer;
 }
@@ -322,10 +332,11 @@ body {
 .banner .body h1 {
   color: #3d3d3d;
   font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 400;
   font-size: 14px;
+  line-height: 16px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 16px; /* 114.286% */
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 7px;
@@ -335,7 +346,8 @@ body {
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 900;
-  font-size: 16px;
+  font-size: 70px;
+  line-height: 70px;
   font-style: normal;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -346,7 +358,8 @@ body {
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 900;
-  font-size: 16px;
+  font-size: 70px;
+  line-height: 70px;
   font-style: normal;
   text-transform: uppercase;
 }
@@ -355,7 +368,8 @@ body {
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 24px;
   font-style: normal;
   margin-bottom: 44px;
   max-width: 557px;
@@ -369,6 +383,7 @@ body {
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 700;
   font-size: 16px;
+  line-height: 20px;
   font-style: normal;
   text-transform: uppercase;
   border-radius: 6px;
@@ -416,9 +431,11 @@ body {
 .main .sidebar .nav2 h2 {
   color: #3d3d3d;
   font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 400;
   font-size: 18px;
+  line-height: 16px;
   font-style: normal;
-  font-weight: 700;
   line-height: 16px;
 }
 .main .sidebar .nav2 ul {
@@ -430,18 +447,20 @@ body {
   text-wrap: nowrap;
   color: #3d3d3d;
   font-family: "Cera Pro";
-  font-size: 15px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 400;
+  font-size: 15px;
   line-height: 40px;
+  font-style: normal;
 }
 .main .sidebar .nav2 ul li:first-of-type {
   color: #46A358;
   font-family: "Cera Pro";
-  font-size: 15px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 700;
+  font-size: 15px;
   line-height: 40px;
+  font-style: normal;
 }
 .main .sidebar .price {
   display: flex;
@@ -451,10 +470,11 @@ body {
 .main .sidebar .price .range-title {
   color: #3d3d3d;
   font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 400;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 16px;
+  font-style: normal;
   margin-bottom: 20px;
 }
 .main .sidebar .price .range-slider {
@@ -497,28 +517,31 @@ body {
 .main .sidebar .price h4 {
   color: #3d3d3d;
   font-family: "Cera Pro";
-  font-size: 15px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 400;
-  line-height: 16px; /* 106.667% */
+  font-size: 15px;
+  line-height: 16px;
+  font-style: normal;
 }
 .main .sidebar .price h4 span {
   color: #46A358;
   font-family: "Cera Pro";
-  font-size: 15px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 700;
+  font-size: 18px;
   line-height: 16px;
+  font-style: normal;
 }
 .main .sidebar .price button {
   display: flex;
   margin-top: 20px;
   color: #FFFFFF;
   font-family: "Cera Pro";
-  font-size: 16px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 700;
+  font-size: 16px;
   line-height: 20px;
+  font-style: normal;
   padding: 8px 25px;
   border-radius: 6px;
   cursor: pointer;
@@ -535,10 +558,11 @@ body {
 .main .sidebar .nav3 h2 {
   color: #3d3d3d;
   font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 400;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 16px;
+  font-style: normal;
 }
 .main .sidebar .nav3 ul {
   margin-left: 12px;

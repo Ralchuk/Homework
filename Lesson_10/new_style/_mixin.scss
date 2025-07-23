@@ -13,10 +13,11 @@
 
 
 
-@mixin font-face ($weight: $bold, $size: 16px) {
+@mixin font-face ($weight: $bold, $size: 16px, $height: 16px) {
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: $weight;
   font-size: $size;
+  line-height: $height;
   font-style: normal;
 }

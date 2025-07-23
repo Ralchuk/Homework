@@ -243,11 +243,7 @@ body {
 
     h1 {
       color: $text_color;
-      font-family: "Cera Pro";
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 16px; /* 114.286% */
+      @include font-face($regular, 14px);
       letter-spacing: 1.4px;
       text-transform: uppercase;
       margin-bottom: 7px;
@@ -255,21 +251,21 @@ body {
 
     h2 {
       color: $text_color;
-      @include font-face($black);
+      @include font-face($black, 70px, 70px);
       text-transform: uppercase;
       margin-bottom: 5px;
       max-width: 530px;
 
       span {
         color: $element_color;
-        @include font-face($black);
+        @include font-face($black, 70px, 70px);
         text-transform: uppercase;
       }
     }
 
     h3 {
       color: $text_color;
-      @include font-face($regular);
+      @include font-face($regular, 14px, 24px);
       margin-bottom: 44px;
       max-width: 557px;
     }
@@ -278,7 +274,7 @@ body {
       width: fit-content;
       padding: 10px 27px;
       color: $body_color;
-      @include font-face($bold);
+      @include font-face($bold, 16px, 20px);
       text-transform: uppercase;
       border-radius: 6px;
       background: $element_color;
@@ -332,10 +328,7 @@ body {
 
       h2 {
         color: #3d3d3d;
-        font-family: "Cera Pro";
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
+        @include font-face($regular, 18px, 16px);
         line-height: 16px;
       }
 
@@ -346,21 +339,13 @@ body {
           display: flex;
           justify-content: space-between;
           text-wrap: nowrap;
-          color: #3d3d3d;
-          font-family: "Cera Pro";
-          font-size: 15px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 40px;
+          color: $text_color;
+          @include font-face($regular, 15px, 40px);
         }
 
         li:first-of-type {
           color: $element_color;
-          font-family: "Cera Pro";
-          font-size: 15px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 40px;
+          @include font-face($bold, 15px, 40px);
         }
 
 
@@ -374,12 +359,8 @@ body {
       margin-bottom: 46px;
 
       .range-title {
-        color: #3d3d3d;
-        font-family: "Cera Pro";
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 16px;
+        color: $text_color;
+        @include font-face($regular, 18px, 16px);
         margin-bottom: 20px;
       }
 
@@ -422,19 +403,11 @@ body {
 
       h4 {
         color: #3d3d3d;
-        font-family: "Cera Pro";
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 16px; /* 106.667% */
+        @include font-face($regular, 15px, 16px);
 
         span {
           color: $element_color;
-          font-family: "Cera Pro";
-          font-size: 15px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 16px;
+          @include font-face($bold, 18px, 16px);
         }
       }
 
@@ -442,11 +415,7 @@ body {
         display: flex;
         margin-top: 20px;
         color: $body_color;
-        font-family: "Cera Pro";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 20px;
+        @include font-face($bold, 16px, 20px);
         padding: 8px 25px;
         border-radius: 6px;
         cursor: pointer;
@@ -465,12 +434,8 @@ body {
       gap: 7px;
 
       h2 {
-        color: #3d3d3d;
-        font-family: "Cera Pro";
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 16px;
+        color: $text_color;
+        @include font-face($regular, 18px, 16px);
       }
 
       ul {
