@@ -1126,6 +1126,7 @@ body {
   flex-direction: column-reverse;
   align-items: center;
   padding-left: 15px;
+  padding-bottom: 3px;
 }
 .background .upper-footer .icons .icons-item2 .img .svg-block #svg-bottom2 {
   width: 68px;
@@ -1191,6 +1192,7 @@ body {
   flex-direction: column-reverse;
   align-items: center;
   padding-left: 7px;
+  padding-bottom: 4px;
 }
 .background .upper-footer .icons .icons-item3 .img .svg-block #svg-bottom3 {
   width: 83px;
@@ -1271,6 +1273,7 @@ body {
   padding: 12px 25px;
   background-color: #46A358;
   border-radius: 0px 6px 6px 0px;
+  cursor: pointer;
 }
 .background .upper-footer .news .news-p {
   color: #727272;
@@ -1399,6 +1402,7 @@ body {
   justify-content: start;
   gap: 10px;
   padding-right: 34px;
+  cursor: pointer;
 }
 .background .down-footer .social-partners .social-media .social-icons img {
   width: 30px;

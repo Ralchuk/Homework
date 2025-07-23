@@ -948,6 +948,7 @@ body {
             flex-direction: column-reverse;
             align-items: center;
             padding-left: 15px;
+            padding-bottom: 3px;
 
             #svg-bottom2 {
               width: 68px;
@@ -1012,6 +1013,7 @@ body {
             flex-direction: column-reverse;
             align-items: center;
             padding-left: 7px;
+            padding-bottom: 4px;
 
             #svg-bottom3 {
               width: 83px;
@@ -1080,6 +1082,7 @@ body {
           padding: 12px 25px;
           background-color: $element_color;
           border-radius: 0px 6px 6px 0px;
+          cursor: pointer;
         }
       }
 
@@ -1194,6 +1197,7 @@ body {
           justify-content: start;
           gap: 10px;
           padding-right: 34px;
+          cursor: pointer;
 
           img {
             width: 30px;
