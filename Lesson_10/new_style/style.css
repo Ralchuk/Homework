@@ -1044,34 +1044,12 @@ body {
   padding-left: 30px;
 }
 .background .upper-footer .icons .icons-item1 .img {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-.background .upper-footer .icons .icons-item1 .img .img2 {
-  width: 74px;
-  height: 74.368px;
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  bottom: 0;
-}
-.background .upper-footer .icons .icons-item1 .img .svg-block {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  padding-left: 19px;
-}
-.background .upper-footer .icons .icons-item1 .img .svg-block #svg-bottom1 {
-  width: 55px;
-  height: 48.239px;
-  flex-shrink: 0;
-}
-.background .upper-footer .icons .icons-item1 .img .svg-block #svg-top1 {
-  width: 61px;
-  height: 46.229px;
-  flex-shrink: 0;
-  margin-bottom: -2px;
+  width: 77px;
+  height: 95px;
+  background-image: url(../img-footer/icon-1/Ellipse\ 9.svg), url(../img-footer/icon-1/Frame1.svg), url(../img-footer/icon-1/Frame2.svg);
+  background-position: left bottom, bottom 2px right 3px, top right;
+  background-repeat: no-repeat;
+  background-size: 74px 74px, 55px 48px, 61px 46px;
 }
 .background .upper-footer .icons .icons-item1 .icons-content {
   display: flex;
@@ -1109,35 +1087,37 @@ body {
   border-left: 1px solid rgba(70, 163, 88, 0.1019607843);
 }
 .background .upper-footer .icons .icons-item2 .img {
+  width: 83px;
+  height: 92px;
+  background-image: url(../img-footer/icon-1/Ellipse\ 9.svg), url(../img-footer/icon_2/Frame1.svg), url(../img-footer/icon_2/Frame2.svg);
+  background-position: left bottom, bottom 2px right, top right 17px;
+  background-repeat: no-repeat;
+  background-size: 74px 74px, 68px 51px, 35px 40px;
+}
+.background .upper-footer .icons .icons-item2 .icons-content {
   display: flex;
-  flex-direction: row;
-  position: relative;
+  flex-direction: column;
+  text-align: start;
+  justify-content: space-between;
+  gap: 9px;
 }
-.background .upper-footer .icons .icons-item2 .img .img2 {
-  width: 74px;
-  height: 74.368px;
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  bottom: 0;
+.background .upper-footer .icons .icons-item2 .icons-content .icons-content-h1 {
+  color: #3d3d3d;
+  font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  font-style: normal;
 }
-.background .upper-footer .icons .icons-item2 .img .svg-block {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  padding-left: 15px;
-  padding-bottom: 3px;
-}
-.background .upper-footer .icons .icons-item2 .img .svg-block #svg-bottom2 {
-  width: 68px;
-  height: 50.5px;
-  flex-shrink: 0;
-}
-.background .upper-footer .icons .icons-item2 .img .svg-block #svg-top2 {
-  width: 35px;
-  height: 40.194px;
-  flex-shrink: 0;
-  margin-bottom: -2px;
+.background .upper-footer .icons .icons-item2 .icons-content .icons-content-h2 {
+  color: #727272;
+  font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  font-style: normal;
 }
 .background .upper-footer .icons .icons-item2 .icons-content {
   display: flex;
@@ -1175,36 +1155,12 @@ body {
   border-left: 1px solid rgba(70, 163, 88, 0.1019607843);
 }
 .background .upper-footer .icons .icons-item3 .img {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-.background .upper-footer .icons .icons-item3 .img .img2 {
-  width: 74px;
-  height: 74.368px;
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  bottom: 0;
-}
-.background .upper-footer .icons .icons-item3 .img .svg-block {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  padding-left: 7px;
-  padding-bottom: 4px;
-}
-.background .upper-footer .icons .icons-item3 .img .svg-block #svg-bottom3 {
-  width: 83px;
-  height: 41.436px;
-  flex-shrink: 0;
-}
-.background .upper-footer .icons .icons-item3 .img .svg-block #svg-top3 {
-  width: 44px;
-  height: 50.759px;
-  flex-shrink: 0;
-  padding-left: 6px;
-  margin-bottom: -8px;
+  width: 90px;
+  height: 92px;
+  background-image: url(../img-footer/icon-1/Ellipse\ 9.svg), url(../img-footer/icon_3/Frame1.svg), url(../img-footer/icon_3/Frame2.svg);
+  background-position: left bottom, bottom 4px right 3px, top right 15px;
+  background-repeat: no-repeat;
+  background-size: 74px 74px, 83px 41px, 44px 51px;
 }
 .background .upper-footer .icons .icons-item3 .icons-content {
   display: flex;
