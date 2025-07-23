@@ -1241,13 +1241,13 @@ body {
   font-size: 18px;
   line-height: 16px;
   font-style: normal;
-  padding-top: 13px;
+  padding: 13px 0 25px;
 }
 .background .upper-footer .news .input-adress {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 25px 0 18px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
 }
 .background .upper-footer .news .input-adress input[type=email] {
   color: #acacac;
@@ -1280,6 +1280,7 @@ body {
   font-size: 13px;
   line-height: 22px;
   font-style: normal;
+  padding-top: 18px;
 }
 .background .midle-footer {
   display: flex;
@@ -1337,6 +1338,7 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   padding: 33px 155px 29px 25px;
+  border-bottom: 1px solid rgba(70, 163, 88, 0.2);
 }
 .background .down-footer .footer-list {
   display: flex;
@@ -1422,4 +1424,20 @@ body {
   width: 224px;
   height: 26px;
   flex-shrink: 0;
+}
+.background .copyrights {
+  padding-top: 7px;
+  width: 100%;
+  text-align: center;
+}
+.background .copyrights span {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #3d3d3d;
+  font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  font-style: normal;
 }/*# sourceMappingURL=style.css.map */

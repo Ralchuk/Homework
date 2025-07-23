@@ -1057,14 +1057,15 @@ body {
       .news-h1 {
         color: $text_color;
         @include font-face($bold, 18px, 16px);
-        padding-top: 13px;
+        padding: 13px 0 25px;
       }
 
       .input-adress {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 25px 0 18px;
+        // padding: 25px 0 18px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
 
         input[type="email"] {
           color: #acacac;
@@ -1085,6 +1086,7 @@ body {
       .news-p {
         color: #727272;
         @include font-face($regular, 13px, 22px);
+        padding-top: 18px;
       }
     }
   }
@@ -1138,6 +1140,7 @@ body {
     flex-flow: row wrap;
     justify-content: space-between;
     padding: 33px 155px 29px 25px;
+    border-bottom: 1px solid #46A35833;
 
     .footer-list {
       display: flex;
@@ -1217,6 +1220,21 @@ body {
           flex-shrink: 0;
         }
       }
+    }
+  }
+
+  .copyrights {
+    padding-top: 7px;
+    width: 100%;
+    text-align: center;
+    
+    
+    span {
+      width: fit-content;
+      color: $text_color;
+      @include font-face($regular, 14px, 30px);
+
+      
     }
   }
 }
