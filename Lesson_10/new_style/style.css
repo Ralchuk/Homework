@@ -1028,24 +1028,25 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: stretch;
   gap: 10%;
   padding-right: 62px;
   flex-grow: 2;
 }
-.background .upper-footer .icons .icons-item {
+.background .upper-footer .icons .icons-item1 {
   max-width: 204px;
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: space-between;
-  gap: 17px;
+  justify-content: end;
+  gap: 15px;
 }
-.background .upper-footer .icons .icons-item .img {
+.background .upper-footer .icons .icons-item1 .img {
   display: flex;
   flex-direction: row;
   position: relative;
 }
-.background .upper-footer .icons .icons-item .img .img2 {
+.background .upper-footer .icons .icons-item1 .img .img2 {
   width: 74px;
   height: 74.368px;
   position: absolute;
@@ -1053,54 +1054,31 @@ body {
   left: 0;
   bottom: 0;
 }
-.background .upper-footer .icons .icons-item .img .svg-block {
+.background .upper-footer .icons .icons-item1 .img .svg-block {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
   padding-left: 19px;
 }
-.background .upper-footer .icons .icons-item .img .svg-block #svg-bottom1 {
+.background .upper-footer .icons .icons-item1 .img .svg-block #svg-bottom1 {
   width: 55px;
   height: 48.239px;
   flex-shrink: 0;
 }
-.background .upper-footer .icons .icons-item .img .svg-block #svg-top1 {
+.background .upper-footer .icons .icons-item1 .img .svg-block #svg-top1 {
   width: 61px;
   height: 46.229px;
   flex-shrink: 0;
   margin-bottom: -2px;
 }
-.background .upper-footer .icons .icons-item .img .svg-block #svg-bottom2 {
-  width: 68px;
-  height: 50.5px;
-  flex-shrink: 0;
-}
-.background .upper-footer .icons .icons-item .img .svg-block #svg-top2 {
-  width: 35px;
-  height: 40.194px;
-  flex-shrink: 0;
-  margin-bottom: -2px;
-}
-.background .upper-footer .icons .icons-item .img .svg-block #svg-bottom3 {
-  width: 83px;
-  height: 41.436px;
-  flex-shrink: 0;
-}
-.background .upper-footer .icons .icons-item .img .svg-block #svg-top3 {
-  width: 44px;
-  height: 50.759px;
-  flex-shrink: 0;
-  padding-left: 6px;
-  margin-bottom: -8px;
-}
-.background .upper-footer .icons .icons-item .icons-content {
+.background .upper-footer .icons .icons-item1 .icons-content {
   display: flex;
   flex-direction: column;
   text-align: start;
   justify-content: space-between;
   gap: 9px;
 }
-.background .upper-footer .icons .icons-item .icons-content .icons-content-h1 {
+.background .upper-footer .icons .icons-item1 .icons-content .icons-content-h1 {
   color: #3d3d3d;
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
@@ -1109,7 +1087,134 @@ body {
   line-height: 16px;
   font-style: normal;
 }
-.background .upper-footer .icons .icons-item .icons-content .icons-content-h2 {
+.background .upper-footer .icons .icons-item1 .icons-content .icons-content-h2 {
+  color: #727272;
+  font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  font-style: normal;
+}
+.background .upper-footer .icons .icons-item2 {
+  max-width: 204px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  gap: 15px;
+}
+.background .upper-footer .icons .icons-item2 .img {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.background .upper-footer .icons .icons-item2 .img .img2 {
+  width: 74px;
+  height: 74.368px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+}
+.background .upper-footer .icons .icons-item2 .img .svg-block {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-left: 15px;
+}
+.background .upper-footer .icons .icons-item2 .img .svg-block #svg-bottom2 {
+  width: 68px;
+  height: 50.5px;
+  flex-shrink: 0;
+}
+.background .upper-footer .icons .icons-item2 .img .svg-block #svg-top2 {
+  width: 35px;
+  height: 40.194px;
+  flex-shrink: 0;
+  margin-bottom: -2px;
+}
+.background .upper-footer .icons .icons-item2 .icons-content {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: space-between;
+  gap: 9px;
+}
+.background .upper-footer .icons .icons-item2 .icons-content .icons-content-h1 {
+  color: #3d3d3d;
+  font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  font-style: normal;
+}
+.background .upper-footer .icons .icons-item2 .icons-content .icons-content-h2 {
+  color: #727272;
+  font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  font-style: normal;
+}
+.background .upper-footer .icons .icons-item3 {
+  max-width: 204px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  gap: 15px;
+}
+.background .upper-footer .icons .icons-item3 .img {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.background .upper-footer .icons .icons-item3 .img .img2 {
+  width: 74px;
+  height: 74.368px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+}
+.background .upper-footer .icons .icons-item3 .img .svg-block {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-left: 7px;
+}
+.background .upper-footer .icons .icons-item3 .img .svg-block #svg-bottom3 {
+  width: 83px;
+  height: 41.436px;
+  flex-shrink: 0;
+}
+.background .upper-footer .icons .icons-item3 .img .svg-block #svg-top3 {
+  width: 44px;
+  height: 50.759px;
+  flex-shrink: 0;
+  padding-left: 6px;
+  margin-bottom: -8px;
+}
+.background .upper-footer .icons .icons-item3 .icons-content {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  justify-content: space-between;
+  gap: 9px;
+}
+.background .upper-footer .icons .icons-item3 .icons-content .icons-content-h1 {
+  color: #3d3d3d;
+  font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  font-style: normal;
+}
+.background .upper-footer .icons .icons-item3 .icons-content .icons-content-h2 {
   color: #727272;
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);

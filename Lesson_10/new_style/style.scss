@@ -848,18 +848,18 @@ body {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
-
+      align-items: stretch;
       gap: 10%;
       padding-right: 62px;
       flex-grow: 2;
 
-      .icons-item {
+      .icons-item1 {
         max-width: 204px;
         display: flex;
         flex-direction: column;
         align-items: start;
-        justify-content: space-between;
-        gap: 17px;
+        justify-content: end;
+        gap: 15px;
 
         .img {
           display: flex;
@@ -895,6 +895,59 @@ body {
               margin-bottom: -2px;
             }
 
+            
+          }
+        }
+
+        .icons-content {
+          display: flex;
+          flex-direction: column;
+          text-align: start;
+          justify-content: space-between;
+          gap: 9px;
+
+          .icons-content-h1 {
+            color: $text_color;
+            @include font-face($bold, 17px, 16px);
+          }
+
+          .icons-content-h2 {
+            color: #727272;
+            @include font-face($regular, 14px, 22px);
+          }
+        }
+      }
+      .icons-item2 {
+        max-width: 204px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+        gap: 15px;
+
+        .img {
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          // border: 1px solid;
+
+          .img2 {
+            width: 74px;
+            height: 74.368px;
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            bottom: 0;
+          }
+
+          .svg-block {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            padding-left: 15px;
+
+          
+
             #svg-bottom2 {
               width: 68px;
               height: 50.5px;
@@ -907,6 +960,59 @@ body {
               flex-shrink: 0;
               margin-bottom: -2px;
             }
+
+           
+          }
+        }
+
+        .icons-content {
+          display: flex;
+          flex-direction: column;
+          text-align: start;
+          justify-content: space-between;
+          gap: 9px;
+
+          .icons-content-h1 {
+            color: $text_color;
+            @include font-face($bold, 17px, 16px);
+          }
+
+          .icons-content-h2 {
+            color: #727272;
+            @include font-face($regular, 14px, 22px);
+          }
+        }
+      }
+      .icons-item3 {
+        max-width: 204px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+        gap: 15px;
+
+        .img {
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          // border: 1px solid;
+
+          .img2 {
+            width: 74px;
+            height: 74.368px;
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            bottom: 0;
+          }
+
+          .svg-block {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            padding-left: 7px;
+
+            
 
             #svg-bottom3 {
               width: 83px;
