@@ -847,6 +847,7 @@ body {
     .icons {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       justify-content: flex-start;
       align-items: stretch;
       gap: 10%;
@@ -894,8 +895,6 @@ body {
               flex-shrink: 0;
               margin-bottom: -2px;
             }
-
-            
           }
         }
 
@@ -946,8 +945,6 @@ body {
             align-items: center;
             padding-left: 15px;
 
-          
-
             #svg-bottom2 {
               width: 68px;
               height: 50.5px;
@@ -960,8 +957,6 @@ body {
               flex-shrink: 0;
               margin-bottom: -2px;
             }
-
-           
           }
         }
 
@@ -1012,14 +1007,10 @@ body {
             align-items: center;
             padding-left: 7px;
 
-            
-
             #svg-bottom3 {
               width: 83px;
               height: 41.436px;
               flex-shrink: 0;
-              
-              
             }
 
             #svg-top3 {
@@ -1089,6 +1080,50 @@ body {
         color: #727272;
         @include font-face($regular, 13px, 22px);
       }
+    }
+  }
+
+  .midle-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 22px;
+   
+    // border: 1px solid;
+    background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
+
+    .midle-footer-adress {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 9px;
+      max-width: 205px;
+      color: $text_color;
+      @include font-face($regular, 14px, 22px);
+    }
+
+    .midle-footer-message {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 9px;
+
+      color: $text_color;
+      @include font-face($regular, 14px, 22px);
+    }
+
+    .midle-footer-phone {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 9px;
+
+      color: $text_color;
+      @include font-face($regular, 14px, 22px);
     }
   }
 }
