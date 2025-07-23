@@ -446,11 +446,7 @@ body {
           justify-content: space-between;
           text-wrap: nowrap;
           color: #3d3d3d;
-          font-family: "Cera Pro";
-          font-size: 15px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 40px;
+          @include font-face($regular, 15px, 40px);
         }
       }
     }
@@ -472,11 +468,7 @@ body {
       span {
         color: #3d3d3d;
         text-align: center;
-        font-family: "Cera Pro";
-        font-size: 23px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 16px;
+       @include font-face($regular, 23px, 16px);
         margin: 11px 50px -6px;
       }
     }
@@ -499,23 +491,15 @@ body {
       gap: 37px;
 
       li {
-        color: #3d3d3d;
-        font-family: "Cera Pro";
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 16px; /* 106.667% */
+        color: $text_color;
+        @include font-face($regular, 15px, 16px);
         text-wrap: nowrap;
         padding-bottom: 7px;
       }
 
       li:first-child {
         color: $element_color;
-        font-family: "Cera Pro";
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 16px;
+       @include font-face($bold, 15px, 16px);
         border-bottom: 2px solid $element_color;
       }
     }
@@ -529,21 +513,13 @@ body {
     #Shortby {
       display: flex;
       flex-wrap: nowrap;
-      color: #3d3d3d;
-      font-family: "Cera Pro";
-      font-size: 15px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 16px; /* 106.667% */
+      color: $text_color;
+      @include font-face($regular, 15px, 16px);
     }
 
     #select {
-      color: #3d3d3d;
-      font-family: "Cera Pro";
-      font-size: 15px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 16px; /* 106.667% */
+      color: $text_color;
+      @include font-face($regular, 15px, 16px);
       cursor: pointer;
     }
 
@@ -596,11 +572,7 @@ body {
           left: 4px;
           top: 34px;
           color: $body_color;
-          font-family: "Cera Pro";
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 16px;
+          @include font-face($medium, 16px, 16px);
           background-color: $element_color;
           padding: 6px 9px;
         }
@@ -650,21 +622,13 @@ body {
         gap: 6px;
 
         .name {
-          color: #3d3d3d;
-          font-family: "Cera Pro";
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 16px;
+          color: $text_color;
+          @include font-face($regular, 16px, 16px);
         }
 
         .price {
           color: $element_color;
-          font-family: "Cera Pro";
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 16px;
+          @include font-face($regular, 18px, 16px);
           padding: 0;
         }
       }
@@ -693,31 +657,19 @@ body {
       height: 35px;
 
       flex-shrink: 0;
-      color: #3d3d3d;
-      font-family: "Cera Pro";
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 16px;
+      color: $text_color;
+      @include font-face($regular, 18px, 16px);
 
       border-radius: 4px;
       border: 1px solid #e5e5e5;
       color: #3d3d3d;
-      font-family: "Cera Pro";
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: 16px; /* 88.889% */
+      @include font-face($light, 18px, 16px);
       cursor: pointer;
     }
 
     li:first-child {
       color: $body_color;
-      font-family: "Cera Pro";
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 16px; /* 88.889% */
+      @include font-face($bold, 18px, 16px);
       background-color: $element_color;
     }
   }
@@ -772,13 +724,9 @@ body {
         /* border: 1px solid ; */
 
         h2 {
-          color: #3d3d3d;
+          color: $text_color;
           text-align: right;
-          font-family: "Cera Pro";
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 900;
-          line-height: 24px; /* 133.333% */
+          @include font-face($black, 18px, 24px);
           text-transform: uppercase;
           max-width: 150px;
           height: fit-content;
@@ -788,11 +736,7 @@ body {
         h3 {
           color: #727272;
           text-align: right;
-          font-family: "Cera Pro";
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 24px; /* 171.429% */
+          @include font-face($regular, 14px, 24px);
           max-width: 292px;
           margin-bottom: 25px;
         }
@@ -801,11 +745,7 @@ body {
           display: flex;
           flex-direction: row;
           color: $body_color;
-          font-family: "Cera Pro";
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 20px; /* 142.857% */
+          @include font-face($medium, 14px, 20px);
           background-color: $element_color;
           gap: 5px;
           padding: 11px 27px;
@@ -825,11 +765,7 @@ body {
     h2 {
       color: #3d3d3d;
       text-align: center;
-      font-family: "Cera Pro";
-      font-size: 30px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 16px; /* 53.333% */
+      @include font-face($bold, 30px, 16px);
       margin-bottom: 15px;
       text-transform: capitalize;
     }
@@ -837,10 +773,7 @@ body {
     h3 {
       color: #727272;
       text-align: center;
-      font-family: "Cera Pro";
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
+     @include font-face($regular, 14px, 24px);
       line-height: 24px; /* 171.429% */
     }
 
@@ -872,31 +805,19 @@ body {
 
           h4 {
             color: $element_color;
-            font-family: "Cera Pro";
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 16px; /* 114.286% */
+            @include font-face($medium, 16px, 16px);
             margin-bottom: 4px;
           }
 
           h5 {
             color: #3d3d3d;
-            font-family: "Cera Pro";
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 26px; /* 130% */
+            @include font-face($bold, 20px, 26px);
             margin-bottom: 4px;
           }
 
           h6 {
             color: #727272;
-            font-family: "Cera Pro";
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 22px; /* 157.143% */
+            @include font-face($regular, 14px, 22px);
             margin-bottom: 4px;
           }
 
@@ -904,12 +825,8 @@ body {
             display: flex;
             flex-direction: row;
             align-items: end;
-            color: #3d3d3d;
-            font-family: "Cera Pro";
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 16px; /* 114.286% */
+            color: $text_color;
+            @include font-face($medium, 14px, 16px);
 
             background-color: $body_color;
 

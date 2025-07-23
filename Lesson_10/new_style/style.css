@@ -573,10 +573,11 @@ body {
   text-wrap: nowrap;
   color: #3d3d3d;
   font-family: "Cera Pro";
-  font-size: 15px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 400;
+  font-size: 15px;
   line-height: 40px;
+  font-style: normal;
 }
 .main .sidebar .img {
   display: flex;
@@ -591,10 +592,11 @@ body {
   color: #3d3d3d;
   text-align: center;
   font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 400;
   font-size: 23px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 16px;
+  font-style: normal;
   margin: 11px 50px -6px;
 }
 .main .content {
@@ -616,20 +618,22 @@ body {
 .main .content .header-content ul li {
   color: #3d3d3d;
   font-family: "Cera Pro";
-  font-size: 15px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 400;
-  line-height: 16px; /* 106.667% */
+  font-size: 15px;
+  line-height: 16px;
+  font-style: normal;
   text-wrap: nowrap;
   padding-bottom: 7px;
 }
 .main .content .header-content ul li:first-child {
   color: #46A358;
   font-family: "Cera Pro";
-  font-size: 15px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 700;
+  font-size: 15px;
   line-height: 16px;
+  font-style: normal;
   border-bottom: 2px solid #46A358;
 }
 .main .content .header-content span {
@@ -642,18 +646,20 @@ body {
   flex-wrap: nowrap;
   color: #3d3d3d;
   font-family: "Cera Pro";
-  font-size: 15px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 400;
-  line-height: 16px; /* 106.667% */
+  font-size: 15px;
+  line-height: 16px;
+  font-style: normal;
 }
 .main .content .header-content #select {
   color: #3d3d3d;
   font-family: "Cera Pro";
-  font-size: 15px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 400;
-  line-height: 16px; /* 106.667% */
+  font-size: 15px;
+  line-height: 16px;
+  font-style: normal;
   cursor: pointer;
 }
 .main .content .header-content #select:hover {
@@ -699,10 +705,11 @@ body {
   top: 34px;
   color: #FFFFFF;
   font-family: "Cera Pro";
-  font-size: 16px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 500;
+  font-size: 16px;
   line-height: 16px;
+  font-style: normal;
   background-color: #46A358;
   padding: 6px 9px;
 }
@@ -748,18 +755,20 @@ body {
 .main .content .catalog .cart .info-cart .name {
   color: #3d3d3d;
   font-family: "Cera Pro";
-  font-size: 16px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 400;
+  font-size: 16px;
   line-height: 16px;
+  font-style: normal;
 }
 .main .content .catalog .cart .info-cart .price {
   color: #46A358;
   font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 400;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
   line-height: 16px;
+  font-style: normal;
   padding: 0;
 }
 
@@ -783,27 +792,30 @@ body {
   flex-shrink: 0;
   color: #3d3d3d;
   font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 400;
   font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
   line-height: 16px;
+  font-style: normal;
   border-radius: 4px;
   border: 1px solid #e5e5e5;
   color: #3d3d3d;
   font-family: "Cera Pro";
-  font-size: 18px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 300;
-  line-height: 16px; /* 88.889% */
+  font-size: 18px;
+  line-height: 16px;
+  font-style: normal;
   cursor: pointer;
 }
 .navigation ul li:first-child {
   color: #FFFFFF;
   font-family: "Cera Pro";
-  font-size: 18px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 700;
-  line-height: 16px; /* 88.889% */
+  font-size: 18px;
+  line-height: 16px;
+  font-style: normal;
   background-color: #46A358;
 }
 
@@ -854,10 +866,11 @@ body {
   color: #3d3d3d;
   text-align: right;
   font-family: "Cera Pro";
-  font-size: 18px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 900;
-  line-height: 24px; /* 133.333% */
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
   text-transform: uppercase;
   max-width: 150px;
   height: -moz-fit-content;
@@ -868,10 +881,11 @@ body {
   color: #727272;
   text-align: right;
   font-family: "Cera Pro";
-  font-size: 14px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
   max-width: 292px;
   margin-bottom: 25px;
 }
@@ -880,10 +894,11 @@ body {
   flex-direction: row;
   color: #FFFFFF;
   font-family: "Cera Pro";
-  font-size: 14px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 500;
-  line-height: 20px; /* 142.857% */
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
   background-color: #46A358;
   gap: 5px;
   padding: 11px 27px;
@@ -900,10 +915,11 @@ body {
   color: #3d3d3d;
   text-align: center;
   font-family: "Cera Pro";
-  font-size: 30px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 700;
-  line-height: 16px; /* 53.333% */
+  font-size: 30px;
+  line-height: 16px;
+  font-style: normal;
   margin-bottom: 15px;
   text-transform: capitalize;
 }
@@ -911,9 +927,11 @@ body {
   color: #727272;
   text-align: center;
   font-family: "Cera Pro";
-  font-size: 14px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
   line-height: 24px; /* 171.429% */
 }
 .preposition .blog .blog-list {
@@ -944,28 +962,31 @@ body {
 .preposition .blog .blog-list .blog-cart .blog-cart-content h4 {
   color: #46A358;
   font-family: "Cera Pro";
-  font-size: 14px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 500;
-  line-height: 16px; /* 114.286% */
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
   margin-bottom: 4px;
 }
 .preposition .blog .blog-list .blog-cart .blog-cart-content h5 {
   color: #3d3d3d;
   font-family: "Cera Pro";
-  font-size: 20px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 700;
-  line-height: 26px; /* 130% */
+  font-size: 20px;
+  line-height: 26px;
+  font-style: normal;
   margin-bottom: 4px;
 }
 .preposition .blog .blog-list .blog-cart .blog-cart-content h6 {
   color: #727272;
   font-family: "Cera Pro";
-  font-size: 14px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 400;
-  line-height: 22px; /* 157.143% */
+  font-size: 14px;
+  line-height: 22px;
+  font-style: normal;
   margin-bottom: 4px;
 }
 .preposition .blog .blog-list .blog-cart .blog-cart-content button {
@@ -974,10 +995,11 @@ body {
   align-items: end;
   color: #3d3d3d;
   font-family: "Cera Pro";
-  font-size: 14px;
-  font-style: normal;
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 500;
-  line-height: 16px; /* 114.286% */
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
   background-color: #FFFFFF;
   cursor: pointer;
 }
