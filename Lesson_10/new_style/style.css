@@ -1013,7 +1013,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 300px;
   padding: 91px 0 22px;
 }
 .background .upper-footer {
@@ -1021,63 +1020,64 @@ body {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: end;
+  width: 100%;
+  padding: 24px 25px 24px 0;
+  border: 1px solid;
 }
 .background .upper-footer .icons {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  max-width: 204px;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10%;
+  padding-right: 62px;
+  flex-grow: 2;
 }
-.background .upper-footer .icons-item {
+.background .upper-footer .icons .icons-item {
+  max-width: 204px;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
   gap: 17px;
 }
-.background .upper-footer .icons-item .img {
+.background .upper-footer .icons .icons-item .img {
   display: flex;
-  justify-content: start;
-  height: -moz-fit-content;
-  height: fit-content;
+  flex-direction: row;
   position: relative;
+  border: 1px solid;
 }
-.background .upper-footer .icons-item .img > img {
+.background .upper-footer .icons .icons-item .img .img2 {
   width: 74px;
   height: 74.368px;
-  flex-shrink: 0;
   position: absolute;
-  bottom: 0;
+  z-index: -1;
   left: 0;
+  bottom: 0;
 }
-.background .upper-footer .icons-item .img .svg-block {
+.background .upper-footer .icons .icons-item .img .svg-block {
   display: flex;
   flex-direction: column-reverse;
-  align-content: space-between;
-  padding-left: 16px;
-  left: 18px;
-  bottom: 2px;
+  padding-left: 19px;
 }
-.background .upper-footer .icons-item .img .svg-block .svg-top {
-  margin-bottom: -3px;
-  width: 61px;
-  height: 46.229px;
-  flex-shrink: 0;
-}
-.background .upper-footer .icons-item .img .svg-block .svg-bottom {
+.background .upper-footer .icons .icons-item .img .svg-block .svg-bottom {
   width: 55px;
   height: 48.239px;
   flex-shrink: 0;
 }
-.background .upper-footer .icons .icons-content {
+.background .upper-footer .icons .icons-item .img .svg-block .svg-top {
+  width: 61px;
+  height: 46.229px;
+  flex-shrink: 0;
+  margin-bottom: -2px;
+}
+.background .upper-footer .icons .icons-item .icons-content {
   display: flex;
   flex-direction: column;
+  text-align: start;
   justify-content: space-between;
   gap: 9px;
-  text-align: start;
 }
-.background .upper-footer .icons .icons-content .icons-content-h1 {
+.background .upper-footer .icons .icons-item .icons-content .icons-content-h1 {
   color: #3d3d3d;
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
@@ -1086,7 +1086,7 @@ body {
   line-height: 16px;
   font-style: normal;
 }
-.background .upper-footer .icons .icons-content .icons-content-h2 {
+.background .upper-footer .icons .icons-item .icons-content .icons-content-h2 {
   color: #727272;
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
@@ -1094,4 +1094,48 @@ body {
   font-size: 14px;
   line-height: 22px;
   font-style: normal;
+}
+.background .upper-footer .news {
+  max-width: 354px;
+  align-self: stretch;
+  border: 1px solid;
+}
+.background .upper-footer .news .news-h1 {
+  color: #3d3d3d;
+  font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  font-style: normal;
+  padding-top: 13px;
+}
+.background .upper-footer .news .input-adress {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px 0 18px;
+}
+.background .upper-footer .news .input-adress input[type=email] {
+  color: #acacac;
+  font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
+  padding-left: 11px;
+  flex-grow: 2;
+}
+.background .upper-footer .news .input-adress .button-join {
+  color: #FFFFFF;
+  font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  font-style: normal;
+  padding: 12px 25px;
+  background-color: #46A358;
+  border-radius: 0px 6px 6px 0px;
 }/*# sourceMappingURL=style.css.map */

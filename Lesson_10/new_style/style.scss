@@ -832,7 +832,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 300px;
   padding: 91px 0 22px;
 
   .upper-footer {
@@ -840,80 +839,115 @@ body {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: end;
+    width: 100%;
+    padding: 24px 25px 24px 0;
+    border: 1px solid;
 
     .icons {
       display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      
-      align-items: stretch;
-      max-width: 204px;
+      flex-direction: row;
+      justify-content: flex-start;
 
-      &-item {
+      gap: 10%;
+      padding-right: 62px;
+      flex-grow: 2;
+
+      .icons-item {
+        max-width: 204px;
         display: flex;
         flex-direction: column;
         align-items: start;
         justify-content: space-between;
         gap: 17px;
-        // border: 1px solid;
 
         .img {
           display: flex;
-          justify-content: start;
-          height: fit-content;
+          flex-direction: row;
           position: relative;
+          border: 1px solid;
 
-          & > img {
+          .img2 {
             width: 74px;
             height: 74.368px;
-            flex-shrink: 0;
             position: absolute;
-            bottom: 0;
+            z-index: -1;
             left: 0;
+            bottom: 0;
           }
 
           .svg-block {
             display: flex;
             flex-direction: column-reverse;
-            align-content: space-between ;
-            padding-left: 16px;
-            
-            
-            left: 18px;
-            bottom: 2px;
-
-            .svg-top {
-              margin-bottom: -3px;
-              width: 61px;
-              height: 46.229px;
-              flex-shrink: 0;
-            }
+            padding-left: 19px;
 
             .svg-bottom {
               width: 55px;
               height: 48.239px;
               flex-shrink: 0;
             }
+
+            .svg-top {
+              width: 61px;
+              height: 46.229px;
+              flex-shrink: 0;
+              margin-bottom: -2px;
+            }
+          }
+        }
+
+        .icons-content {
+          display: flex;
+          flex-direction: column;
+          text-align: start;
+          justify-content: space-between;
+          gap: 9px;
+
+          .icons-content-h1 {
+            color: $text_color;
+            @include font-face($bold, 17px, 16px);
+          }
+
+          .icons-content-h2 {
+            color: #727272;
+            @include font-face($regular, 14px, 22px);
           }
         }
       }
+    }
 
-      .icons-content {
+    .news {
+      max-width: 354px;
+      align-self: stretch;
+      border: 1px solid;
+
+      .news-h1 {
+        color: $text_color;
+        @include font-face($bold, 18px, 16px);
+        padding-top: 13px;
+      }
+
+      .input-adress {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
-        gap: 9px;
-        text-align: start ;
+        padding: 25px 0 18px;
+        
 
-        .icons-content-h1 {
-          color: $text_color;
-          @include font-face($bold, 17px, 16px);
+        input[type="email"] {
+          color: #acacac;
+          @include font-face($regular, 14px, 16px);
+          padding-left: 11px;
+          flex-grow: 2;
         }
 
-        .icons-content-h2 {
-          color: #727272;
-          @include font-face($regular, 14px, 22px);
+        .button-join {
+          color: $body_color;
+          @include font-face($bold, 18px, 16px);
+          padding: 12px 25px;
+          background-color: $element_color;
+          border-radius: 0px 6px 6px 0px;
         }
+
       }
     }
   }
