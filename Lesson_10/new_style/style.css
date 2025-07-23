@@ -1030,7 +1030,7 @@ body {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: stretch;
-  gap: 10%;
+  gap: 5%;
   padding-right: 62px;
   flex-grow: 2;
 }
@@ -1041,6 +1041,7 @@ body {
   align-items: start;
   justify-content: end;
   gap: 15px;
+  padding-left: 30px;
 }
 .background .upper-footer .icons .icons-item1 .img {
   display: flex;
@@ -1104,6 +1105,8 @@ body {
   align-items: start;
   justify-content: end;
   gap: 15px;
+  padding-left: 30px;
+  border-left: 1px solid rgba(70, 163, 88, 0.1019607843);
 }
 .background .upper-footer .icons .icons-item2 .img {
   display: flex;
@@ -1167,6 +1170,8 @@ body {
   align-items: start;
   justify-content: end;
   gap: 15px;
+  padding-left: 30px;
+  border-left: 1px solid rgba(70, 163, 88, 0.1019607843);
 }
 .background .upper-footer .icons .icons-item3 .img {
   display: flex;
@@ -1282,7 +1287,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 24px 22px;
-  background: linear-gradient(90deg, #EDF6EF 0%, #52C368 100%);
+  background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
 }
 .background .midle-footer .midle-footer-adress {
   display: flex;
@@ -1326,4 +1331,95 @@ body {
   font-size: 14px;
   line-height: 22px;
   font-style: normal;
+}
+.background .down-footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 33px 155px 29px 25px;
+}
+.background .down-footer .footer-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  gap: 164px;
+  align-content: start;
+}
+.background .down-footer .footer-list .footer-list-column {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+  justify-content: start;
+  gap: 8px;
+}
+.background .down-footer .footer-list .footer-list-column h1 {
+  color: #3d3d3d;
+  font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 30px;
+  font-style: normal;
+}
+.background .down-footer .footer-list .footer-list-column ul > li {
+  color: #3d3d3d;
+  font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  font-style: normal;
+}
+.background .down-footer .social-partners {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  gap: 33px;
+}
+.background .down-footer .social-partners .social-media {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.background .down-footer .social-partners .social-media h2 {
+  color: #3d3d3d;
+  font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  font-style: normal;
+}
+.background .down-footer .social-partners .social-media .social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 10px;
+  padding-right: 34px;
+}
+.background .down-footer .social-partners .social-media .social-icons img {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+.background .down-footer .social-partners .partners {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.background .down-footer .social-partners .partners h2 {
+  color: #3d3d3d;
+  font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  font-style: normal;
+}
+.background .down-footer .social-partners .partners img {
+  width: 224px;
+  height: 26px;
+  flex-shrink: 0;
 }/*# sourceMappingURL=style.css.map */
