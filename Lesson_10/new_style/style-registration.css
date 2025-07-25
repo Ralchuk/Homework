@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'icomoon';
+  
+  src:  url('../Fonts/icomoon/fonts/icomoon.eot') format('embedded-opentype'),
+    url('../Fonts/icomoon/fonts/icomoon.ttf') format('truetype'),
+    url('../Fonts/icomoon/fonts/icomoon.woff') format('woff'),
+    url('../Fonts/icomoon/fonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+
+
 body {
   display: flex;
   flex-direction: column;
@@ -120,8 +135,15 @@ img {
   margin-top: 41px;
 }
 
+
+
 .submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
   border-radius: 5px;
+  border: transparent;
   background: #46a358;
   color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -132,7 +154,32 @@ img {
   width: 300px;
   height: 45px;
   cursor: pointer;
+  transition: .5s;
+  /* transition-property: background-color; */
+  /* transition-delay: .5s; */
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+.submit:hover {
+  background-color: #fff;
+  color:  #46a358;
+  border: 2px solid #46a358;
+  
+  
+}
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+
 
 /* Or-register-with */
 
