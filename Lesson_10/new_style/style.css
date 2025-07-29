@@ -605,6 +605,11 @@ body {
   background-color: #46A358;
   border: #FFFFFF solid 2px;
 }
+
+.header .but a {
+  text-decoration: none;
+}
+
 .header .but .Login {
   display: flex;
   align-items: center;
@@ -623,16 +628,15 @@ body {
   font-style: normal;
   cursor: pointer;
 }
+
+
 .header .but #logout {
   width: 16.278px;
   height: 15.417px;
   flex-shrink: 0;
 }
 
-.header .but .Login a {
-  color: white;
-  text-decoration: none;
-}
+
 
 
 
