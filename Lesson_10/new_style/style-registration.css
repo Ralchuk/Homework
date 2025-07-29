@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-style: normal;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+
+
 @font-face {
   font-family: 'icomoon';
   
@@ -13,58 +25,29 @@
 
 
 
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: gray;
-}
-
-a {
-  text-decoration: none;
-  color: #3d3d3d;
-}
-
-input {
-  height: 40px;
-  padding: 0px 14px;
-  border-radius: 5px;
-  border: 1px solid #eaeaea;
-  color: #a5a5a5;
-
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
-  width: 100%;
-}
-
-img {
-  width: 20px;
-}
-
-/*registration div*/
 
 .registration {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-self: center;
+  justify-self: center;
   background-color: #fff;
   width: 100%;
   max-width: 500px;
   height: 100%;
   max-height: 656px;
   flex-shrink: 0;
-  margin-top: 150px;
-  position: relative;
+  margin-top: 52px;
+  /* position: relative; */
+  padding: 0 100px;
+  box-sizing: border-box;
 }
 
 .green-shape {
   background-color: green;
   position: absolute;
-  width: 500px;
+  width: 100%;
   height: 10px;
   bottom: 0px;
 }
@@ -89,25 +72,34 @@ img {
 .login_registration {
   font-weight: 500;
   font-size: 20px;
+  text-decoration: none;
+  color: #3d3d3d;
 }
+
+
 
 .register_registration {
   color: green;
   font-weight: 500;
   font-size: 20px;
+  text-decoration: none;
+  
+  
 }
+
+
 
 /*Enter your email and password to register.*/
 
 .enter_to_register {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   margin-top: 40px;
   color: #3d3d3d;
   font-size: 13px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 16px;
 }
 
@@ -120,16 +112,64 @@ img {
   
   margin-top: 14px;
   gap: 16px;
-  width: 300px;
+  width: 100%;
+}
+
+.input_enter_to_register > input {
+  height: 40px;
+  padding: 0px 14px;
+  border-radius: 5px;
+  border: 1px solid #eaeaea;
+  color: #a5a5a5;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  width: 100%;
 }
 
 .password_enter_to_register {
   display: flex;
   align-items: center;
+  height: 40px;
+  padding: 0px 14px;
+  border-radius: 5px;
+  border: 1px solid #eaeaea;
+  color: #a5a5a5;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  width: 100%;
+}
+
+
+
+.password_enter_to_register > input {
+  border: none;
+  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  width: 100%;
+}
+
+.password_enter_to_register > input:focus {
+  outline: none;
 }
 
 .eye {
   opacity: 50%;
+  width: 20px;
 }
 
 /*button-register*/
@@ -188,24 +228,24 @@ img {
 
 /* Or-register-with */
 
-.Or-register-with {
+.or-register-with {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  position: relative;
-  width: 300px;
+  align-items: center;
+  
+  width: 100%;
   margin-top: 36px;
 }
 
-.Or-register-with .hr {
-  display: block;
-  position: static;
-  color: #3d3d3d;
-  width: 92px;
+.or-register-with .hr {
+  background-color: #EAEAEA;
+  width: 100%;
+  height: 2px;
 }
-.Or-register-with .or {
-  display: block;
-  position: static;
+.or-register-with .or {
+  text-wrap: nowrap;
+  margin: 0 6px;
   padding-inline: 6px;
   color: #3d3d3d;
   font-family: "Montserrat", sans-serif;
@@ -224,7 +264,14 @@ img {
   margin-top: 27px;
   margin-bottom: 50px;
   gap: 15px;
+  
 }
+
+.other-buttons-social > a {
+  text-decoration: none;
+  color: #3d3d3d;
+}
+
 
 .other-buttons-social .button {
   display: flex;
@@ -242,7 +289,7 @@ img {
   font-weight: 500;
   line-height: 16px;
   border-radius: 5px;
-  border-style: none;
+  border: 1px solid #EAEAEA;
   background-color: #fff;
   cursor: pointer;
 }
