@@ -80,19 +80,6 @@
   font-weight: 300;
   font-style: normal;
 }
-@font-face {
-  font-family: 'icomoon';
-  
-  src:  url('../Fonts/icomoon/fonts/icomoon.eot') format('embedded-opentype'),
-    url('../Fonts/icomoon/fonts/icomoon.ttf') format('truetype'),
-    url('../Fonts/icomoon/fonts/icomoon.woff') format('woff'),
-    url('../Fonts/icomoon/fonts/icomoon.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
-
-
 body {
   display: flex;
   flex-direction: column;
@@ -102,7 +89,6 @@ body {
 }
 
 /* registration page */
-
 .registration {
   display: flex;
   flex-direction: column;
@@ -119,22 +105,24 @@ body {
   /* position: relative; */
   padding: 0 100px;
   box-sizing: border-box;
+  /* header */
+  /*Enter your email and password to register.*/
+  /*input*/
+  /*button-register*/
+  /* Or-register-with */
+  /* Google and Facebook */
+  /*close*/
 }
-
-.green-shape {
+.registration .green-shape {
   background-color: green;
   position: absolute;
   width: 100%;
   height: 10px;
   bottom: 0px;
 }
-
-/* header */
-
-.header-registration {
+.registration .header-registration {
   display: flex;
   flex-direction: row;
-
   justify-content: center;
   font-size: 18px;
   margin-top: 52px;
@@ -145,30 +133,19 @@ body {
   font-weight: 150;
   line-height: 16px;
 }
-
-.login_registration {
+.registration .header-registration .login_registration {
   font-weight: 500;
   font-size: 20px;
   text-decoration: none;
   color: #3d3d3d;
 }
-
-
-
-.register_registration {
+.registration .header-registration .register_registration {
   color: green;
   font-weight: 500;
   font-size: 20px;
   text-decoration: none;
-  
-  
 }
-
-
-
-/*Enter your email and password to register.*/
-
-.enter_to_register {
+.registration .enter_to_register {
   display: flex;
   justify-content: start;
   margin-top: 40px;
@@ -179,20 +156,15 @@ body {
   font-weight: 400;
   line-height: 16px;
 }
-
-/*input*/
-
-.input_enter_to_register {
+.registration .input_enter_to_register {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
   margin-top: 14px;
   gap: 16px;
   width: 100%;
 }
-
-.input_enter_to_register > input {
+.registration .input_enter_to_register > input {
   height: 40px;
   padding: 0px 14px;
   border-radius: 5px;
@@ -206,8 +178,7 @@ body {
   line-height: 16px;
   width: 100%;
 }
-
-.password_enter_to_register {
+.registration .input_enter_to_register .password_enter_to_register {
   display: flex;
   align-items: center;
   height: 40px;
@@ -215,7 +186,6 @@ body {
   border-radius: 5px;
   border: 1px solid #eaeaea;
   color: #a5a5a5;
-
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-style: normal;
@@ -223,12 +193,8 @@ body {
   line-height: 16px;
   width: 100%;
 }
-
-
-
-.password_enter_to_register > input {
+.registration .input_enter_to_register .password_enter_to_register > input {
   border: none;
-  
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -239,27 +205,19 @@ body {
   line-height: 16px;
   width: 100%;
 }
-
-.password_enter_to_register > input:focus {
+.registration .input_enter_to_register .password_enter_to_register > input:focus {
   outline: none;
 }
-
-.eye {
+.registration .input_enter_to_register .password_enter_to_register .eye {
   opacity: 50%;
   width: 20px;
 }
-
-/*button-register*/
-
-.button-register {
+.registration .button-register {
   display: flex;
   justify-content: center;
   margin-top: 41px;
 }
-
-
-
-.button-register .submit {
+.registration .button-register .submit {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,51 +234,33 @@ body {
   width: 300px;
   height: 45px;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
   /* transition-property: background-color; */
   /* transition-delay: .5s; */
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
-.button-register .submit:hover {
+.registration .button-register .submit .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+.registration .button-register .submit:hover {
   background-color: #fff;
-  color:  #46a358;
+  color: #46a358;
   border: 2px solid #46a358;
-  
-  
 }
-
-
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-
-
-
-
-/* Or-register-with */
-
-.or-register-with {
+.registration .or-register-with {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
   width: 100%;
   margin-top: 36px;
 }
-
-.or-register-with .hr {
+.registration .or-register-with .hr {
   background-color: #EAEAEA;
   width: 100%;
   height: 2px;
 }
-.or-register-with .or {
+.registration .or-register-with .or {
   text-wrap: nowrap;
   margin: 0 6px;
   padding-inline: 6px;
@@ -331,26 +271,19 @@ body {
   font-weight: 400;
   line-height: 16px;
 }
-
-/* Google and Facebook */
-
-.other-buttons-social {
+.registration .other-buttons-social {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 27px;
   margin-bottom: 50px;
   gap: 15px;
-  
 }
-
-.other-buttons-social > a {
+.registration .other-buttons-social > a {
   text-decoration: none;
   color: #3d3d3d;
 }
-
-
-.other-buttons-social .button {
+.registration .other-buttons-social .button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -370,21 +303,16 @@ body {
   background-color: #fff;
   cursor: pointer;
 }
-
-/*close*/
-
-.close-registration {
+.registration .close-registration {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: absolute;
-
   top: 13px;
   right: 13px;
 }
-
-.close-registration-button {
+.registration .close-registration .close-registration-button {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -395,8 +323,7 @@ body {
   background-color: #fff;
   cursor: pointer;
 }
-
-.close-registration-img {
+.registration .close-registration .close-registration-img {
   height: 14px;
   width: 14px;
 }
@@ -415,7 +342,7 @@ body {
   padding: 26px 0 0;
   margin-bottom: 12px;
   border-bottom: 1px solid #c5dfca;
-  background-color: #FFFFFF;
+  background-color: #FBFBFB;
 }
 .header .nav-header {
   display: flex;
@@ -584,7 +511,7 @@ body {
   width: 24px;
   height: 24px;
 }
-.header .but .basket-number {
+.header .but .basket .basket-number {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -605,11 +532,9 @@ body {
   background-color: #46A358;
   border: #FFFFFF solid 2px;
 }
-
-.header .but a {
+.header .but > a {
   text-decoration: none;
 }
-
 .header .but .Login {
   display: flex;
   align-items: center;
@@ -628,17 +553,11 @@ body {
   font-style: normal;
   cursor: pointer;
 }
-
-
 .header .but #logout {
   width: 16.278px;
   height: 15.417px;
   flex-shrink: 0;
 }
-
-
-
-
 
 /* banner */
 .banner {
@@ -1324,7 +1243,7 @@ body {
   font-size: 14px;
   line-height: 16px;
   font-style: normal;
-  background-color: transparent;
+  background-color: #FFFFFF;
   cursor: pointer;
 }
 .preposition .blog .blog-list .blog-cart .blog-cart-content button span {
