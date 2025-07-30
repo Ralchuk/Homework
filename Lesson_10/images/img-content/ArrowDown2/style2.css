@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'icomoon2';
+  src:  url('../images/img-content/ArrowDown2/fonts/icomoon.eot?wmotvb');
+  src:  url('../images/img-content/ArrowDown2/fonts/icomoon.eot?wmotvb#iefix') format('embedded-opentype'),
+    url('../images/img-content/ArrowDown2/fonts/icomoon.ttf?wmotvb') format('truetype'),
+    url('../images/img-content/ArrowDown2/fonts/icomoon.woff?wmotvb') format('woff'),
+    url('../images/img-content/ArrowDown2/fonts/icomoon.svg?wmotvb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon2' !important;
+  
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ArrowDown2:before {
+  content: "\e900";
+}
