@@ -496,14 +496,13 @@ body {
       color: $body_color;
       @include font-face($medium);
       cursor: pointer;
+      
+      #logout {
+        width: 16.278px;
+        height: 15.417px;
+        flex-shrink: 0;
+      }
     }
-
-    #logout {
-      width: 16.278px;
-      height: 15.417px;
-      flex-shrink: 0;
-    }
-    
   }
 }
 

@@ -45,6 +45,14 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "icomoon";
+  src: url("../images/img-header/Logout/fonts/icomoon.eot?44f1y4");
+  src: url("../images/img-header/Logout/fonts/icomoon.eot?44f1y4#iefix") format("embedded-opentype"), url("../images/img-header/Logout/fonts/icomoon.ttf?44f1y4") format("truetype"), url("../images/img-header/Logout/fonts/icomoon.woff?44f1y4") format("woff"), url("../images/img-header/Logout/fonts/icomoon.svg?44f1y4#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 400;
@@ -79,6 +87,14 @@
   src: url(../Fonts/CeraPro/CeraPro-Light.woff2) format(woff2);
   font-weight: 300;
   font-style: normal;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../images/img-header/Logout/fonts/icomoon.eot?44f1y4");
+  src: url("../images/img-header/Logout/fonts/icomoon.eot?44f1y4#iefix") format("embedded-opentype"), url("../images/img-header/Logout/fonts/icomoon.ttf?44f1y4") format("truetype"), url("../images/img-header/Logout/fonts/icomoon.woff?44f1y4") format("woff"), url("../images/img-header/Logout/fonts/icomoon.svg?44f1y4#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 body {
   display: flex;
@@ -553,7 +569,7 @@ body {
   font-style: normal;
   cursor: pointer;
 }
-.header .but #logout {
+.header .but .Login #logout {
   width: 16.278px;
   height: 15.417px;
   flex-shrink: 0;
