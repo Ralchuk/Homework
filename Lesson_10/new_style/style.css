@@ -722,8 +722,18 @@ body {
   font-size: 15px;
   line-height: 40px;
   font-style: normal;
+  cursor: pointer;
 }
 .main .sidebar .nav2 ul li:first-of-type {
+  color: #46A358;
+  font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 40px;
+  font-style: normal;
+}
+.main .sidebar .nav2 ul li:hover {
   color: #46A358;
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
@@ -856,6 +866,16 @@ body {
   font-size: 15px;
   line-height: 40px;
   font-style: normal;
+  cursor: pointer;
+}
+.main .sidebar .nav3 ul li:hover {
+  color: #46A358;
+  font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 40px;
+  font-style: normal;
 }
 .main .sidebar .img {
   display: flex;
@@ -949,7 +969,7 @@ body {
   color: #3d3d3d;
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
-  font-weight: 700;
+  font-weight: 500;
   font-size: 15px;
   line-height: 16px;
   font-style: normal;
@@ -957,7 +977,17 @@ body {
   position: relative;
 }
 .main .content .header-content span .select .icon-ArrowDown {
-  font-size: 0.6em;
+  font-size: 0.6rem;
+  position: relative;
+}
+.main .content .header-content span .select .icon-ArrowDown > .icon-ArrowDown {
+  transform: rotate(180deg);
+  position: absolute;
+  bottom: 1px;
+  left: 0px;
+  opacity: 0;
+  background-color: #FFFFFF;
+  border: 2px solid #FFFFFF;
 }
 .main .content .header-content span .select .select-menu {
   opacity: 0;
@@ -1005,6 +1035,9 @@ body {
   color: #46A358;
 }
 .main .content .header-content span .select:hover > .select-menu {
+  opacity: 1;
+}
+.main .content .header-content span .select:hover > .icon-ArrowDown > .icon-ArrowDown {
   opacity: 1;
 }
 .main .content .header-content span .select:focus {
@@ -1074,19 +1107,23 @@ body {
   gap: 26px;
   padding-bottom: 7px;
   transition: 0.5s;
+  cursor: pointer;
 }
 .main .content .catalog .cart .cart_img .hidden_cart_img #basket {
   width: 20px;
   height: 20px;
   color: #46A358;
+  cursor: pointer;
 }
 .main .content .catalog .cart .cart_img .hidden_cart_img #heart {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 .main .content .catalog .cart .cart_img .hidden_cart_img #frame {
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 .main .content .catalog .cart .cart_img .hidden_cart_img:hover {
   opacity: 1;
@@ -1143,6 +1180,7 @@ body {
   font-size: 18px;
   line-height: 16px;
   font-style: normal;
+  transition: 0.4s;
   border-radius: 4px;
   border: 1px solid #e5e5e5;
   color: #3d3d3d;
@@ -1268,6 +1306,7 @@ body {
   justify-content: center;
   border-radius: 6px;
   cursor: pointer;
+  transition: 0.4s;
 }
 .preposition .action .action-cart .action-cart-content button .icon-Arrow-Right {
   font-size: 0.9em;
@@ -1371,6 +1410,7 @@ body {
   font-size: 14px;
   line-height: 16px;
   font-style: normal;
+  transition: 0.5s;
   background-color: #FFFFFF;
   cursor: pointer;
 }
@@ -1609,6 +1649,7 @@ body {
   background-color: #46A358;
   border-radius: 0px 6px 6px 0px;
   cursor: pointer;
+  transition: 0.4s;
 }
 .background .upper-footer .news .input-adress .button-join:hover {
   background-color: #FFFFFF;
@@ -1711,6 +1752,17 @@ body {
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
   font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  font-style: normal;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.background .down-footer .footer-list .footer-list-column ul > li:hover {
+  color: #46A358;
+  font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 700;
   font-size: 14px;
   line-height: 30px;
   font-style: normal;

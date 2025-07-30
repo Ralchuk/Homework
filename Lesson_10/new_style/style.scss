@@ -625,9 +625,15 @@ body {
           text-wrap: nowrap;
           color: $text_color;
           @include font-face($regular, 15px, 40px);
+          cursor: pointer;
         }
 
         li:first-of-type {
+          color: $element_color;
+          @include font-face($bold, 15px, 40px);
+        }
+
+        li:hover {
           color: $element_color;
           @include font-face($bold, 15px, 40px);
         }
@@ -739,7 +745,15 @@ body {
           text-wrap: nowrap;
           color: #3d3d3d;
           @include font-face($regular, 15px, 40px);
+          cursor: pointer;
         }
+
+        li:hover {
+          color: $element_color;
+          @include font-face($bold, 15px, 40px);
+        }
+
+
       }
     }
 
@@ -777,6 +791,7 @@ body {
       justify-content: space-between;
       margin-bottom: 38px;
 
+     
       ul {
         display: flex;
         flex-direction: row;
@@ -821,12 +836,23 @@ body {
           padding-left: 8px;
           gap: 5px;
           color: $text_color;
-          @include font-face($bold, 15px, 16px);
+          @include font-face($medium, 15px, 16px);
           cursor: pointer;
           position: relative;
 
           .icon-ArrowDown {
-            font-size: 0.6em;
+            font-size: 0.6rem;
+            position: relative;
+
+            & > .icon-ArrowDown {
+              transform: rotate(180deg);
+              position: absolute;
+              bottom: 1px;
+              left: 0px;
+              opacity: 0;
+              background-color: $body_color;
+              border: 2px solid $body_color;
+            }
           }
 
           .select-menu {
@@ -878,6 +904,11 @@ body {
           opacity: 1;
         }
 
+        .select:hover > .icon-ArrowDown > .icon-ArrowDown {
+          opacity: 1;
+        }
+
+        
         .select:focus {
           color: $element_color;
         }
@@ -949,21 +980,25 @@ body {
             gap: 26px;
             padding-bottom: 7px;
             transition: 0.5s;
+            cursor: pointer;
 
             #basket {
               width: 20px;
               height: 20px;
               color: $element_color;
+              cursor: pointer;
             }
 
             #heart {
               width: 20px;
               height: 20px;
+              cursor: pointer;
             }
 
             #frame {
               width: 20px;
               height: 20px;
+              cursor: pointer;
             }
           }
 
@@ -1017,7 +1052,7 @@ body {
       flex-shrink: 0;
       color: $text_color;
       @include font-face($regular, 18px, 16px);
-
+      transition: .4s;
       border-radius: 4px;
       border: 1px solid #e5e5e5;
       color: #3d3d3d;
@@ -1123,6 +1158,7 @@ body {
           justify-content: center;
           border-radius: 6px;
           cursor: pointer;
+          transition: .4s;
 
           .icon-Arrow-Right {
             font-size: 0.9em;
@@ -1208,7 +1244,7 @@ body {
             align-items: end;
             color: $text_color;
             @include font-face($medium, 14px, 16px);
-
+            transition: .5s;
             background-color: $body_color;
 
             cursor: pointer;
@@ -1434,6 +1470,7 @@ body {
           background-color: $element_color;
           border-radius: 0px 6px 6px 0px;
           cursor: pointer;
+          transition: .4s;
         }
 
         .button-join:hover {
@@ -1524,6 +1561,13 @@ body {
         ul > li {
           color: $text_color;
           @include font-face($regular, 14px, 30px);
+          cursor: pointer;
+          transition: .5s;
+        }
+
+        ul > li:hover {
+          color: $element_color;
+          @include font-face($bold, 14px, 30px);
         }
       }
     }
