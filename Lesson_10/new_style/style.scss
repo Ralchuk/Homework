@@ -816,8 +816,59 @@ body {
           padding-left: 8px;
           gap: 5px;
           color: $text_color;
-          @include font-face($regular, 15px, 16px);
+          @include font-face($bold, 15px, 16px);
           cursor: pointer;
+          position: relative;
+
+          .icon-ArrowDown {
+            font-size: 0.6em;
+          }
+
+          .select-menu {
+            opacity: 0;
+          }
+
+          .select-menu > ul{
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            // padding-left: 8px;
+            // padding-right: 8px;
+            // border: 1px solid ;
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            top: 0;
+            padding-top: 25px;
+            gap: 0;
+            
+            
+            
+            
+
+            & > li {
+              display: flex;
+              flex-flow: row nowrap;
+              text-decoration: none;
+              padding: 12px 8px;
+              color: $text_color;
+              @include font-face($regular, 15px, 16px);
+              border: none;
+              background-color: $main_color;
+
+               &:hover {
+                @include font-face($bold, 15px, 16px);
+                color: $element_color;
+              }
+            }
+
+           
+
+            & .icon-ArrowDown {
+              opacity: 0;
+            }
+          }
+          
           
         }
 
@@ -825,13 +876,15 @@ body {
           color: $element_color;
         }
 
+        .select:hover > .select-menu {
+          opacity: 1;
+        }
+
         .select:focus {
           color: $element_color;
         }
 
-        .icon-ArrowDown {
-          font-size: 0.6em;
-        }
+        
       }
 
      
