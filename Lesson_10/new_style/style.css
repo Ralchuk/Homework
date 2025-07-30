@@ -903,6 +903,7 @@ body {
   font-style: normal;
   text-wrap: nowrap;
   padding-bottom: 7px;
+  cursor: pointer;
 }
 .main .content .header-content ul li:first-child {
   color: #46A358;
@@ -913,6 +914,15 @@ body {
   line-height: 16px;
   font-style: normal;
   border-bottom: 2px solid #46A358;
+}
+.main .content .header-content ul li:hover {
+  color: #46A358;
+  font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  font-style: normal;
 }
 .main .content .header-content span {
   display: flex;
@@ -951,13 +961,14 @@ body {
 }
 .main .content .header-content span .select .select-menu {
   opacity: 0;
+  transition: 0.3s;
 }
 .main .content .header-content span .select .select-menu > ul {
   display: flex;
   flex-direction: column;
   align-content: space-between;
   position: absolute;
-  z-index: 2;
+  z-index: 10;
   left: 0;
   top: 0;
   padding-top: 25px;
@@ -1062,6 +1073,7 @@ body {
   align-items: end;
   gap: 26px;
   padding-bottom: 7px;
+  transition: 0.5s;
 }
 .main .content .catalog .cart .cart_img .hidden_cart_img #basket {
   width: 20px;
@@ -1141,6 +1153,20 @@ body {
   line-height: 16px;
   font-style: normal;
   cursor: pointer;
+}
+.navigation ul li > .icon-ArrowDown {
+  font-size: 0.5em;
+  transform: rotate(-90deg);
+}
+.navigation ul li:hover {
+  color: #46A358;
+  font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  font-style: normal;
+  border: 1px solid #46A358;
 }
 .navigation ul li:first-child {
   color: #FFFFFF;
@@ -1235,10 +1261,21 @@ body {
   font-style: normal;
   background-color: #46A358;
   gap: 5px;
-  padding: 11px 27px;
+  width: 140px;
+  height: 40px;
+  flex-shrink: 0;
   align-items: center;
+  justify-content: center;
   border-radius: 6px;
   cursor: pointer;
+}
+.preposition .action .action-cart .action-cart-content button .icon-Arrow-Right {
+  font-size: 0.9em;
+}
+.preposition .action .action-cart .action-cart-content button:hover {
+  background-color: #FFFFFF;
+  border: 2px solid #46A358;
+  color: #46A358;
 }
 .preposition .blog {
   display: flex;
@@ -1340,6 +1377,9 @@ body {
 .preposition .blog .blog-list .blog-cart .blog-cart-content button span {
   display: flex;
   margin-bottom: 2px;
+}
+.preposition .blog .blog-list .blog-cart .blog-cart-content button:hover {
+  opacity: 0.6;
 }
 
 /* background */
@@ -1540,6 +1580,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
+  height: 40px;
 }
 .background .upper-footer .news .input-adress input[type=email] {
   color: #acacac;
@@ -1552,6 +1593,9 @@ body {
   padding-left: 11px;
   flex-grow: 2;
 }
+.background .upper-footer .news .input-adress input[type=email]:focus {
+  outline: none;
+}
 .background .upper-footer .news .input-adress .button-join {
   color: #FFFFFF;
   font-family: "Cera Pro";
@@ -1560,10 +1604,16 @@ body {
   font-size: 18px;
   line-height: 16px;
   font-style: normal;
-  padding: 12px 25px;
+  height: 100%;
+  width: 85px;
   background-color: #46A358;
   border-radius: 0px 6px 6px 0px;
   cursor: pointer;
+}
+.background .upper-footer .news .input-adress .button-join:hover {
+  background-color: #FFFFFF;
+  color: #46A358;
+  border: 2px solid #46A358;
 }
 .background .upper-footer .news .news-p {
   color: #727272;

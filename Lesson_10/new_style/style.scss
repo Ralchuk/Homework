@@ -705,7 +705,7 @@ body {
         transition: 0.5s;
         border-radius: 6px;
         cursor: pointer;
-        
+
         background-color: $element_color;
       }
 
@@ -787,6 +787,7 @@ body {
           @include font-face($regular, 15px, 16px);
           text-wrap: nowrap;
           padding-bottom: 7px;
+          cursor: pointer;
         }
 
         li:first-child {
@@ -794,13 +795,17 @@ body {
           @include font-face($bold, 15px, 16px);
           border-bottom: 2px solid $element_color;
         }
+
+        li:hover {
+          color: $element_color;
+          @include font-face($bold, 15px, 16px);
+        }
       }
 
       span {
         display: flex;
         flex-wrap: nowrap;
         align-items: baseline;
-      
 
         #Shortby {
           display: flex;
@@ -826,9 +831,10 @@ body {
 
           .select-menu {
             opacity: 0;
+            transition: 0.3s;
           }
 
-          .select-menu > ul{
+          .select-menu > ul {
             display: flex;
             flex-direction: column;
             align-content: space-between;
@@ -836,15 +842,11 @@ body {
             // padding-right: 8px;
             // border: 1px solid ;
             position: absolute;
-            z-index: 2;
+            z-index: 10;
             left: 0;
             top: 0;
             padding-top: 25px;
             gap: 0;
-            
-            
-            
-            
 
             & > li {
               display: flex;
@@ -856,20 +858,16 @@ body {
               border: none;
               background-color: $main_color;
 
-               &:hover {
+              &:hover {
                 @include font-face($bold, 15px, 16px);
                 color: $element_color;
               }
             }
 
-           
-
             & .icon-ArrowDown {
               opacity: 0;
             }
           }
-          
-          
         }
 
         .select:hover {
@@ -883,13 +881,7 @@ body {
         .select:focus {
           color: $element_color;
         }
-
-        
       }
-
-     
-
-      
     }
 
     .catalog {
@@ -956,6 +948,7 @@ body {
             align-items: end;
             gap: 26px;
             padding-bottom: 7px;
+            transition: 0.5s;
 
             #basket {
               width: 20px;
@@ -1030,6 +1023,17 @@ body {
       color: #3d3d3d;
       @include font-face($light, 18px, 16px);
       cursor: pointer;
+
+      & > .icon-ArrowDown {
+        font-size: 0.5em;
+        transform: rotate(-90deg);
+      }
+    }
+
+    li:hover {
+      color: $element_color;
+      @include font-face($bold, 18px, 16px);
+      border: 1px solid $element_color;
     }
 
     li:first-child {
@@ -1112,11 +1116,24 @@ body {
           @include font-face($medium, 14px, 20px);
           background-color: $element_color;
           gap: 5px;
-          padding: 11px 27px;
+          width: 140px;
+          height: 40px;
+          flex-shrink: 0;
           align-items: center;
+          justify-content: center;
           border-radius: 6px;
           cursor: pointer;
+
+          .icon-Arrow-Right {
+            font-size: 0.9em;
+          }
         }
+
+      button:hover {
+        background-color: $body_color;
+        border: 2px solid $element_color;
+        color: $element_color;
+      }
       }
     }
   }
@@ -1200,6 +1217,10 @@ body {
               display: flex;
               margin-bottom: 2px;
             }
+          }
+
+          button:hover {
+            opacity: 0.6;
           }
         }
       }
@@ -1392,6 +1413,7 @@ body {
         justify-content: space-between;
         // padding: 25px 0 18px;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
+        height: 40px;
 
         input[type="email"] {
           color: #acacac;
@@ -1400,13 +1422,25 @@ body {
           flex-grow: 2;
         }
 
+        input[type="email"]:focus {
+          outline: none;
+        }
+
         .button-join {
           color: $body_color;
           @include font-face($bold, 18px, 16px);
-          padding: 12px 25px;
+          height: 100%;
+          width: 85px;
           background-color: $element_color;
           border-radius: 0px 6px 6px 0px;
           cursor: pointer;
+        }
+
+        .button-join:hover {
+          background-color: $body_color;
+          color: $element_color;
+          border: 2px solid $element_color;
+
         }
       }
 
