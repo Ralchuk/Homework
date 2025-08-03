@@ -708,13 +708,26 @@ body {
   font-style: normal;
   line-height: 16px;
 }
-.main .sidebar .nav2 ul {
-  margin-left: 12px;
-}
-.main .sidebar .nav2 ul li {
+.main .sidebar .nav2 > label {
   display: flex;
+  width: 100%;
+}
+.main .sidebar .nav2 > label > input {
+  display: none;
+}
+.main .sidebar .nav2 > label > input:checked ~ .custom-checkbox {
+  color: #46A358;
+  font-family: "Cera Pro";
+  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 40px;
+  font-style: normal;
+}
+.main .sidebar .nav2 > label .custom-checkbox {
+  display: flex;
+  flex-grow: 2;
   justify-content: space-between;
-  text-wrap: nowrap;
   color: #3d3d3d;
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
@@ -724,16 +737,7 @@ body {
   font-style: normal;
   cursor: pointer;
 }
-.main .sidebar .nav2 ul li:first-of-type {
-  color: #46A358;
-  font-family: "Cera Pro";
-  src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 40px;
-  font-style: normal;
-}
-.main .sidebar .nav2 ul li:hover {
+.main .sidebar .nav2 > label .custom-checkbox:hover {
   color: #46A358;
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);

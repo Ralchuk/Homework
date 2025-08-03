@@ -616,28 +616,36 @@ body {
         line-height: 16px;
       }
 
-      ul {
-        margin-left: 12px;
+      & > label {
+        display: flex;
+        width: 100%;
 
-        li {
+        & > input {
+          display: none;
+        }
+
+        & > input:checked ~ .custom-checkbox{
+          color: $element_color;
+          @include font-face($bold, 15px, 40px);
+
+        }
+
+        .custom-checkbox {
           display: flex;
+          flex-grow: 2;
           justify-content: space-between;
-          text-wrap: nowrap;
-          color: $text_color;
+          color: #3d3d3d;
           @include font-face($regular, 15px, 40px);
           cursor: pointer;
         }
 
-        li:first-of-type {
-          color: $element_color;
-          @include font-face($bold, 15px, 40px);
-        }
-
-        li:hover {
+        .custom-checkbox:hover {
           color: $element_color;
           @include font-face($bold, 15px, 40px);
         }
       }
+
+     
     }
 
     .price {
