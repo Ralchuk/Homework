@@ -1,2 +1,5 @@
-const loader = document.querySelector(".loader");
-setTimeout(() => loader.hidden = true, 1000);
+const loader = document.querySelector("#Login");
+setTimeout(() => loader.hidden = true, 7000);
+// $ (window) .on('load', function() {
+//     $('#loader') .fadeOut (7000);
+// })
