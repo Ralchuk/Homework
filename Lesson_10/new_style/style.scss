@@ -414,7 +414,7 @@ body {
   .main {
     display: flex;
     margin-bottom: 90px;
-    gap: 50px;
+    gap: 50px 50px;
 
     .sidebar {
       display: flex;
@@ -611,6 +611,10 @@ body {
       }
     }
 
+    .sidebar_hidden {
+      display: none;
+    }
+
     .content {
       display: flex;
       flex-direction: column;
@@ -645,6 +649,31 @@ body {
           li:hover {
             color: $element_color;
             @include font-face($bold, 15px, 16px);
+          }
+        }
+
+        .header-content-ul-hidden {
+          display: flex;
+          display: none;
+          flex-direction: row;
+          align-items: baseline;
+          background-color: $body_color;
+          
+          gap: 5px;
+          cursor: pointer;
+
+          & > span {
+            color: $element_color;
+            @include font-face($bold, 15px, 16px);
+            
+            padding-bottom: 7px;
+
+          }
+
+          & > .icon-ArrowDown {
+            font-size: 0.6rem;
+            color: $text_color;
+            
           }
         }
 
@@ -924,6 +953,7 @@ body {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
+      gap:138px 0;
 
       .action-cart {
         display: flex;
@@ -1497,15 +1527,56 @@ body {
       }
     }
 
-      
-    
-
     .banner {
       .images {
         display: none;
       }
 
     }
+
+    .main {
+      flex-direction: column;
+
+      .sidebar {
+        display: none;
+      }
+
+      .sidebar_hidden {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        background-color: $main_color;
+        gap: 7px;
+        align-items: baseline;
+
+        .icon-ArrowDown {
+          font-size: 0.6rem;
+          color: $text_color;
+        }
+
+      }
+
+      .content {
+
+        .catalog {
+          justify-content: space-between;
+        }
+      
+        // .header-content {
+
+        //   & > ul {
+        //     display: none;
+        //   }
+
+        //   .header-content-ul-hidden {
+        //     display: flex;
+        //   }
+        // }
+      }
+
+    }
+
+    
 
     
   }
