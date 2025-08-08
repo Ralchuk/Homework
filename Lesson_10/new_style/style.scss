@@ -611,7 +611,7 @@ body {
       }
     }
 
-    .sidebar_hidden {
+    .sidebar-hidden {
       display: none;
     }
 
@@ -1535,31 +1535,43 @@ body {
     }
 
     .main {
-      flex-direction: column;
+      
 
       .sidebar {
         display: none;
       }
 
-      .sidebar_hidden {
+      .sidebar-hidden {
         display: flex;
         flex-direction: row;
         justify-content: start;
         background-color: $main_color;
         gap: 7px;
-        align-items: baseline;
+        align-items: center;
 
-        .icon-ArrowDown {
+        .sidebar-hidden-btn {
+           &__filters {
+          color: $element_color;
+          @include font-face($bold, 18px, 24px);
+        }
+
+        & .icon-ArrowDown {
           font-size: 0.6rem;
           color: $text_color;
+          transform: rotate(-90deg);
         }
+
+        }
+
+
+       
 
       }
 
       .content {
 
         .catalog {
-          justify-content: space-between;
+          justify-content: start;
         }
       
         // .header-content {
