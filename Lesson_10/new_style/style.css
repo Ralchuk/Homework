@@ -380,7 +380,42 @@ body .header .but > a .Login:hover {
   color: #46A358;
   transition: 0.5s;
 }
-body .header .material-symbols-outlined {
+body .header .header-material-symbols-outlined {
+  display: flex;
+  position: relative;
+}
+body .header .header-material-symbols-outlined .material-symbols-outlined {
+  display: inline-block;
+  font-size: 36px;
+  color: #3d3d3d;
+  cursor: pointer;
+  transition: 0.3s;
+}
+body .header .header-material-symbols-outlined .header-material-symbols-outlined-menu-hidden {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  align-items: center;
+  left: 0;
+  top: 0;
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 80px 0 40px;
+  gap: 30px;
+  border-bottom: 1px solid #c5dfca;
+  opacity: 0;
+}
+body .header .header-material-symbols-outlined .header-material-symbols-outlined-menu-hidden .nav-header {
+  display: flex;
+}
+body .header .header-material-symbols-outlined .header-material-symbols-outlined-menu-hidden .nav-header > ul {
+  display: flex;
+  gap: 120px;
+}
+body .header .header-material-symbols-outlined .material-symbols-outlined:hover > .header-material-symbols-outlined-menu-hidden {
+  opacity: 1;
+}
+body .header .header-material-symbols-outlined {
   display: none;
 }
 body .banner {
@@ -1717,12 +1752,8 @@ body .background .copyrights span {
   body .header .but {
     display: none;
   }
-  body .header .material-symbols-outlined {
-    display: inline-block;
-    font-size: 36px;
-    color: #3d3d3d;
-    cursor: pointer;
-    transition: 0.3s;
+  body .header .header-material-symbols-outlined {
+    display: flex;
   }
   body .banner .images {
     display: none;
