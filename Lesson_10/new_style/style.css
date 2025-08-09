@@ -502,33 +502,38 @@ body .main {
 body .main .sidebar {
   display: flex;
   flex-direction: column;
-  padding: 14px 24px 0 18px;
-  background: #FBFBFB;
+  background: #FFFFFF;
 }
-body .main .sidebar .nav2 {
+body .main .sidebar .filters {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 24px 0 18px;
+  background-color: #FBFBFB;
+}
+body .main .sidebar .filters .nav2 {
   display: flex;
   flex-direction: column;
   margin-bottom: 36px;
   gap: 7px;
 }
-body .main .sidebar .nav2 h2 {
+body .main .sidebar .filters .nav2 h2 {
   color: #3d3d3d;
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
-  font-weight: 400;
+  font-weight: 700;
   font-size: 18px;
   line-height: 16px;
   font-style: normal;
   line-height: 16px;
 }
-body .main .sidebar .nav2 > label {
+body .main .sidebar .filters .nav2 > label {
   display: flex;
   width: 100%;
 }
-body .main .sidebar .nav2 > label > input {
+body .main .sidebar .filters .nav2 > label > input {
   display: none;
 }
-body .main .sidebar .nav2 > label > input:checked ~ .custom-checkbox {
+body .main .sidebar .filters .nav2 > label > input:checked ~ .custom-checkbox {
   color: #46A358;
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
@@ -537,7 +542,7 @@ body .main .sidebar .nav2 > label > input:checked ~ .custom-checkbox {
   line-height: 40px;
   font-style: normal;
 }
-body .main .sidebar .nav2 > label .custom-checkbox {
+body .main .sidebar .filters .nav2 > label .custom-checkbox {
   display: flex;
   flex-grow: 2;
   justify-content: space-between;
@@ -549,8 +554,9 @@ body .main .sidebar .nav2 > label .custom-checkbox {
   line-height: 40px;
   font-style: normal;
   cursor: pointer;
+  padding-left: 12px;
 }
-body .main .sidebar .nav2 > label .custom-checkbox:hover {
+body .main .sidebar .filters .nav2 > label .custom-checkbox:hover {
   color: #46A358;
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
@@ -559,28 +565,28 @@ body .main .sidebar .nav2 > label .custom-checkbox:hover {
   line-height: 40px;
   font-style: normal;
 }
-body .main .sidebar .price {
+body .main .sidebar .filters .price {
   display: flex;
   flex-flow: column wrap;
   margin-bottom: 46px;
 }
-body .main .sidebar .price .range-title {
+body .main .sidebar .filters .price .range-title {
   color: #3d3d3d;
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
-  font-weight: 400;
+  font-weight: 700;
   font-size: 18px;
   line-height: 16px;
   font-style: normal;
   margin-bottom: 20px;
 }
-body .main .sidebar .price .range-slider {
+body .main .sidebar .filters .price .range-slider {
   display: flex;
   position: relative;
   height: -moz-fit-content;
   height: fit-content;
 }
-body .main .sidebar .price .range-slider input {
+body .main .sidebar .filters .price .range-slider input {
   width: 100%;
   max-width: 200px;
   height: 5px;
@@ -591,7 +597,7 @@ body .main .sidebar .price .range-slider input {
           appearance: none;
   margin-bottom: 15px;
 }
-body .main .sidebar .price .range-slider input::-webkit-slider-thumb {
+body .main .sidebar .filters .price .range-slider input::-webkit-slider-thumb {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -601,7 +607,7 @@ body .main .sidebar .price .range-slider input::-webkit-slider-thumb {
   -webkit-appearance: none;
           appearance: none;
 }
-body .main .sidebar .price .range-slider .round {
+body .main .sidebar .filters .price .range-slider .round {
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -611,7 +617,7 @@ body .main .sidebar .price .range-slider .round {
   position: absolute;
   top: -7px;
 }
-body .main .sidebar .price h4 {
+body .main .sidebar .filters .price h4 {
   color: #3d3d3d;
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
@@ -620,7 +626,7 @@ body .main .sidebar .price h4 {
   line-height: 16px;
   font-style: normal;
 }
-body .main .sidebar .price h4 span {
+body .main .sidebar .filters .price h4 span {
   color: #46A358;
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
@@ -629,7 +635,7 @@ body .main .sidebar .price h4 span {
   line-height: 16px;
   font-style: normal;
 }
-body .main .sidebar .price button {
+body .main .sidebar .filters .price button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -649,30 +655,30 @@ body .main .sidebar .price button {
   cursor: pointer;
   background-color: #46A358;
 }
-body .main .sidebar .price button:hover {
+body .main .sidebar .filters .price button:hover {
   background: #FFFFFF;
   border: 2px solid #46A358;
   color: #46A358;
 }
-body .main .sidebar .nav3 {
+body .main .sidebar .filters .nav3 {
   display: flex;
   flex-direction: column;
   margin-bottom: 18px;
   gap: 7px;
 }
-body .main .sidebar .nav3 h2 {
+body .main .sidebar .filters .nav3 h2 {
   color: #3d3d3d;
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
-  font-weight: 400;
+  font-weight: 700;
   font-size: 18px;
   line-height: 16px;
   font-style: normal;
 }
-body .main .sidebar .nav3 ul {
+body .main .sidebar .filters .nav3 ul {
   margin-left: 12px;
 }
-body .main .sidebar .nav3 ul li {
+body .main .sidebar .filters .nav3 ul li {
   display: flex;
   justify-content: space-between;
   text-wrap: nowrap;
@@ -685,7 +691,7 @@ body .main .sidebar .nav3 ul li {
   font-style: normal;
   cursor: pointer;
 }
-body .main .sidebar .nav3 ul li:hover {
+body .main .sidebar .filters .nav3 ul li:hover {
   color: #46A358;
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
@@ -697,27 +703,38 @@ body .main .sidebar .nav3 ul li:hover {
 body .main .sidebar .img {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 310px;
-  height: 100%;
-  max-height: 470px;
+  align-items: center;
+  width: 310px;
+  height: 470px;
   flex-shrink: 0;
   flex-shrink: 0;
+  position: relative;
   background: linear-gradient(180deg, rgba(70, 163, 88, 0.1) 0%, rgba(70, 163, 88, 0.03) 100%);
 }
 body .main .sidebar .img .img-SuperSale {
-  margin: 0 22px;
+  position: absolute;
+  width: 90%;
+  height: auto;
+  top: 0;
 }
 body .main .sidebar .img span {
+  position: absolute;
   color: #3d3d3d;
   text-align: center;
   font-family: "Cera Pro";
   src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
-  font-weight: 400;
+  font-weight: 700;
   font-size: 23px;
   line-height: 16px;
   font-style: normal;
   margin: 11px 50px -6px;
+  top: 85px;
+}
+body .main .sidebar .img .img-plant {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 0;
 }
 body .main .sidebar-hidden {
   display: none;
@@ -1284,7 +1301,7 @@ body .background .upper-footer {
 body .background .upper-footer .icons {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: stretch;
   gap: 30px;
@@ -1509,7 +1526,7 @@ body .background .upper-footer .news .news-p {
   font-style: normal;
   padding-top: 18px;
 }
-body .background .midle-footer {
+body .background .middle-footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -1517,7 +1534,7 @@ body .background .midle-footer {
   padding: 24px 22px;
   background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
 }
-body .background .midle-footer .midle-footer-adress {
+body .background .middle-footer .midle-footer-adress {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1532,7 +1549,7 @@ body .background .midle-footer .midle-footer-adress {
   line-height: 22px;
   font-style: normal;
 }
-body .background .midle-footer .midle-footer-message {
+body .background .middle-footer .midle-footer-message {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1546,7 +1563,7 @@ body .background .midle-footer .midle-footer-message {
   line-height: 22px;
   font-style: normal;
 }
-body .background .midle-footer .midle-footer-phone {
+body .background .middle-footer .midle-footer-phone {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1569,7 +1586,7 @@ body .background .down-footer {
 }
 body .background .down-footer .footer-list {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: start;
   gap: 164px;
   align-content: start;
@@ -1698,30 +1715,119 @@ body .background .copyrights span {
   body .banner .images {
     display: none;
   }
+  body .main .sidebar .filters {
+    display: flex;
+  }
+  body .main .sidebar .img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 400px;
+    flex-shrink: 0;
+    flex-shrink: 0;
+    position: relative;
+    background: linear-gradient(180deg, rgba(70, 163, 88, 0.1) 0%, rgba(70, 163, 88, 0.03) 100%);
+  }
+  body .main .sidebar .img .img-SuperSale {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    top: 0;
+  }
+  body .main .sidebar .img span {
+    position: absolute;
+    color: #3d3d3d;
+    text-align: center;
+    font-family: "Cera Pro";
+    src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    font-style: normal;
+    margin: 11px 50px -6px;
+    top: 75px;
+  }
+  body .main .sidebar .img .img-plant {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+  }
+  body .main .sidebar-hidden {
+    display: none;
+  }
+  body .main .content .catalog {
+    justify-content: start;
+  }
+  body .background .upper-footer {
+    gap: 40px 0;
+  }
+  body .background .upper-footer .icons {
+    flex-wrap: nowrap;
+  }
+  body .background .upper-footer .news {
+    padding-left: 30px;
+  }
+  body .background .down-footer {
+    gap: 40px 0;
+  }
+  body .background .down-footer .social-partners {
+    flex-direction: row;
+  }
+}
+@media screen and (max-width: 992px) {
+  body .header .nav-header > ul {
+    display: none;
+  }
+  body .header .but {
+    display: none;
+  }
+  body .header .material-symbols-outlined {
+    display: inline-block;
+    font-size: 36px;
+    color: #3d3d3d;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  body .banner .images {
+    display: none;
+  }
+  body .main {
+    display: flex;
+    flex-direction: column;
+  }
   body .main .sidebar {
     display: none;
   }
   body .main .sidebar-hidden {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
+    align-content: space-between;
     background-color: #FBFBFB;
-    gap: 7px;
-    align-items: center;
+    align-content: center;
+  }
+  body .main .sidebar-hidden .sidebar-hidden-btn {
+    display: flex;
+    background-color: #FFFFFF;
+    padding: 15px 0;
+    gap: 10px;
+    align-items: baseline;
   }
   body .main .sidebar-hidden .sidebar-hidden-btn__filters {
     color: #46A358;
     font-family: "Cera Pro";
     src: url(../Fonts/CeraPro/CeraPro-Regular.woff2) format(woff2);
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 18px;
     font-style: normal;
+    line-height: 16px;
   }
   body .main .sidebar-hidden .sidebar-hidden-btn .icon-ArrowDown {
     font-size: 0.6rem;
     color: #3d3d3d;
-    transform: rotate(-90deg);
   }
   body .main .content .catalog {
     justify-content: start;
