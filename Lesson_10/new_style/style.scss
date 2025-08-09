@@ -995,8 +995,9 @@ body {
           position: absolute;
           bottom: 10px;
           z-index: 1;
-
+          width: 100%;
           max-width: 287px;
+          height: 100%;
           max-height: 292px;
           flex-shrink: 0;
           background-color: url(<path-to-image>) lightgray -5px 0px / 101.742% 100%
@@ -1010,7 +1011,7 @@ body {
           flex-flow: column nowrap;
           align-items: end;
           text-align: end;
-          padding: 29px 30px 37px 264px;
+          padding: 29px 30px 37px 0;
           background-color: $main_color;
           /* border: 1px solid ; */
 
@@ -1019,7 +1020,7 @@ body {
             text-align: right;
             @include font-face($black, 18px, 24px);
             text-transform: uppercase;
-            max-width: 150px;
+            max-width: 30%;
             height: fit-content;
             margin-bottom: 9px;
           }
@@ -1028,7 +1029,7 @@ body {
             color: #727272;
             text-align: right;
             @include font-face($regular, 14px, 24px);
-            max-width: 292px;
+            max-width: 50%;
             margin-bottom: 25px;
           }
 
@@ -1519,7 +1520,7 @@ body {
 
           h2 {
             color: $text_color;
-            @include font-face($bold, 18px, 16px);
+            @include font-face($bold, 18px, 30px);
           }
 
           img {
@@ -1727,6 +1728,10 @@ body {
     }
 
     .banner {
+      .body-banner {
+        padding-right: 40px;
+      }
+      
       .images {
         display: none;
       }
@@ -1822,6 +1827,87 @@ body {
     
 
     
+
+    
+  }
+}
+
+@media screen and (max-width:768px) {
+  body {
+    padding: 0 60px;
+    .banner {
+      .body-banner {
+        padding-right: 40px;
+      }
+      
+    }
+  }
+}
+
+@media screen and (max-width:540px) {
+  body {
+    padding: 0 15px;
+
+    .main {
+      .content {
+        .header-content {
+          & > ul {
+            display: none;
+          }
+          & > .header-content-ul-hidden {
+            display: flex;
+
+            & > span {
+              border-bottom: 2px solid $element_color;
+            }
+
+            & > .icon-ArrowDown {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+    }
+
+    .preposition {
+      .action {
+        .action-cart {
+          img {
+            position: absolute;
+            bottom: 10px;
+            z-index: 1;
+            width: 100%;
+            max-width: 187px;
+            height: auto;
+            flex-shrink: 0;
+            background-color: url(<path-to-image>) lightgray -5px 0px / 101.742% 100%
+              no-repeat;
+            mix-blend-mode: multiply;
+          }
+        }
+        
+      }
+    }
+
+    .background {
+      .upper-footer {
+        .icons {
+          flex-wrap: wrap;
+        }
+      }
+      .down-footer {
+        
+        .footer-list {
+          flex-wrap: wrap;
+          row-gap: 40px;
+          padding: 0;
+        }
+
+        .social-partners {
+          flex-wrap: wrap;
+        }
+      }
+    }
 
     
   }
