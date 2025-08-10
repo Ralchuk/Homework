@@ -1,0 +1,10 @@
+@import 'reset',
+        'variables';
+
+div {
+    display: block;
+    width: 100px;
+    height: 100px;
+    // background-color: $color-accent;
+    background: $gradient-regular;
+}

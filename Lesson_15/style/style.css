@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-style: normal;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+div {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(129deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+}/*# sourceMappingURL=style.css.map */
