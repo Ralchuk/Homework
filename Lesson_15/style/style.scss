@@ -8,6 +8,7 @@
     body {
         @include flex(column);
         background: $gradient-regular_supersoft;
+        
         height: 100vh;
     }
 
@@ -19,16 +20,18 @@
         .contacts {
             @include flex (row, nowrap);
             justify-content: space-between;
+            width: 100%;
             padding: 10px 15px;
             align-items: center;
             background-color: rgba(245, 245, 250, 0.20) ;
+            
             background-clip: padding-box;
 
             .lang {
                 @include flex (row, nowrap);
                 
 
-                .lang__item {
+                &__item {
                     display: inline-block;
                     @include font-bold (12px,normal, white);
                     width: fit-content;
@@ -36,7 +39,7 @@
 
                 }
 
-                .lang__item--focused {
+                &--focused {
                     display: inline-block;
                     @include font-bold (12px,normal, white);
                     background-color: $color-accent ;
@@ -67,7 +70,7 @@
                 @include flex(row);
                 align-items: start;
 
-                .logo-img {
+                &-img {
                     @include flex(column);
                     position: relative;
                     gap: 3px;
@@ -119,30 +122,26 @@
                         url( "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='267' height='600' viewBox='0 0 267 600' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.601656 600H-74.2773C-10.547 399.881 53.9069 199.998 118.014 0H192.79C192.475 1.00023 192.156 2.00313 191.832 3.0086C88.1019 322.175 123.486 214.391 0.601656 600Z' fill='%23F0145A'/%3E%3C/svg%3E");
             background-repeat: no-repeat;
         }
+    }
+    .content {
+        @include flex (column);
+        padding: 30px 30px;
 
-        // &__img1 {
-        //     position: absolute;
-        //     max-width: 267px;
-        //     max-height: 600px;
-        //     z-index: -1;
-        //     left: 0;
-        //     bottom: 0;
-        // }
-        
+        &-block {
+            @include flex (column);
 
-        // &__img2 {
-        //     position: absolute;
-        //     width: 100%;
-        //     max-width: 285px;
-        //     height: auto;
-        //     max-height: 344px;
-        //     z-index: -2;
-        //     left: 62px;
-        //     bottom: 0;
-        // }
+            &__menu {
+                @include flex (row);    
+            }
 
-       
+            &__item {
+                display: inline-block;
 
+                input {
+                    display: none;
+                }
+            }
+        }
     }
     
 }
