@@ -8,9 +8,27 @@
   list-style: none;
 }
 
-div {
-  display: block;
-  width: 100px;
-  height: 100px;
-  background: linear-gradient(129deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
 }/*# sourceMappingURL=style.css.map */

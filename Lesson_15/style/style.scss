@@ -1,10 +1,26 @@
 @import 'reset',
-        'variables';
+        'variables',
+        'mixin',
+        'fonts';
 
-div {
-    display: block;
-    width: 100px;
-    height: 100px;
-    // background-color: $color-accent;
-    background: $gradient-regular;
+
+@media screen and (max-width:375px) {
+    body {
+        @include flex(column);
+        
+    }
+
+    header {
+        @include flex(column);
+        
+        .contact {
+            @include flex (row, nowrap);
+
+            .lang {
+                @include flex ;
+            }
+
+        }
+    }
+    
 }

@@ -1,0 +1,91 @@
+@import 'variables',
+        'fonts';
+
+@mixin font-bold($size, $height) {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: $bold;
+    font-style: normal;
+    font-size: $size;
+    line-height: $height;
+
+}
+
+@mixin font-regular($size, $height) {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: $regular;
+    font-style: normal;
+    font-size: $size;
+    line-height: $height;
+}
+
+
+@mixin flex($dir, $wrap) {
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+}
+
+@mixin h1 ($size, $height, $color) {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: $bold;
+    font-style: normal;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+}
+
+@mixin h2 ($size, $height, $color) {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: $bold;
+    font-style: normal;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+}
+
+@mixin h3 ($size, $height, $color) {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: $bold;
+    font-style: normal;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+}
+
+@mixin h3caps ($size, $height, $color) {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: $bold;
+    font-style: normal;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+}
+
+@mixin h4 ($size, $height, $color) {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: $bold;
+    font-style: normal;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+}
+
+@mixin p ($size, $height, $color) {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: $bold;
+    font-style: normal;
+    font-size: $size;
+    line-height: $height;
+    color: $color;
+
+}
+
+
