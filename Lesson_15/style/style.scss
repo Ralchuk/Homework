@@ -12,15 +12,81 @@
 
     header {
         @include flex(column);
+        padding: 10px 15px;
         
-        .contact {
+        .contacts {
             @include flex (row, nowrap);
+            justify-content: space-between;
+            padding-bottom: 10px;
+            align-items: center;
 
             .lang {
-                @include flex ;
+                @include flex (row, nowrap);
+                
+
+                .lang__item {
+                    display: inline-block;
+                    @include font-bold (12px,normal, $color-grey_text);
+                    width: fit-content;
+                    padding: 5px 7px;
+
+                }
+
+                .lang__item--focused {
+                    display: inline-block;
+                    @include font-bold (12px,normal, white);
+                    background-color: $color-accent ;
+                    border-radius: 8px;
+                    width: fit-content;
+                    padding: 5px 7px;
+                }
             }
 
+            .adress {
+                display: inline-block;
+                @include font-bold (16px, normal, $color-grey_text);
+
+            }
+
+
+
+        }
+
+        .menu {
+            @include flex(row);
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 10px;
+            gap: 3px;
+
+            .logo {
+                @include flex(row);
+                align-items: start;
+
+                .logo-img {
+                    @include flex(column);
+                    position: relative;
+
+                    .logo__slash {
+                        position: absolute;
+                        top: 0;
+                        right: -17px;
+                    }
+                }
+
+                .logo__nav {
+                    display: inline-block;
+                    @include font-regular(20px, normal, black);
+                    padding-left: 21px;
+                }
+
+                
+
+            }
+
+            
         }
     }
     
 }
+
