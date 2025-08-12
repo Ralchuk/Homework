@@ -40,7 +40,6 @@
     width: 100%;
     background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     background-attachment: fixed;
-    height: 100vh;
   }
   header {
     display: flex;
@@ -261,6 +260,94 @@
     font-style: normal;
     font-size: 19px;
     line-height: 30px;
+    color: white;
+  }
+  .content-icons {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+  .content-icons__header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+  }
+  .content-icons .subheader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 2px;
+  }
+  .content-icons .subheader > h4 {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: normal;
+    color: #24A3FF;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .content-icons .nameheader {
+    display: inline-block;
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    line-height: normal;
+    color: transparent;
+    text-wrap: wrap;
+    background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
+  .content-icons__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    padding-top: 30px;
+    gap: 30px;
+  }
+  .content-icons__img > img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+    width: 64px;
+    height: 64px;
+    padding: 14px;
+    background-color: white;
+    border-radius: 24px;
+  }
+  .content-icons__txt {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .content-icons__txt-header {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    line-height: normal;
+    color: #24A3FF;
+  }
+  .content-icons__txt-p {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
     color: white;
   }
 }/*# sourceMappingURL=style.css.map */
