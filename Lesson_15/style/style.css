@@ -457,6 +457,7 @@
     line-height: normal;
     color: #B3B3BA;
     padding-bottom: 6px;
+    word-break: break-word;
   }
   .photo-block__content > span {
     font-family: "Montserrat";
@@ -472,7 +473,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
-    padding-bottom: 30px;
+    padding-top: 30px;
     justify-content: center;
     gap: 10px;
   }
@@ -493,5 +494,20 @@
   }
   .photo-block__nav > label > input:checked ~ .custom-nav {
     opacity: 1;
+  }
+  .photo-block__slogan {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-top: 60px;
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: normal;
+    color: #323264;
+    letter-spacing: 1px;
+    text-transform: uppercase;
   }
 }/*# sourceMappingURL=style.css.map */

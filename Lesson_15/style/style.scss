@@ -379,6 +379,7 @@
             & > h2 {
                 @include font-bold (16px, normal, $color-grey_text);
                 padding-bottom: 6px;
+                word-break: break-word;
             }
 
             & > span {
@@ -392,7 +393,7 @@
         &__nav {
             @include flex(row, nowrap);
             width: 100%;
-            padding-bottom: 30px;
+            padding-top: 30px;
             justify-content: center;
             gap: 10px;
 
@@ -418,6 +419,18 @@
 
             
         }
+
+        &__slogan {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            padding-top: 60px;
+            @include font-bold (14px, normal, $color-main);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+
     }
 
     
