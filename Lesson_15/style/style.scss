@@ -207,32 +207,9 @@
             @include flex (column);
             padding-top: 30px;
 
-            .inheader {
-                @include flex (column);
-                align-items: start;
+            @import 'inheader';
 
-                .subheader {
-                    @include flex (row);
-                    justify-content: start;
-                    align-items: center;
-                    gap: 2px;
-                
-
-                    & > h4 {
-                        @include font-bold (14px, normal, $color-active_regular);
-                        letter-spacing: 1px;
-                        text-transform: uppercase;
-                    }
-                }
-
-                .nameheader {
-                    display: inline-block;
-                    @include font-bold (30px, normal, transparent);
-                    text-wrap: wrap;
-                    background: $gradient-regular_redtext;
-                    background-clip: text;
-                }
-            }
+           
 
             .icon-item {
                 @include flex (column);
@@ -352,39 +329,16 @@
             align-items: start;
             padding: 30px;
 
-            .inheader {
-                @include flex (column);
-                align-items: start;
-                padding-bottom: 30px;
+            @import 'inheader';
 
-                .subheader {
-                    @include flex (row);
-                    justify-content: start;
-                    align-items: center;
-                    gap: 2px;
-                
-
-                    & > h4 {
-                        @include font-bold (14px, normal, $color-active_regular);
-                        letter-spacing: 1px;
-                        text-transform: uppercase;
-                    }
-                }
-
-                .nameheader {
-                    display: inline-block;
-                    @include font-bold (30px, normal, transparent);
-                    text-wrap: wrap;
-                    background: $gradient-regular_redtext;
-                    background-clip: text;
-                    word-break: break-word;
-                }
-            }
+            
             
 
             & > h2 {
+                display: inline-block;
+                padding: 30px 0 6px;
                 @include font-bold (16px, normal, $color-grey_text);
-                padding-bottom: 6px;
+                
                 word-break: break-word;
             }
 
@@ -509,6 +463,158 @@
         
     }
 
+    .publications {
+        @include flex (column);
+        padding: 30px 30px 0;
+        width: 100%;
+
+        @import 'inheader';
+
+        &__element {
+            @include flex(column);
+            gap: 30px;
+            padding-top: 30px;
+
+            .publications-cart {
+                @include flex(row, wrap);
+                gap: 30px;
+
+                &__img1 {
+                    width: 100%;
+                    height: 200px;
+                    background: url(./images/index/publications/bac30771551944a6a99f95b6d5657e8e0ee495d7.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 8px 8px 0 0;
+                }
+
+                &__img2 {
+                    width: 100%;
+                    height: 200px;
+                    background: url(./images/index/publications/b300cdc34641c0243d6f7be0f81f6a06a7c57f59.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 8px 8px 0 0;
+                }
+
+                &__img3 {
+                    width: 100%;
+                    height: 200px;
+                    background: url(./images/index/publications/45df5b20cea39013922afb4b9a565b65431d7661.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 8px 8px 0 0;
+                }
+
+                &__content {
+                    @include flex(column);
+                    padding: 30px;
+                    gap: 15px;
+
+                    & > h2 {
+                        @include font-bold (16px, normal, $color-active_regular);
+                    }
+
+                    & > h4 {
+                        display: inline-block;
+                        padding-bottom: 15px;
+                        border-bottom: 2px solid $color-grey_separator;
+                        @include font-bold (12px, normal, $color-grey_text);
+
+                    }
+
+                    & > p {
+                        @include font-regular (14px, 22px, black);
+                    }
+                }
+            }
+        }
+
+    }
+
+    
+    
+    footer {
+
+        @include flex (column);
+        width: 100%;
+        gap: 30px;
+        padding: 30px;
+
+        #shape {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: $color-grey_text;
+        }
+
+        #shape {
+            display: none;
+        }
+
+        .footer-contact {
+            @include flex (column);
+            gap: 20px;
+            
+            &__location {
+                @include flex (column);
+                
+                align-items: center;
+                text-align: center;
+                gap: 10px;
+                padding-top: 30px;
+                
+                border-top: 2px solid $color-grey_separator;
+
+                & > a {
+                    @include font-bold (12px, normal, $color-active_regular);
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                }
+
+                & > .street {
+                    @include font-regular (16px, normal, $color-main);
+                }
+
+                
+
+                // & > .shape {
+                //     display: none;
+                // }
+
+                & > .map {
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+
+
+            }
+
+            &__social {
+                @include flex (column);
+                width: 100%;
+                align-items: center;
+                text-align: center;
+                gap: 10px;
+
+                & > .phone {
+                    @include font-bold (16px, normal, black);
+                }
+
+                & > .email {
+                    @include font-bold (16px, normal, $color-active_regular);
+                } 
+            }
+
+
+        }
+
+        .footer-article {
+            @include flex (column);
+            text-align: center;
+            @include font-regular (16px,normal, $color-grey_text);
+        }
+    }
     
 
     

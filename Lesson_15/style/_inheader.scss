@@ -1,0 +1,28 @@
+.inheader {
+    @include flex (column);
+    align-items: start;
+    gap: 10px;
+
+    .subheader {
+        @include flex (row);
+        justify-content: start;
+        align-items: center;
+        gap: 2px;
+    
+
+        & > h4 {
+            @include font-bold (14px, normal, $color-active_regular);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    }
+
+    .nameheader {
+        display: inline-block;
+        @include font-bold (30px, normal, transparent);
+        text-wrap: wrap;
+        background: $gradient-regular_redtext;
+        background-clip: text;
+        word-break: break-word;
+    }
+}
