@@ -170,13 +170,14 @@ header {
 }
 .content {
     @include flex (column);
-    padding: 30px 0 ;
+    
     
     width: 100%;
 
-    .content-block {
+    &-block {
         @include flex (column);
         width: 100%;
+        padding: 30px 0 ;
         
 
         &__menu {
@@ -239,8 +240,9 @@ header {
         }
     }
 
-    .content-icons {
-        @include flex (column);
+    &-icons {
+        @include flex (row);
+        width: 100%;
         padding-top: 30px;
 
         @import 'inheader';
@@ -274,10 +276,12 @@ header {
 
                     &-header {
                         @include font-bold(22px, normal, $color-active_regular);
+                        text-wrap: wrap;
                     }
 
                     &-p {
                         @include font-regular (16px, 26px, white);
+                        text-wrap: wrap;
                     }
 
             }
@@ -348,7 +352,7 @@ header {
     
     width: 100%;
     
-    padding: 38px 30px 30px;
+    padding: 30px 30px 60px;
 
     &__img {
         width: 100%;
@@ -425,7 +429,7 @@ header {
 
 .partners {
     @include flex (column);
-    padding-top: 60px;
+    
 
     &__slogan {
         display: inline-block;
@@ -439,11 +443,13 @@ header {
     }
 
     &__block {
-        display: block;
+        @include flex (row);
         width: 100%;
 
         &--hillel {
             @include flex (row);
+            width: 217px;
+            flex-grow: 2;
             height: 120px;
             justify-content: center;
             align-items: center;
@@ -453,6 +459,8 @@ header {
 
         &--wannabiz {
             @include flex (row);
+            width: 217px;
+            flex-grow: 2;
             height: 120px;
             justify-content: center;
             align-items: center;
@@ -462,6 +470,8 @@ header {
 
         &--tapgerine {
             @include flex (row);
+            width: 217px;
+            flex-grow: 2;
             height: 120px;
             justify-content: center;
             align-items: center;
@@ -471,6 +481,8 @@ header {
 
         &--3dlook {
             @include flex (row);
+            width: 217px;
+            flex-grow: 2;
             height: 120px;
             justify-content: center;
             align-items: center;
@@ -480,6 +492,8 @@ header {
 
         &--orangear {
             @include flex (row);
+            width: 217px;
+            flex-grow: 2;
             height: 120px;
             justify-content: center;
             align-items: center;
@@ -489,12 +503,46 @@ header {
 
         &--adtelligent {
             @include flex (row);
+            width: 217px;
+            flex-grow: 2;
             height: 120px;
             justify-content: center;
             align-items: center;
             background-color:  #E2E2E4;
 
         }
+
+        &--clickky {
+            display: none;
+
+        }
+
+        &--ecolease {
+            display: none;
+
+        }
+
+        &--infratek {
+            display: none;
+
+        }
+
+        &--siti-park {
+            display: none;
+
+        }
+
+        &--art-print{
+           display: none;
+
+        }
+
+        &--ultimate-card {
+            display: none;
+
+        }
+
+        
     }
     
 }
@@ -507,13 +555,17 @@ header {
     @import 'inheader';
 
     &__element {
-        @include flex(column);
+        @include flex(row);
+        justify-content: space-between;
         gap: 30px;
         padding-top: 30px;
 
         .publications-cart {
-            @include flex(row, wrap);
-            gap: 30px;
+            @include flex(column, wrap);
+            gap: 0;
+            max-width: 300px;
+            flex-grow: 2;
+            gap: 0;
 
             &__img1 {
                 width: 100%;
@@ -544,8 +596,10 @@ header {
 
             &__content {
                 @include flex(column);
+                
+                flex-grow: 2;
                 padding: 30px;
-                gap: 15px;
+                gap: 0;
 
                 & > h2 {
                     @include font-bold (16px, normal, $color-active_regular);
@@ -573,6 +627,7 @@ header {
 footer {
 
     @include flex (column);
+    justify-content: space-between;
     width: 100%;
     gap: 30px;
     padding: 30px;
@@ -588,6 +643,19 @@ footer {
         display: none;
     }
 
+    .footer-line {
+        height: 2px;
+        background-color: $color-grey_separator;
+    }
+
+    .footer-content {
+        @include flex (column);
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px 0;
+        
+    }
+
     .footer-contact {
         @include flex (column);
         gap: 20px;
@@ -598,9 +666,9 @@ footer {
             align-items: center;
             text-align: center;
             gap: 10px;
-            padding-top: 30px;
             
-            border-top: 2px solid $color-grey_separator;
+            
+            
 
             & > a {
                 @include font-bold (12px, normal, $color-active_regular);
@@ -736,6 +804,8 @@ footer {
 
     .main {
 
+        padding: 0 60px 80px;
+
         .banner {
             height: 893.277px;
             padding-top: 489px;
@@ -749,9 +819,120 @@ footer {
                 padding: 0 30px;
             }
         }
+
+        .content {
+
+            &-block {
+
+                padding: 60px 0;
+
+                &__menu {
+                    padding-bottom: 60px;
+                }
+
+                &__name + &__name--active {
+                    font-size: 38px;
+                }
+
+                &__text {
+                    padding-top: 60px;
+
+                    & > h2 {
+                        font-size: 30px;
+                    }
+                }
+            }
+
+            &-icons {
+                justify-content: space-between;
+                gap: 10px;
+
+                .icon-item {
+                    width: 100%;
+                    max-width: 294px;
+                    
+                }
+                
+            }
+        }
     }
     
+    .photo-block {
+        padding: 60px;
+    }
     
+    .partners {
+
+        &__block {
+             &--clickky {
+                @include flex (row);
+                width: 217px;
+                flex-grow: 2;
+                height: 120px;
+                justify-content: center;
+                align-items: center;
+                background-color:  #C71C36;
+
+            }
+
+            &--ecolease {
+                @include flex (row);
+                width: 217px;
+                flex-grow: 2;
+                height: 120px;
+                justify-content: center;
+                align-items: center;
+                background-color:  #DCF3F9;
+
+            }
+
+            &--infratek {
+                @include flex (row);
+                width: 217px;
+                flex-grow: 2;
+                height: 120px;
+                justify-content: center;
+                align-items: center;
+                background-color:  #EAEAEA;
+
+            }
+
+            &--siti-park {
+                @include flex (row);
+                width: 217px;
+                flex-grow: 2;
+                height: 120px;
+                justify-content: center;
+                align-items: center;
+                background-color:  #282240;
+
+            }
+
+            &--art-print{
+                @include flex (row);
+                width: 217px;
+                flex-grow: 2;
+                height: 120px;
+                justify-content: center;
+                align-items: center;
+                background-color:  #1D4568;
+
+            }
+
+            &--ultimate-card {
+                @include flex (row);
+                width: 217px;
+                flex-grow: 2;
+                height: 120px;
+                justify-content: center;
+                align-items: center;
+                background-color:  #000000;
+
+            }
+        }
+
+       
+    }
     
 
     

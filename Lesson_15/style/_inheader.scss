@@ -25,4 +25,13 @@
         background-clip: text;
         word-break: break-word;
     }
+
+    @media  screen and (min-width: 375px) {
+        
+        .nameheader {
+            font-size: 38px;
+        }
+        
+        
+    }
 }
