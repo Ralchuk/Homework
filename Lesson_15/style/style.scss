@@ -563,7 +563,7 @@ header {
         .publications-cart {
             @include flex(column, wrap);
             gap: 0;
-            max-width: 300px;
+            width: 100%;
             flex-grow: 2;
             gap: 0;
 
@@ -597,7 +597,7 @@ header {
             &__content {
                 @include flex(column);
                 
-                flex-grow: 2;
+                
                 padding: 30px;
                 gap: 0;
 
@@ -932,6 +932,31 @@ footer {
         }
 
        
+    }
+
+    .publications {
+
+        &__element {
+            .publications-cart {
+                width: 300px;
+                flex-grow: 2;
+
+            }
+        }
+    }
+
+    footer {
+        .footer-content {
+            @include flex (row);
+            align-items: start;
+
+            .footer-contact {
+                
+                &__location {
+                    @include flex (row);
+                }
+            }
+        }
     }
     
 
