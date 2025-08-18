@@ -7,6 +7,7 @@
     @include flex (column);
     width: 100%;
     padding-top: 30px;
+    gap: 30px;
 
     @import '../inheader';
 
@@ -58,6 +59,7 @@
     .icons {
 
         justify-content: space-between;
+        gap: 60px;
         
         &__wrapping {
             gap: 60px;

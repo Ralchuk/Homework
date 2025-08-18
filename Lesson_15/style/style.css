@@ -517,6 +517,7 @@ header .menu__burger:hover {
   flex-wrap: wrap;
   width: 100%;
   padding-top: 30px;
+  gap: 30px;
 }
 .content .icons .inheader {
   display: flex;
@@ -621,6 +622,7 @@ header .menu__burger:hover {
 @media screen and (min-width: 375px) {
   .content .icons {
     justify-content: space-between;
+    gap: 60px;
   }
   .content .icons__wrapping {
     gap: 60px;
@@ -815,6 +817,7 @@ header .menu__burger:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding-top: 60px;
 }
 .partners__slogan {
   display: inline-block;

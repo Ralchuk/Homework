@@ -1,0 +1,336 @@
+@import '../reset',
+        '../variables',
+        '../mixin',
+        '../fonts';
+
+.partners {
+    @include flex (column);
+    
+
+    &__slogan {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        
+        padding-bottom: 30px;
+        @include font-bold (14px, normal, $color-main);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    &__block {
+        @include flex (row);
+        width: 100%;
+
+        &--hillel {
+            @include flex (row);
+            width: 217px;
+            flex-grow: 2;
+            height: 120px;
+            justify-content: center;
+            align-items: center;
+            background-color:  #1C4280;
+
+        }
+
+        &--wannabiz {
+            @include flex (row);
+            width: 217px;
+            flex-grow: 2;
+            height: 120px;
+            justify-content: center;
+            align-items: center;
+            background-color:  #143646;
+
+        }
+
+        &--tapgerine {
+            @include flex (row);
+            width: 217px;
+            flex-grow: 2;
+            height: 120px;
+            justify-content: center;
+            align-items: center;
+            background-color:  #F48B30;
+
+        }
+
+        &--3dlook {
+            @include flex (row);
+            width: 217px;
+            flex-grow: 2;
+            height: 120px;
+            justify-content: center;
+            align-items: center;
+            background-color:  #9E4DC3;
+
+        }
+
+        &--orangear {
+            @include flex (row);
+            width: 217px;
+            flex-grow: 2;
+            height: 120px;
+            justify-content: center;
+            align-items: center;
+            background-color:  #F48B30;
+
+        }
+
+        &--adtelligent {
+            @include flex (row);
+            width: 217px;
+            flex-grow: 2;
+            height: 120px;
+            justify-content: center;
+            align-items: center;
+            background-color:  #E2E2E4;
+
+        }
+
+        &--clickky {
+            display: none;
+
+        }
+
+        &--ecolease {
+            display: none;
+
+        }
+
+        &--infratek {
+            display: none;
+
+        }
+
+        &--siti-park {
+            display: none;
+
+        }
+
+        &--art-print{
+           display: none;
+
+        }
+
+        &--ultimate-card {
+            display: none;
+
+        }
+
+        
+    }
+    
+}
+
+@media screen and (min-width:375px) {
+
+    .partners {
+
+        &__block {
+             &--clickky {
+                @include flex (row);
+                width: 217px;
+                flex-grow: 2;
+                height: 120px;
+                justify-content: center;
+                align-items: center;
+                background-color:  #C71C36;
+
+            }
+
+            &--ecolease {
+                @include flex (row);
+                width: 217px;
+                flex-grow: 2;
+                height: 120px;
+                justify-content: center;
+                align-items: center;
+                background-color:  #DCF3F9;
+
+            }
+
+            &--infratek {
+                @include flex (row);
+                width: 217px;
+                flex-grow: 2;
+                height: 120px;
+                justify-content: center;
+                align-items: center;
+                background-color:  #EAEAEA;
+
+            }
+
+            &--siti-park {
+                @include flex (row);
+                width: 217px;
+                flex-grow: 2;
+                height: 120px;
+                justify-content: center;
+                align-items: center;
+                background-color:  #282240;
+
+            }
+
+            &--art-print{
+                @include flex (row);
+                width: 217px;
+                flex-grow: 2;
+                height: 120px;
+                justify-content: center;
+                align-items: center;
+                background-color:  #1D4568;
+
+            }
+
+            &--ultimate-card {
+                @include flex (row);
+                width: 217px;
+                flex-grow: 2;
+                height: 120px;
+                justify-content: center;
+                align-items: center;
+                background-color:  #000000;
+
+            }
+        }
+
+       
+    }
+}
+
+@media screen and (min-width:1024px) {
+    
+     .partners {
+
+            &__block {
+
+                &--hillel {
+                    width: 256px;
+                }
+
+                &--wannabiz {
+                   width: 256px;
+
+                }
+
+                &--tapgerine {
+                   width: 256px;
+                }
+
+                &--3dlook {
+                   width: 256px;
+                }
+
+                &--orangear {
+                    width: 256px;
+                }
+
+                &--adtelligent {
+                  width: 256px;
+                }
+
+                &--clickky {
+                    width: 256px;
+                }
+
+                &--ecolease {
+                    width: 256px;
+
+                }
+
+                &--infratek {
+                    width: 256px;
+
+                }
+
+                &--siti-park {
+                    width: 256px;
+
+                }
+
+                &--art-print{
+                width: 256px;
+                }
+
+                &--ultimate-card {
+                    width: 256px;
+
+                }
+        }
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+    .partners {
+
+            &__block {
+
+                &--hillel {
+                    width: 360px;
+                }
+
+                &--wannabiz {
+                    width: 360px;
+
+                }
+
+                &--tapgerine {
+                   width: 360px;
+                }
+
+                &--3dlook {
+                   width: 360px;
+                }
+
+                &--orangear {
+                    width: 360px;
+                }
+
+                &--adtelligent {
+                  width: 360px;
+                }
+
+                &--clickky {
+                    width: 360px;
+                }
+
+                &--ecolease {
+                    width: 360px;
+
+                }
+
+                &--infratek {
+                    width: 360px;
+
+                }
+
+                &--siti-park {
+                    width: 360px;
+
+                }
+
+                &--art-print{
+                width: 360px;
+                }
+
+                &--ultimate-card {
+                    width: 360px;
+
+                }
+        }
+    }
+    
+
+}
+
+@media screen and (min-width:1920px) {
+
+   
+
+    .partners {
+        padding: 0 100px;
+        margin-bottom: 60px;
+    }
+}

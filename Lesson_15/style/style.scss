@@ -322,8 +322,11 @@
 
 }
 
+
+
 .partners {
     @include flex (column);
+    padding-top: 60px;
     
 
     &__slogan {
