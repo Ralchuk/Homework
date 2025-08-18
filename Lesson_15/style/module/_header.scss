@@ -230,17 +230,31 @@ header {
                     &-item {
 
                         & > a {
+                            display: inline-block;
                             text-decoration: none;
                             @include font-bold(16px,normal, white);
-                            padding-bottom: 3px;
+                            padding-bottom: 5px;
                         }
                     }
 
                     &-item:hover {
 
                        & > a {
+                            display: inline-block;
                             text-decoration: none;
                             @include font-bold(16px,normal, $color-accent);
+                            padding-bottom: 5px;
+                            border-bottom: 2px solid $color-accent;
+                        }
+                    }
+
+                    &-item--active {
+
+                       & > a {
+                            display: inline-block;
+                            text-decoration: none;
+                            @include font-bold(16px,normal, $color-accent);
+                            padding-bottom: 5px;
                             border-bottom: 2px solid $color-accent;
                         }
                     }

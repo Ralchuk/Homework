@@ -273,6 +273,7 @@ header .menu__burger:hover {
     gap: 15px;
   }
   header .menu .logo__nav-item > a {
+    display: inline-block;
     text-decoration: none;
     font-family: "Montserrat";
     src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
@@ -281,9 +282,10 @@ header .menu__burger:hover {
     font-size: 16px;
     line-height: normal;
     color: white;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
   }
   header .menu .logo__nav-item:hover > a {
+    display: inline-block;
     text-decoration: none;
     font-family: "Montserrat";
     src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
@@ -292,6 +294,20 @@ header .menu__burger:hover {
     font-size: 16px;
     line-height: normal;
     color: #F0145A;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #F0145A;
+  }
+  header .menu .logo__nav-item--active > a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: normal;
+    color: #F0145A;
+    padding-bottom: 5px;
     border-bottom: 2px solid #F0145A;
   }
   header .menu__burger {
