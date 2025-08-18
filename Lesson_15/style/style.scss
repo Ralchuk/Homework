@@ -8,17 +8,10 @@
 
 @import './module/header';
 
-
-
-
-
 .main {
     @include flex(column);
     width: 100%;
     position: relative;
-    
-    
-    
 }
 
 
@@ -322,8 +315,6 @@
 
 }
 
-
-
 .partners {
     @include flex (column);
     padding-top: 60px;
@@ -525,7 +516,6 @@
     }
 
 }
-
 
 @import './module/footer';
 
