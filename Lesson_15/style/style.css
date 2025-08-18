@@ -213,6 +213,32 @@ header .menu .logo__nav {
   display: inline-block;
   max-width: 200px;
 }
+.banner__svg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+}
+.banner__svg--show {
+  display: block;
+}
+.banner__svg--hidden {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+.banner__svg:hover > .banner__svg--show {
+  display: none;
+}
+.banner__svg:hover > .banner__svg--hidden {
+  display: block;
+}
 
 .content {
   display: flex;

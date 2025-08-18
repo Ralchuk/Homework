@@ -3,6 +3,8 @@
         'mixin',
         'fonts';
 
+
+        
 header {
     @include flex(column);
     width: 100%;
@@ -183,6 +185,38 @@ header {
         // padding: 0 30px;
         max-width: 200px;
     }
+
+    &__svg {
+        @include flex;
+        position: relative;
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+
+        &--show {
+            display: block;
+        }
+
+        &--hidden {
+            display: none;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.5s;
+        }
+    }
+
+    &__svg:hover > &__svg--show{
+        display: none;
+    }
+
+    &__svg:hover > &__svg--hidden{
+        display: block;
+    } 
+    
+    
+    
     
     
 }
