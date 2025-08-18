@@ -1,0 +1,99 @@
+@import '../reset',
+        '../variables',
+        '../mixin',
+        '../fonts';
+
+.icons {
+    @include flex (column);
+    width: 100%;
+    padding-top: 30px;
+
+    @import '../inheader';
+
+    &__wrapping {
+        @include flex (row);
+        justify-content: space-between;
+    }
+
+    .icon-item {
+        @include flex (column);
+        max-width: 260px;
+        align-items: start;
+        padding-top: 30px;
+        gap: 30px;
+
+        &__img {
+            width: 92px;
+            height: 92px; 
+            background-color: white;
+            border-radius: 24px;
+            position: relative;
+
+            & > img{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+
+        &__txt {
+                @include flex (column);
+                gap: 15px;
+
+                &-header {
+                    @include font-bold(22px, normal, $color-active_regular);
+                    text-wrap: wrap;
+                }
+
+                &-p {
+                    @include font-regular (16px, 26px, white);
+                    text-wrap: wrap;
+                }
+        }
+    }
+} 
+
+@media screen and (min-width:375px) {
+    .icons {
+
+        justify-content: space-between;
+        
+        &__wrapping {
+            gap: 60px;
+        }
+
+        .icon-item {
+            width: 100%;
+            max-width: 294px;
+            
+        }
+        
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .icons {
+
+        &__wrapping {
+
+            .icon-item {
+                max-width:  400px;
+                
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .icons {
+
+        &__wrapping {
+
+            .icon-item {
+                max-width:  493px;
+                
+            }
+        }
+    }
+}

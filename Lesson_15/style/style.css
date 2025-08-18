@@ -484,21 +484,54 @@ header .menu__burger:hover {
   line-height: 30px;
   color: white;
 }
-.content-icons {
+.content * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-style: normal;
+  box-sizing: border-box;
+  list-style: none;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+.content .icons {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
   padding-top: 30px;
 }
-.content-icons .inheader {
+.content .icons .inheader {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: start;
   gap: 10px;
 }
-.content-icons .inheader .subheader {
+.content .icons .inheader .subheader {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -506,7 +539,7 @@ header .menu__burger:hover {
   align-items: center;
   gap: 2px;
 }
-.content-icons .inheader .subheader > h4 {
+.content .icons .inheader .subheader > h4 {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
   font-weight: 700;
@@ -517,7 +550,7 @@ header .menu__burger:hover {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-.content-icons .inheader .nameheader {
+.content .icons .inheader .nameheader {
   display: inline-block;
   font-family: "Montserrat";
   src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
@@ -533,17 +566,17 @@ header .menu__burger:hover {
   word-break: break-word;
 }
 @media screen and (min-width: 375px) {
-  .content-icons .inheader .nameheader {
+  .content .icons .inheader .nameheader {
     font-size: 38px;
   }
 }
-.content-icons__wrapping {
+.content .icons__wrapping {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.content-icons .icon-item {
+.content .icons .icon-item {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -552,26 +585,26 @@ header .menu__burger:hover {
   padding-top: 30px;
   gap: 30px;
 }
-.content-icons .icon-item__img {
+.content .icons .icon-item__img {
   width: 92px;
   height: 92px;
   background-color: white;
   border-radius: 24px;
   position: relative;
 }
-.content-icons .icon-item__img > img {
+.content .icons .icon-item__img > img {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.content-icons .icon-item__txt {
+.content .icons .icon-item__txt {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   gap: 15px;
 }
-.content-icons .icon-item__txt-header {
+.content .icons .icon-item__txt-header {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
   font-weight: 700;
@@ -581,7 +614,7 @@ header .menu__burger:hover {
   color: #24A3FF;
   text-wrap: wrap;
 }
-.content-icons .icon-item__txt-p {
+.content .icons .icon-item__txt-p {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
   font-weight: 400;
@@ -590,6 +623,28 @@ header .menu__burger:hover {
   line-height: 26px;
   color: white;
   text-wrap: wrap;
+}
+@media screen and (min-width: 375px) {
+  .content .icons {
+    justify-content: space-between;
+  }
+  .content .icons__wrapping {
+    gap: 60px;
+  }
+  .content .icons .icon-item {
+    width: 100%;
+    max-width: 294px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content .icons__wrapping .icon-item {
+    max-width: 400px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .content .icons__wrapping .icon-item {
+    max-width: 493px;
+  }
 }
 
 .bg {
@@ -1235,16 +1290,6 @@ footer .footer-article {
   .main .content-block__text > h2 {
     font-size: 30px;
   }
-  .main .content-icons {
-    justify-content: space-between;
-  }
-  .main .content-icons__wrapping {
-    gap: 60px;
-  }
-  .main .content-icons .icon-item {
-    width: 100%;
-    max-width: 294px;
-  }
   .photo {
     padding: 60px;
   }
@@ -1374,9 +1419,6 @@ footer .footer-article {
   }
 }
 @media screen and (min-width: 1024px) {
-  .main .content-icons__wrapping .icon-item {
-    max-width: 400px;
-  }
   .partners__block--hillel {
     width: 256px;
   }
@@ -1461,9 +1503,6 @@ footer .footer-article {
     width: 872px;
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='477' height='575' viewBox='0 0 477 575' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M55.7736 0.53125H289.779C357.001 0.53125 413.103 29.2075 447.986 77.6654C482.843 126.126 483.918 206.984 463.591 270.241L437.603 350.999C426.75 384.719 375.932 544.19 366.021 574.999H238.361C238.361 574.999 240.313 576.709 346.956 245.212C356.372 215.958 361.748 168.473 346.956 147.936C332.189 127.403 307.273 115.25 274.304 115.25H83.0245C45.4661 115.25 12.1824 139.677 0.563477 175.757L55.7736 0.53125Z' fill='url(%23paint0_linear_173680_1626)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_173680_1626' x1='402.095' y1='574.998' x2='85.0486' y2='221.678' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F0145A'/%3E%3Cstop offset='1' stop-color='%23693264'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E") bottom left 251.56px, url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='445' height='1000' viewBox='0 0 445 1000' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M124.336 1000H-0.462402C105.755 666.469 213.178 333.33 320.023 0H444.65C444.125 1.66705 443.593 3.33854 443.053 5.01434C270.17 536.959 329.143 357.318 124.336 1000Z' fill='%23F0145A'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
-  }
-  .main .content-icons__wrapping .icon-item {
-    max-width: 493px;
   }
   .partners {
     padding: 0 100px;
