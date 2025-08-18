@@ -10,6 +10,8 @@
 
 
 
+
+
 .main {
     @include flex(column);
     width: 100%;
@@ -28,9 +30,11 @@
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    padding-top: 231px;
+    
     padding-bottom: 30px;
-    overflow: hidden;
+    // overflow: hidden;
+    overflow-x: hidden;
+    
     
     
 
@@ -39,7 +43,7 @@
         height: 100%;
         width: 523px;
         left: 0;
-        top: 0;
+        bottom: 0;
         
         z-index: -1;
         background-origin: padding-box;
@@ -535,7 +539,7 @@
         .banner {
             
             height: 1024px;
-            padding-top: 489px;
+            
             
 
             & > .bg {
@@ -689,7 +693,7 @@
         .banner {
             
             height: 768px;
-            padding-top: 360px;
+            
             
             & > .bg {
                 
@@ -891,7 +895,7 @@
         .banner {
 
             height: 1000px;
-            padding-top: 472px;
+            
 
             & > .bg {
 
