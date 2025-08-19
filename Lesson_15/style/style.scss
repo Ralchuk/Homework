@@ -94,7 +94,7 @@
     
     width: 100%;
 
-    &-block {
+    .content-block {
         @include flex (column);
         width: 100%;
         
@@ -116,6 +116,7 @@
 
         &__item {
             display: inline-block;
+            
             text-wrap: nowrap;
 
             input {
@@ -148,6 +149,7 @@
         &__text {
             @include flex (column);
             padding-top: 30px;
+            
             gap: 30px;
             
             & > h2 {
@@ -558,7 +560,7 @@
         .content {
             padding: 60px 60px 80px;
 
-            &-block {
+            .content-block {
 
                 
 
@@ -571,6 +573,7 @@
                 }
 
                 &__text {
+                   
                     padding-top: 60px;
 
                     & > h2 {
@@ -706,7 +709,7 @@
 
         }
         .content {
-            &-block {
+            .content-block {
                 @include flex (row, nowrap);
                 width: 100%;
                 align-content: center;
@@ -714,19 +717,23 @@
 
                 &__menu {
                     @include flex (column, nowrap);
-                    width: 100%;
+                    width: fit-content;
                     overflow: visible;
-                    padding-bottom: 15px;
-                    padding-top: 15px;
+                    // padding-bottom: 15px;
+                    // padding-top: 15px;
                     align-items: end;
                     padding-right: 60px;
+                    padding-bottom: 0;
                     flex-grow: 2;
-                    justify-content: space-between;
+                    justify-content: center;
+                    gap: 30px;
                     border-bottom: none;
                     border-right: 4px solid  rgba(255, 255, 255, 0.30);
                 }
 
                 &__text {
+                     @include flex(column);
+                    justify-content: center;
                     padding-top: 0;
                     padding-left: 60px;
                 }
@@ -819,7 +826,12 @@
 }
 
 @media screen and (min-width:1440px) {
-
+    .main {
+        .content {
+            .content-block {
+               padding: 0 180px;
+            }
+        }
     .partners {
 
             &__block {
@@ -878,8 +890,7 @@
                 }
         }
     }
-    
-
+}
 }
 
 @media screen and (min-width:1920px) {
