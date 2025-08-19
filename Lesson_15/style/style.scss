@@ -339,68 +339,86 @@
 
         &--hillel {
             @include flex (row);
-            width: 217px;
-            flex-grow: 2;
+            
+            width: 100%;
+            
             height: 120px;
             justify-content: center;
             align-items: center;
             background-color:  #1C4280;
-
+            background-image: url(./images/index/partners/7478508add86647f9076e594b2297edc8c32b9bd.png);
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         &--wannabiz {
             @include flex (row);
-            width: 217px;
-            flex-grow: 2;
+            
+            width: 100%;
+            
             height: 120px;
             justify-content: center;
             align-items: center;
             background-color:  #143646;
-
+            background-image: url(./images/index/partners/wannabiz.png);
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         &--tapgerine {
             @include flex (row);
-            width: 217px;
-            flex-grow: 2;
+            
+            width: 100%;
+            
             height: 120px;
             justify-content: center;
             align-items: center;
             background-color:  #F48B30;
-
+            background-image: url(./images/index/partners/tapgerine.png);
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         &--3dlook {
             @include flex (row);
-            width: 217px;
-            flex-grow: 2;
+            
+            width: 100%;
+            
             height: 120px;
             justify-content: center;
             align-items: center;
             background-color:  #9E4DC3;
-
+            background-image: url(./images/index/partners/3dlook.png);
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         &--orangear {
             @include flex (row);
-            width: 217px;
-            flex-grow: 2;
+            
+            width: 100%;
+            
             height: 120px;
             justify-content: center;
             align-items: center;
             background-color:  #F48B30;
-
+            background-image: url(./images/index/partners/orangear.png);
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         &--adtelligent {
             @include flex (row);
-            width: 217px;
-            flex-grow: 2;
+            
+            width: 100%;
+            
             height: 120px;
             justify-content: center;
             align-items: center;
             background-color:  #E2E2E4;
-
+            background-image: url(./images/index/partners/adtelligent.png);
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         &--clickky {
@@ -592,70 +610,174 @@
     .partners {
 
         &__block {
+
+            
+            &--hillel {
+                @include flex (row);
+                
+                width: 50%;
+                
+                height: 120px;
+                justify-content: center;
+                align-items: center;
+                background-color:  #1C4280;
+                background-image: url(./images/index/partners/7478508add86647f9076e594b2297edc8c32b9bd.png);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &--wannabiz {
+                @include flex (row);
+                
+                width: 50%;
+                
+                height: 120px;
+                justify-content: center;
+                align-items: center;
+                background-color:  #143646;
+                background-image: url(./images/index/partners/wannabiz.png);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &--tapgerine {
+                @include flex (row);
+                
+                width: 50%;
+                
+                height: 120px;
+                justify-content: center;
+                align-items: center;
+                background-color:  #F48B30;
+                background-image: url(./images/index/partners/tapgerine.png);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &--3dlook {
+                @include flex (row);
+                
+                width: 50%;
+                
+                height: 120px;
+                justify-content: center;
+                align-items: center;
+                background-color:  #9E4DC3;
+                background-image: url(./images/index/partners/3dlook.png);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &--orangear {
+                @include flex (row);
+                
+                width: 50%;
+                
+                height: 120px;
+                justify-content: center;
+                align-items: center;
+                background-color:  #F48B30;
+                background-image: url(./images/index/partners/orangear.png);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &--adtelligent {
+                @include flex (row);
+                
+                width: 50%;
+                
+                height: 120px;
+                justify-content: center;
+                align-items: center;
+                background-color:  #E2E2E4;
+                background-image: url(./images/index/partners/adtelligent.png);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
              &--clickky {
                 @include flex (row);
-                width: 217px;
                 flex-grow: 2;
+                width: 50%;
+                
                 height: 120px;
                 justify-content: center;
                 align-items: center;
                 background-color:  #C71C36;
-
+                background-image: url(./images/index/partners/Clickky.png);
+                background-repeat: no-repeat;
+                background-position: center;
             }
 
             &--ecolease {
                 @include flex (row);
-                width: 217px;
                 flex-grow: 2;
+                width: 50%;
+                
                 height: 120px;
                 justify-content: center;
                 align-items: center;
                 background-color:  #DCF3F9;
-
+                background-image: url(./images/index/partners/ecolease.png);
+                background-repeat: no-repeat;
+                background-position: center;
             }
 
             &--infratek {
                 @include flex (row);
-                width: 217px;
                 flex-grow: 2;
+                width: 50%;
+                
                 height: 120px;
                 justify-content: center;
                 align-items: center;
                 background-color:  #EAEAEA;
-
+                background-image: url(./images/index/partners/infratek.png);
+                background-repeat: no-repeat;
+                background-position: center;
             }
 
             &--siti-park {
                 @include flex (row);
-                width: 217px;
                 flex-grow: 2;
+                width: 50%;
+                
                 height: 120px;
                 justify-content: center;
                 align-items: center;
                 background-color:  #282240;
-
+                background-image: url(./images/index/partners/siti-park.png);
+                background-repeat: no-repeat;
+                background-position: center;
             }
 
             &--art-print{
                 @include flex (row);
-                width: 217px;
                 flex-grow: 2;
+                width: 50%;
+                
                 height: 120px;
                 justify-content: center;
                 align-items: center;
                 background-color:  #1D4568;
-
+                background-image: url(./images/index/partners/art-print.png);
+                background-repeat: no-repeat;
+                background-position: center;
             }
 
             &--ultimate-card {
                 @include flex (row);
-                width: 217px;
                 flex-grow: 2;
+                width: 50%;
+                
                 height: 120px;
                 justify-content: center;
                 align-items: center;
                 background-color:  #000000;
-
+                background-image: url(./images/index/partners/ultimate-card.png);
+                background-repeat: no-repeat;
+                background-position: center;
             }
         }
 
@@ -757,73 +879,131 @@
             }
         }
     }
-
-}
-
-@media screen and (min-width:1024px) {
-    
      .partners {
 
-            &__block {
+         &__block {
 
-                &--hillel {
-                    width: 256px;
-                }
+            
+            &--hillel {
+                max-width: 33%;
+            }
 
-                &--wannabiz {
-                   width: 256px;
+            &--wannabiz {
+                max-width: 33%;
+            }
 
-                }
+            &--tapgerine {
+                max-width: 33%;
+                
+            }
 
-                &--tapgerine {
-                   width: 256px;
-                }
+            &--3dlook {
+               max-width: 33%;
+            }
 
-                &--3dlook {
-                   width: 256px;
-                }
+            &--orangear {
+               max-width: 33%;
+            }
 
-                &--orangear {
-                    width: 256px;
-                }
+            &--adtelligent {
+               max-width: 33%;
+            }
 
-                &--adtelligent {
-                  width: 256px;
-                }
+             &--clickky {
+               max-width: 33%;
+            }
 
-                &--clickky {
-                    width: 256px;
-                }
+            &--ecolease {
+                max-width: 33%;
+            }    
 
-                &--ecolease {
-                    width: 256px;
+            &--infratek {
+                max-width: 33%;
+            }
 
-                }
+            &--siti-park {
+                max-width: 33%;
+            }
 
-                &--infratek {
-                    width: 256px;
+            &--art-print{
+               max-width: 33%;
+            }
 
-                }
-
-                &--siti-park {
-                    width: 256px;
-
-                }
-
-                &--art-print{
-                width: 256px;
-                }
-
-                &--ultimate-card {
-                    width: 256px;
-
-                }
+            &--ultimate-card {
+                max-width: 33%;
+            }
         }
     }
     
 
     
 }
+
+
+
+@media screen and (min-width:1024px) {
+    
+     .partners {
+
+         &__block {
+
+            
+            &--hillel {
+                width: 25%;
+            }
+
+            &--wannabiz {
+                width: 25%;
+            }
+
+            &--tapgerine {
+                width: 25%;
+                
+            }
+
+            &--3dlook {
+               width: 25%;
+            }
+
+            &--orangear {
+               width: 25%;
+            }
+
+            &--adtelligent {
+                width: 25%;
+            }
+
+             &--clickky {
+               width: 25%;
+            }
+
+            &--ecolease {
+            width: 25%;
+            }
+
+            &--infratek {
+                width: 25%;
+            }
+
+            &--siti-park {
+                width: 25%;
+            }
+
+            &--art-print{
+               width: 25%;
+            }
+
+            &--ultimate-card {
+                width: 25%;
+            }
+        }
+    }
+    
+
+    
+}
+
+
 
 @media screen and (min-width:1440px) {
     .main {

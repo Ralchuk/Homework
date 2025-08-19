@@ -860,67 +860,79 @@ header .menu__burger:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 217px;
-  flex-grow: 2;
+  width: 100%;
   height: 120px;
   justify-content: center;
   align-items: center;
   background-color: #1C4280;
+  background-image: url(./images/index/partners/7478508add86647f9076e594b2297edc8c32b9bd.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .partners__block--wannabiz {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 217px;
-  flex-grow: 2;
+  width: 100%;
   height: 120px;
   justify-content: center;
   align-items: center;
   background-color: #143646;
+  background-image: url(./images/index/partners/wannabiz.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .partners__block--tapgerine {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 217px;
-  flex-grow: 2;
+  width: 100%;
   height: 120px;
   justify-content: center;
   align-items: center;
   background-color: #F48B30;
+  background-image: url(./images/index/partners/tapgerine.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .partners__block--3dlook {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 217px;
-  flex-grow: 2;
+  width: 100%;
   height: 120px;
   justify-content: center;
   align-items: center;
   background-color: #9E4DC3;
+  background-image: url(./images/index/partners/3dlook.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .partners__block--orangear {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 217px;
-  flex-grow: 2;
+  width: 100%;
   height: 120px;
   justify-content: center;
   align-items: center;
   background-color: #F48B30;
+  background-image: url(./images/index/partners/orangear.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .partners__block--adtelligent {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 217px;
-  flex-grow: 2;
+  width: 100%;
   height: 120px;
   justify-content: center;
   align-items: center;
   background-color: #E2E2E4;
+  background-image: url(./images/index/partners/adtelligent.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .partners__block--clickky {
   display: none;
@@ -1305,71 +1317,167 @@ footer .footer-article {
   .photo {
     padding: 60px;
   }
+  .partners__block--hillel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C4280;
+    background-image: url(./images/index/partners/7478508add86647f9076e594b2297edc8c32b9bd.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .partners__block--wannabiz {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: #143646;
+    background-image: url(./images/index/partners/wannabiz.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .partners__block--tapgerine {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F48B30;
+    background-image: url(./images/index/partners/tapgerine.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .partners__block--3dlook {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: #9E4DC3;
+    background-image: url(./images/index/partners/3dlook.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .partners__block--orangear {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F48B30;
+    background-image: url(./images/index/partners/orangear.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .partners__block--adtelligent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2E2E4;
+    background-image: url(./images/index/partners/adtelligent.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   .partners__block--clickky {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 217px;
     flex-grow: 2;
+    width: 50%;
     height: 120px;
     justify-content: center;
     align-items: center;
     background-color: #C71C36;
+    background-image: url(./images/index/partners/Clickky.png);
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .partners__block--ecolease {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 217px;
     flex-grow: 2;
+    width: 50%;
     height: 120px;
     justify-content: center;
     align-items: center;
     background-color: #DCF3F9;
+    background-image: url(./images/index/partners/ecolease.png);
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .partners__block--infratek {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 217px;
     flex-grow: 2;
+    width: 50%;
     height: 120px;
     justify-content: center;
     align-items: center;
     background-color: #EAEAEA;
+    background-image: url(./images/index/partners/infratek.png);
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .partners__block--siti-park {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 217px;
     flex-grow: 2;
+    width: 50%;
     height: 120px;
     justify-content: center;
     align-items: center;
     background-color: #282240;
+    background-image: url(./images/index/partners/siti-park.png);
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .partners__block--art-print {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 217px;
     flex-grow: 2;
+    width: 50%;
     height: 120px;
     justify-content: center;
     align-items: center;
     background-color: #1D4568;
+    background-image: url(./images/index/partners/art-print.png);
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .partners__block--ultimate-card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 217px;
     flex-grow: 2;
+    width: 50%;
     height: 120px;
     justify-content: center;
     align-items: center;
     background-color: #000000;
+    background-image: url(./images/index/partners/ultimate-card.png);
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .publications__element .publications-cart {
     width: 280px;
@@ -1433,43 +1541,79 @@ footer .footer-article {
   .photo .photo-block__content {
     width: 100%;
   }
+  .partners__block--hillel {
+    max-width: 33%;
+  }
+  .partners__block--wannabiz {
+    max-width: 33%;
+  }
+  .partners__block--tapgerine {
+    max-width: 33%;
+  }
+  .partners__block--3dlook {
+    max-width: 33%;
+  }
+  .partners__block--orangear {
+    max-width: 33%;
+  }
+  .partners__block--adtelligent {
+    max-width: 33%;
+  }
+  .partners__block--clickky {
+    max-width: 33%;
+  }
+  .partners__block--ecolease {
+    max-width: 33%;
+  }
+  .partners__block--infratek {
+    max-width: 33%;
+  }
+  .partners__block--siti-park {
+    max-width: 33%;
+  }
+  .partners__block--art-print {
+    max-width: 33%;
+  }
+  .partners__block--ultimate-card {
+    max-width: 33%;
+  }
 }
 @media screen and (min-width: 1024px) {
   .partners__block--hillel {
-    width: 256px;
+    width: 25%;
   }
   .partners__block--wannabiz {
-    width: 256px;
+    width: 25%;
   }
   .partners__block--tapgerine {
-    width: 256px;
+    width: 25%;
   }
   .partners__block--3dlook {
-    width: 256px;
+    width: 25%;
   }
   .partners__block--orangear {
-    width: 256px;
+    width: 25%;
   }
   .partners__block--adtelligent {
-    width: 256px;
+    width: 25%;
   }
   .partners__block--clickky {
-    width: 256px;
+    width: 25%;
   }
   .partners__block--ecolease {
-    width: 256px;
+    width: 25%;
   }
   .partners__block--infratek {
-    width: 256px;
+    width: 25%;
   }
   .partners__block--siti-park {
-    width: 256px;
+    width: 25%;
   }
   .partners__block--art-print {
-    width: 256px;
+    width: 25%;
   }
   .partners__block--ultimate-card {
-    width: 256px;
+    width: 25%;
   }
 }
 @media screen and (min-width: 1440px) {
