@@ -107,9 +107,7 @@ header {
         
 
         .logo {
-            @include flex(row);
-            align-items: start;
-            
+            @include flex (row);
             gap: 4px;
 
             &-img {
@@ -129,9 +127,8 @@ header {
             }
 
             &__slash {
-                display: block;
-                top: 0;
-                right: -17px;
+                width: 11.617px;
+                height: 26px;
                 
             }
 
@@ -141,10 +138,12 @@ header {
                 
             }
 
-            &__nav {
-                display: none;
-            }
+            
 
+        }
+
+        .menu__nav {
+            display: none;
         }
 
         &__burger {
@@ -189,42 +188,45 @@ header {
         }
 
         .menu {
-            
+            gap: 30px;
 
             .logo {
 
-                @include flex(column);
-                align-items: start;
                 padding: 15px 0 10px;
-                gap: 30px;
+                gap: 4px;
 
                 &-img {
                     @include flex(column);
                     
-                    gap: 3px;
+                    gap: 7px;
 
                     .logo__name {
                         width: 130px;
-                        height: auto;
+                        height: 46.499px;
                         
                     }
 
                     .logo__subname {
                         width: 130px;
-                        height: auto;
+                        height: 7.147px;
                         
                     }
                 }
 
-                &__slash {
-                display: none;
+                 &__slash {
+                    width: 21px;
+                    height: 47px;
+                
                 }
 
                 &__nav--mobile {
-                    display: none; 
+                    display: inline-block;
+                    @include font-regular(36px, normal, white);
+                    
                 }
+            }
 
-                &__nav {
+            .menu__nav {
                     @include  flex (row, wrap);
                     gap: 15px;
 
@@ -259,7 +261,6 @@ header {
                             border-bottom: 2px solid $color-accent;
                         }
                     }
-                }
             }
             
              &__burger {
@@ -286,14 +287,82 @@ header {
             right: 60px;
         }
         .menu {
+            align-items: end;
+
             .logo {
-                @include flex (row);
-                padding-top: 0 ;
-                width: 100%;
-                align-items: end;
-                justify-content: space-between;
+
+                padding: 15px 0 10px;
+                gap: 4px;
+
+                &-img {
+                    @include flex(column);
+                    
+                    gap: 7px;
+
+                    .logo__name {
+                        width: 130px;
+                        height: 46.499px;
+                        
+                    }
+
+                    .logo__subname {
+                        width: 130px;
+                        height: 7.147px;
+                        
+                    }
+                }
+
+                 &__slash {
+                    width: 21px;
+                    height: 47px;
+                
+                }
+
+                &__nav--mobile {
+                    display: inline-block;
+                    @include font-regular(36px, normal, white);
+                    
+                }
+            }
+
+            .menu__nav {
+                    @include  flex (row, wrap);
+                    gap: 15px;
+
+                    &-item {
+
+                        & > a {
+                            display: inline-block;
+                            text-decoration: none;
+                            @include font-bold(16px,normal, white);
+                            padding-bottom: 5px;
+                        }
+                    }
+
+                    &-item:hover {
+
+                       & > a {
+                            display: inline-block;
+                            text-decoration: none;
+                            @include font-bold(16px,normal, $color-accent);
+                            padding-bottom: 5px;
+                            border-bottom: 2px solid $color-accent;
+                        }
+                    }
+
+                    &-item--active {
+
+                       & > a {
+                            display: inline-block;
+                            text-decoration: none;
+                            @include font-bold(16px,normal, $color-accent);
+                            padding-bottom: 5px;
+                            border-bottom: 2px solid $color-accent;
+                        }
+                    }
             }
             
+             
         }
     }
 
