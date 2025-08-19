@@ -425,7 +425,7 @@ header .menu__burger:hover {
 @media screen and (min-width: 1920px) {
   header {
     max-width: 1600px;
-    margin: auto;
+    margin-inline: auto;
     padding-inline: 0;
   }
   header .contacts {
