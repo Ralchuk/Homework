@@ -70,6 +70,7 @@ header {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  position: relative;
   width: 100%;
 }
 header .contacts {
@@ -329,6 +330,21 @@ header .menu__burger:hover {
     width: 100%;
     align-items: end;
     justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1920px) {
+  header {
+    max-width: 1600px;
+    margin: auto;
+    padding-inline: 0;
+  }
+  header .contacts {
+    position: absolute;
+    max-width: 1600px;
+    margin: auto;
+    justify-content: end;
+    top: 50px;
+    right: 0;
   }
 }
 .main {
