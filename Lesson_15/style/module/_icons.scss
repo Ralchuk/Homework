@@ -60,7 +60,8 @@
 
         justify-content: space-between;
         gap: 60px;
-        
+        padding-top: 60px;
+
         &__wrapping {
             gap: 60px;
         }
@@ -89,6 +90,10 @@
 
 @media screen and (min-width:1920px) {
     .icons {
+
+        max-width: 1600px;
+        margin: auto;
+        padding-inline: 0;
 
         &__wrapping {
 

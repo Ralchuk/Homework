@@ -91,7 +91,7 @@
 .content {
     @include flex (column);
     padding: 30px 30px 80px;
-    
+    align-items: center;
     width: 100%;
 
     .content-block {
@@ -319,6 +319,7 @@
 
 .partners {
     @include flex (column);
+    align-items: center;
     padding-top: 60px;
     
 
@@ -577,6 +578,7 @@
 
         .content {
             padding: 60px 60px 80px;
+            
 
             .content-block {
 
@@ -1012,64 +1014,7 @@
                padding: 0 180px;
             }
         }
-    .partners {
-
-            &__block {
-
-                &--hillel {
-                    width: 360px;
-                }
-
-                &--wannabiz {
-                    width: 360px;
-
-                }
-
-                &--tapgerine {
-                   width: 360px;
-                }
-
-                &--3dlook {
-                   width: 360px;
-                }
-
-                &--orangear {
-                    width: 360px;
-                }
-
-                &--adtelligent {
-                  width: 360px;
-                }
-
-                &--clickky {
-                    width: 360px;
-                }
-
-                &--ecolease {
-                    width: 360px;
-
-                }
-
-                &--infratek {
-                    width: 360px;
-
-                }
-
-                &--siti-park {
-                    width: 360px;
-
-                }
-
-                &--art-print{
-                width: 360px;
-                }
-
-                &--ultimate-card {
-                    width: 360px;
-
-                }
-        }
-    }
+   
 }
 }
 
@@ -1089,11 +1034,34 @@
                 background-repeat: no-repeat;
             }
         }
+
+        .content {
+            max-width: 1600px;
+            margin: auto;
+            padding-inline: 0;
+
+            .content-block {
+                max-width: 1360px;
+                padding-inline: 0;
+            }
+        }
+    }
+
+    .photo {
+        max-width: 1600px;
+        margin: auto;
     }
 
     .partners {
-        padding: 0 100px;
+        
+        max-width: 1520px;
+        margin: auto;
         margin-bottom: 60px;
+    }
+
+    .publications {
+        max-width: 1600px;
+        margin: auto;
     }
 }
 

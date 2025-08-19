@@ -153,3 +153,11 @@ footer {
         }
     }
 }
+
+@media screen and (min-width:1920px) {
+
+    footer {
+        max-width: 1600px;
+        margin: auto;
+    }
+}
