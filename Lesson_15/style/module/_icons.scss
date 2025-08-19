@@ -5,7 +5,7 @@
 
 .icons {
     @include flex (column);
-    width: 100%;
+    max-width: 100%;
     padding-top: 30px;
     gap: 30px;
 
@@ -18,7 +18,7 @@
 
     .icon-item {
         @include flex (column);
-        max-width: 260px;
+        max-width: 100%;
         align-items: start;
         padding-top: 30px;
         gap: 30px;
@@ -57,18 +57,16 @@
 
 @media screen and (min-width:375px) {
     .icons {
-
-        justify-content: space-between;
-        gap: 60px;
-        padding-top: 60px;
-
+        
         &__wrapping {
+            justify-content: center;
+    
             gap: 60px;
         }
 
         .icon-item {
-            width: 100%;
-            max-width: 294px;
+           
+           max-width: 294px;
             
         }
         
@@ -79,10 +77,23 @@
     .icons {
 
         &__wrapping {
+            justify-content: space-between;
+
+            .icon-item {
+                max-width:  291px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .icons {
+
+        &__wrapping {
+            justify-content: space-between;
 
             .icon-item {
                 max-width:  400px;
-                
             }
         }
     }
