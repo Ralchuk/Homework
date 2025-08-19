@@ -117,6 +117,21 @@ header .contacts .lang__item--focused {
   width: fit-content;
   padding: 5px 7px;
 }
+header .contacts .lang__item:hover {
+  display: inline-block;
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  line-height: normal;
+  color: white;
+  background-color: #F0145A;
+  border-radius: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 7px;
+}
 header .contacts #point {
   width: 6px;
   height: 6px;

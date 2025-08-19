@@ -38,14 +38,23 @@ header {
                 padding: 5px 7px;
 
                 &--focused {
+                    display: inline-block;
+                    @include font-bold (12px,normal, white);
+                    background-color: $color-accent ;
+                    border-radius: 8px;
+                    width: fit-content;
+                    padding: 5px 7px;
+                }
+
+            }
+
+            &__item:hover {
                 display: inline-block;
                 @include font-bold (12px,normal, white);
                 background-color: $color-accent ;
                 border-radius: 8px;
                 width: fit-content;
                 padding: 5px 7px;
-                }
-
             }
 
             
