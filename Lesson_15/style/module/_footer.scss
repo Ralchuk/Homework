@@ -4,13 +4,19 @@
         '../fonts';
 
 footer {
+    @include flex;
+    justify-content: center;
+    background-color: $color-grey_bg;
+}
+
+.footer-wrraper {
 
     @include flex (column);
     justify-content: space-between;
     width: 100%;
     gap: 30px;
     padding: 30px;
-    background-color: $color-grey_bg;
+    
 
     #point {
         width: 6px;
@@ -117,9 +123,9 @@ footer {
 } 
 
 @media screen and (min-width:375px) {
-    footer {
+    .footer-wrraper {
 
-       
+       padding: 60px;
 
         .footer-content {
             @include flex (row);
@@ -156,8 +162,8 @@ footer {
 
 @media screen and (min-width:1920px) {
 
-    footer {
+    .footer-wrraper {
         max-width: 1600px;
-        margin: auto;
+        
     }
 }
