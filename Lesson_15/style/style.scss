@@ -465,8 +465,9 @@
 
 .publications-wrapper {
     @include flex (column);
-    align-content: center;
+    align-items: center;
     padding: 30px 30px 0;
+    gap: 30px;
     width: 100%;
     
     .toggle {
@@ -505,7 +506,6 @@
         justify-content: space-between;
         width: 100%;
         gap: 30px;
-        padding-top: 30px;
 
         .publications-cart {
             @include flex(column, wrap);
@@ -599,6 +599,15 @@
                 }
             }
         }
+    }
+
+    &__btn {
+        width: fit-content;
+        padding: 18px 30px;
+        background: $color-active_regular;
+        @include font-bold (16px, normal, white);
+        border-radius: 12px;
+        box-shadow: 0 0 20px 0 rgba(36, 163, 255, 0.50);
     }
 
 }
