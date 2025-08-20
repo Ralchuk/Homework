@@ -165,6 +165,81 @@
     @import './module/icons';
 
 }
+.content-about{
+    @include flex (column);
+    gap: 30px;
+
+    &__part {
+        @include flex (column);
+        padding: 30px;
+        gap: 30px;
+
+        @import './inheader';
+
+        & > p {
+            @include font-regular (19px,normal,black);
+            line-height: 30px;
+        }
+
+        .content-about__icons {
+            @include flex (column);
+            justify-content: start;
+            padding-left: 30px;
+            border-left: 4px solid $color-grey_separator;
+            gap: 30px;
+
+            &--i {
+                @include flex (column);
+                justify-content: start;
+                gap: 10px;
+
+                .content-about__icons-img1 {
+                    width: 101px;
+                    height: 44px;
+                    background-image: url(./images/about/content-about__icons/Heading_1.png);
+                }
+
+                .content-about__icons-img2 {
+                    width: 108px;
+                    height: 44px;
+                    background-image: url(./images/about/content-about__icons/Heading_2.png);
+                }
+
+                .content-about__icons-img3 {
+                    width: 132px;
+                    height: 44px;
+                    background-image: url(./images/about/content-about__icons/Heading_3.png);
+                }
+
+                & > span {
+                    @include font-regular (16px, normal, black);
+                }
+                
+            } 
+        }
+    }
+
+    &__team {
+        @include flex;
+        text-align: center;
+        padding: 35px 0;
+        background-image: url(./images/about/content-about__team/a5fe9081d97f6f81acbdfe1a72fa6356c9619010.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% ;
+        background-position: center;
+
+        & > span {
+            display: inline-block;
+            @include font-bold(36px, normal, white);
+            letter-spacing: 13px;
+            text-transform: uppercase;
+        }
+
+        display: inline-block;
+
+    }
+}
+
 .bg {
     @include flex(column);
     

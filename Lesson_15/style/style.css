@@ -1143,6 +1143,140 @@
   }
 }
 
+.content-about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.content-about__part {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 30px;
+}
+.content-about__part .inheader {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 10px;
+}
+.content-about__part .inheader .subheader {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 2px;
+}
+.content-about__part .inheader .subheader > h4 {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: normal;
+  color: #24A3FF;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.content-about__part .inheader .nameheader {
+  display: inline-block;
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: normal;
+  color: transparent;
+  text-wrap: wrap;
+  background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  word-break: break-word;
+}
+@media screen and (min-width: 375px) {
+  .content-about__part .inheader .nameheader {
+    font-size: 38px;
+  }
+}
+.content-about__part > p {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19px;
+  line-height: normal;
+  color: black;
+  line-height: 30px;
+}
+.content-about__part .content-about__icons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+  padding-left: 30px;
+  border-left: 4px solid #E6E6F0;
+  gap: 30px;
+}
+.content-about__part .content-about__icons--i {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 10px;
+}
+.content-about__part .content-about__icons--i .content-about__icons-img1 {
+  width: 101px;
+  height: 44px;
+  background-image: url(./images/about/content-about__icons/Heading_1.png);
+}
+.content-about__part .content-about__icons--i .content-about__icons-img2 {
+  width: 108px;
+  height: 44px;
+  background-image: url(./images/about/content-about__icons/Heading_2.png);
+}
+.content-about__part .content-about__icons--i .content-about__icons-img3 {
+  width: 132px;
+  height: 44px;
+  background-image: url(./images/about/content-about__icons/Heading_3.png);
+}
+.content-about__part .content-about__icons--i > span {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: normal;
+  color: black;
+}
+.content-about__team {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 35px 0;
+  background-image: url(./images/about/content-about__team/a5fe9081d97f6f81acbdfe1a72fa6356c9619010.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  display: inline-block;
+}
+.content-about__team > span {
+  display: inline-block;
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: normal;
+  color: white;
+  letter-spacing: 13px;
+  text-transform: uppercase;
+}
+
 .bg {
   display: flex;
   flex-direction: column;
