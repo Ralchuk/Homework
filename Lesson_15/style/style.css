@@ -1284,6 +1284,11 @@
 }
 
 .achivments {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
   background: #F5F5FA;
   padding: 30px 60px;
 }
@@ -1323,6 +1328,39 @@
   border-radius: 12px;
   background-position: center;
 }
+.achivments-wrapper__img-item--premium {
+  display: none;
+  width: 100%;
+  height: 90px;
+  background: url(./images/about/slider/Premium.png);
+  background-color: white;
+  background-size: 106px 40px;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  background-position: center;
+}
+.achivments-wrapper__img-item--lider {
+  display: none;
+  width: 100%;
+  height: 90px;
+  background: url(./images/about/slider/lider.png);
+  background-color: white;
+  background-size: 130px 40px;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  background-position: center;
+}
+.achivments-wrapper__img-item--uif2017 {
+  display: none;
+  width: 100%;
+  height: 90px;
+  background: url(./images/about/slider/uif2017.png);
+  background-color: white;
+  background-size: 110.6px 40px;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  background-position: center;
+}
 .achivments-wrapper__nav {
   display: flex;
   flex-direction: row;
@@ -1344,6 +1382,13 @@
   border-radius: 50%;
   background-color: #24A3FF;
   opacity: 1;
+}
+.achivments-wrapper__nav-item--disable {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #24A3FF;
+  opacity: 0.2;
 }
 
 .bg {
@@ -2146,6 +2191,54 @@ footer {
   .content-about__part2 {
     padding: 60px;
   }
+  .achivments-wrapper__img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 5%;
+    width: 100%;
+  }
+  .achivments-wrapper__img-item--legal {
+    max-width: 132px;
+  }
+  .achivments-wrapper__img-item--premium {
+    display: block;
+    max-width: 132px;
+  }
+  .achivments-wrapper__img-item--lider {
+    display: block;
+    max-width: 132px;
+  }
+  .achivments-wrapper__img-item--uif2017 {
+    display: block;
+    max-width: 132px;
+  }
+  .achivments-wrapper__nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    width: 100%;
+  }
+  .achivments-wrapper__nav-item {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #24A3FF;
+    opacity: 0.2;
+  }
+  .achivments-wrapper__nav-item--active {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #24A3FF;
+    opacity: 1;
+  }
+  .achivments-wrapper__nav-item--disable {
+    display: none;
+  }
   .photo {
     padding: 60px;
   }
@@ -2383,6 +2476,34 @@ footer {
     letter-spacing: 63px;
     text-transform: uppercase;
   }
+  .achivments-wrapper__img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+  }
+  .achivments-wrapper__img-item--legal {
+    max-width: 196px;
+    height: 110px;
+    background-size: 80px 60px;
+  }
+  .achivments-wrapper__img-item--premium {
+    max-width: 196px;
+    height: 110px;
+    background-size: 159px 60px;
+  }
+  .achivments-wrapper__img-item--lider {
+    max-width: 196px;
+    height: 110px;
+    background-size: 195px 60px;
+  }
+  .achivments-wrapper__img-item--uif2017 {
+    max-width: 196px;
+    height: 110px;
+    background-size: 166px 60px;
+  }
   .photo .photo-block {
     display: flex;
     flex-direction: row;
@@ -2480,6 +2601,26 @@ footer {
     padding-left: 30px;
     max-width: 354px;
   }
+  .achivments-wrapper__img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+  }
+  .achivments-wrapper__img-item--legal {
+    max-width: 300px;
+  }
+  .achivments-wrapper__img-item--premium {
+    max-width: 300px;
+  }
+  .achivments-wrapper__img-item--lider {
+    max-width: 300px;
+  }
+  .achivments-wrapper__img-item--uif2017 {
+    max-width: 300px;
+  }
   .partners__block--hillel {
     width: 25%;
   }
@@ -2557,6 +2698,26 @@ footer {
   .content-about__part2 .content-about__txt {
     max-width: 662px;
   }
+  .achivments-wrapper__img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+  }
+  .achivments-wrapper__img-item--legal {
+    max-width: 370px;
+  }
+  .achivments-wrapper__img-item--premium {
+    max-width: 370px;
+  }
+  .achivments-wrapper__img-item--lider {
+    max-width: 370px;
+  }
+  .achivments-wrapper__img-item--uif2017 {
+    max-width: 370px;
+  }
   .publications-wrapper__element .publications-cart {
     max-width: 440px;
   }
@@ -2613,6 +2774,9 @@ footer {
   }
   .content-about__part2 .content-about__txt {
     max-width: 942px;
+  }
+  .achivments-wrapper {
+    max-width: 1600px;
   }
   .photo {
     max-width: 1600px;

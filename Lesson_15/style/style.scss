@@ -275,6 +275,9 @@
 }
 
 .achivments {
+    @include flex(row);
+    justify-content: center;
+    width: 100%;
     background: $color-grey_bg;
     padding: 30px 60px;
 
@@ -307,6 +310,45 @@
                 background-position: center;
             }
 
+            &-item--premium {
+                display: none;
+                width: 100%;
+                height: 90px;
+                background: url(./images/about/slider/Premium.png);
+                background-color: white;
+                background-size: 106px 40px;
+                background-repeat: no-repeat;
+                border-radius: 12px;
+                background-position: center;
+                
+            }
+
+            &-item--lider {
+                display: none;
+                width: 100%;
+                height: 90px;
+                background: url(./images/about/slider/lider.png);
+                background-color: white;
+                background-size: 130px 40px;
+                background-repeat: no-repeat;
+                border-radius: 12px;
+                background-position: center;
+                
+            }
+
+            &-item--uif2017 {
+                display: none;
+                width: 100%;
+                height: 90px;
+                background: url(./images/about/slider/uif2017.png);
+                background-color: white;
+                background-size: 110.6px 40px;
+                background-repeat: no-repeat;
+                border-radius: 12px;
+                background-position: center;
+                
+            }
+
 
         }
 
@@ -330,6 +372,14 @@
                 border-radius: 50%;
                 background-color: $color-active_regular;
                 opacity: 1;
+            }
+
+            &-item--disable {
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background-color: $color-active_regular;
+                opacity: 0.2;
             }
         }
 
@@ -885,6 +935,69 @@
         }
     }
 
+    .achivments {
+        
+        &-wrapper {
+            
+            &__img {
+                @include flex(row, nowrap);
+                justify-content: space-between;
+                gap: 5%;
+                width: 100%;
+
+                &-item--legal {
+                    max-width: 132px;
+                }
+
+                &-item--premium {
+                    display: block;
+                    max-width: 132px;
+                }
+
+                &-item--lider {
+                    display: block;
+                    max-width: 132px;
+                }
+
+                &-item--uif2017 {
+                    display: block;
+                    max-width: 132px;
+                }
+
+
+            }
+
+            &__nav {
+                @include flex (row);
+                justify-content: center;
+                gap: 14px;
+                width: 100%;
+
+                &-item {
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    background-color: $color-active_regular;
+                    opacity: 0.2;
+                }
+
+                &-item--active {
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    background-color: $color-active_regular;
+                    opacity: 1;
+                }
+
+                &-item--disable {
+                    display: none;
+                }
+            }
+
+        }
+
+    }
+
     .photo {
         padding: 60px;
     }
@@ -1158,6 +1271,48 @@
         }
 
     }
+
+    .achivments {
+        
+        &-wrapper {
+            
+            &__img {
+                @include flex(row, nowrap);
+                justify-content: space-between;
+                gap: 40px;
+                width: 100%;
+
+                &-item--legal {
+                    max-width: 196px;
+                    height: 110px;
+                    background-size: 80px 60px;
+                }
+
+                &-item--premium {
+                    max-width: 196px;
+                    height: 110px;
+                    background-size: 159px 60px;
+                }
+
+                &-item--lider {
+                    max-width: 196px;
+                    height: 110px;
+                    background-size: 195px 60px;
+                }
+
+                &-item--uif2017 {
+                    max-width: 196px;
+                    height: 110px;
+                    background-size: 166px 60px;
+                }
+
+
+            }
+
+        }
+
+    }
+
     .photo {
         .photo-block {
             @include flex (row,nowrap);
@@ -1298,6 +1453,39 @@
             }
         }
     }
+
+    .achivments {
+        
+        &-wrapper {
+            
+            &__img {
+                @include flex(row, nowrap);
+                justify-content: space-between;
+                gap: 40px;
+                width: 100%;
+
+                &-item--legal {
+                    max-width: 300px;
+                }
+
+                &-item--premium {
+                    max-width: 300px;
+                }
+
+                &-item--lider {
+                    max-width: 300px;
+                }
+
+                &-item--uif2017 {
+                    max-width: 300px;
+                }
+
+
+            }
+
+        }
+
+    }
     
     .partners {
 
@@ -1414,6 +1602,39 @@
         }
     }
 
+    .achivments {
+        
+        &-wrapper {
+            
+            &__img {
+                @include flex(row, nowrap);
+                justify-content: space-between;
+                gap: 40px;
+                width: 100%;
+
+                &-item--legal {
+                    max-width: 370px;
+                }
+
+                &-item--premium {
+                    max-width: 370px;
+                }
+
+                &-item--lider {
+                    max-width: 370px;
+                }
+
+                &-item--uif2017 {
+                    max-width: 370px;
+                }
+
+
+            }
+
+        }
+
+    }
+
     .publications-wrapper {
         
         &__element {
@@ -1491,6 +1712,15 @@
             }
 
         }
+    }
+
+    .achivments {
+        
+        &-wrapper {
+            max-width: 1600px;
+            
+        }
+
     }
 
     .photo {
