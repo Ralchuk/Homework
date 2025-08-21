@@ -244,6 +244,7 @@
             @include font-bold(36px, normal, white);
             letter-spacing: 13px;
             text-transform: uppercase;
+            text-shadow: 0 15px 30px rgba(40, 40, 86, 0.80);
         }
 
         display: inline-block;
@@ -1206,7 +1207,7 @@
 
         &__team {
             
-            padding: 89px 0;
+            padding: 103px 0;
             
             & > span {
                 display: inline-block;
@@ -1324,7 +1325,7 @@
 
         &__team {
             
-            padding: 89px 0;
+            padding: 163px 0;
             
             & > span {
                 display: inline-block;
@@ -1403,11 +1404,11 @@
 
         &__team {
             
-            padding: 89px 0;
+            padding: 236px 0;
             
             & > span {
                 display: inline-block;
-                @include font-bold(46px, normal, white);
+                @include font-bold(96px, normal, white);
                 letter-spacing: 63px;
                 text-transform: uppercase;
             }

@@ -1249,6 +1249,7 @@
   color: white;
   letter-spacing: 13px;
   text-transform: uppercase;
+  text-shadow: 0 15px 30px rgba(40, 40, 86, 0.8);
 }
 .content-about__part2 {
   display: flex;
@@ -2389,7 +2390,7 @@ footer {
     max-width: 354px;
   }
   .content-about__team {
-    padding: 89px 0;
+    padding: 103px 0;
   }
   .content-about__team > span {
     display: inline-block;
@@ -2470,7 +2471,7 @@ footer {
     max-width: 662px;
   }
   .content-about__team {
-    padding: 89px 0;
+    padding: 163px 0;
   }
   .content-about__team > span {
     display: inline-block;
@@ -2526,7 +2527,7 @@ footer {
     max-width: 942px;
   }
   .content-about__team {
-    padding: 89px 0;
+    padding: 236px 0;
   }
   .content-about__team > span {
     display: inline-block;
@@ -2534,7 +2535,7 @@ footer {
     src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
     font-weight: 700;
     font-style: normal;
-    font-size: 46px;
+    font-size: 96px;
     line-height: normal;
     color: white;
     letter-spacing: 63px;
