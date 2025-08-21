@@ -15,7 +15,7 @@ footer {
     justify-content: space-between;
     width: 100%;
     gap: 30px;
-    padding: 30px;
+    padding: 0 30px 30px;
     
 
     #point {
@@ -125,7 +125,7 @@ footer {
 @media screen and (min-width:375px) {
     .footer-wrraper {
 
-       padding: 60px;
+       padding: 0 60px 60px;
 
         .footer-content {
             @include flex (row);
