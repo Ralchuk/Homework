@@ -1161,33 +1161,7 @@
   flex-wrap: wrap;
   gap: 30px;
 }
-.content-about__part-wrapping .inheader {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: start;
-  gap: 10px;
-}
-.content-about__part-wrapping .inheader .subheader {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: start;
-  align-items: center;
-  gap: 2px;
-}
-.content-about__part-wrapping .inheader .subheader > h4 {
-  font-family: "Montserrat";
-  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
-  font-weight: 700;
-  font-style: normal;
-  font-size: 14px;
-  line-height: normal;
-  color: #24A3FF;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.content-about__part-wrapping .inheader .nameheader {
+.content-about__part-wrapping .content-about__part-header {
   display: inline-block;
   font-family: "Montserrat";
   src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
@@ -1200,14 +1174,8 @@
   background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
           background-clip: text;
-  word-break: break-word;
 }
-@media screen and (min-width: 375px) {
-  .content-about__part-wrapping .inheader .nameheader {
-    font-size: 38px;
-  }
-}
-.content-about__part-wrapping > p {
+.content-about__part-wrapping .content-about__txt {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
   font-weight: 400;
@@ -1281,6 +1249,37 @@
   color: white;
   letter-spacing: 13px;
   text-transform: uppercase;
+}
+.content-about__part2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 30px;
+}
+.content-about__part2 .content-about__txt {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19px;
+  line-height: normal;
+  color: black;
+  line-height: 30px;
+}
+.content-about__part2 .content-about__part-header {
+  display: inline-block;
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: normal;
+  color: transparent;
+  text-wrap: wrap;
+  background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 
 .bg {
@@ -2048,6 +2047,23 @@ footer {
   .content-about__part {
     padding: 60px;
   }
+  .content-about__part-wrapping {
+    gap: 60px;
+  }
+  .content-about__part-wrapping .content-about__part-header {
+    display: inline-block;
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 38px;
+    line-height: normal;
+    color: transparent;
+    text-wrap: wrap;
+    background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+            background-clip: text;
+  }
   .content-about__team {
     padding: 89px 0;
   }
@@ -2062,6 +2078,9 @@ footer {
     color: white;
     letter-spacing: 63px;
     text-transform: uppercase;
+  }
+  .content-about__part2 {
+    padding: 60px;
   }
   .photo {
     padding: 60px;
@@ -2285,18 +2304,6 @@ footer {
     padding-top: 0;
     padding-left: 60px;
   }
-  .content-about__part {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 60px;
-  }
-  .content-about__part-wrapping {
-    max-width: 486px;
-  }
-  .content-about__part .content-about__icons {
-    max-width: 388px;
-  }
   .content-about__team {
     padding: 89px 0;
   }
@@ -2369,6 +2376,46 @@ footer {
   }
 }
 @media screen and (min-width: 1024px) {
+  .content-about__part {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .content-about__part-wrapping {
+    max-width: 486px;
+  }
+  .content-about__part .content-about__icons {
+    max-width: 354px;
+  }
+  .content-about__team {
+    padding: 89px 0;
+  }
+  .content-about__team > span {
+    display: inline-block;
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 46px;
+    line-height: normal;
+    color: white;
+    letter-spacing: 63px;
+    text-transform: uppercase;
+  }
+  .content-about__part2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .content-about__part2 .content-about__txt {
+    max-width: 486px;
+  }
+  .content-about__part2 .content-about__part-header {
+    padding-left: 30px;
+    max-width: 354px;
+  }
   .partners__block--hillel {
     width: 25%;
   }
@@ -2413,6 +2460,39 @@ footer {
   .content .content-block {
     padding: 0 180px;
   }
+  .content-about__part {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 60px 180px;
+  }
+  .content-about__part-wrapping {
+    max-width: 662px;
+  }
+  .content-about__team {
+    padding: 89px 0;
+  }
+  .content-about__team > span {
+    display: inline-block;
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 46px;
+    line-height: normal;
+    color: white;
+    letter-spacing: 63px;
+    text-transform: uppercase;
+  }
+  .content-about__part2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 60px 180px;
+  }
+  .content-about__part2 .content-about__txt {
+    max-width: 662px;
+  }
   .publications-wrapper__element .publications-cart {
     max-width: 440px;
   }
@@ -2434,6 +2514,41 @@ footer {
   .content .content-block {
     max-width: 1360px;
     padding-inline: 0;
+  }
+  .content-about__part {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px 180px;
+  }
+  .content-about__part-wrapping {
+    max-width: 942px;
+  }
+  .content-about__team {
+    padding: 89px 0;
+  }
+  .content-about__team > span {
+    display: inline-block;
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 46px;
+    line-height: normal;
+    color: white;
+    letter-spacing: 63px;
+    text-transform: uppercase;
+  }
+  .content-about__part2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px 180px;
+  }
+  .content-about__part2 .content-about__txt {
+    max-width: 942px;
   }
   .photo {
     max-width: 1600px;

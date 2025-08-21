@@ -177,9 +177,15 @@
             @include flex (column);
             gap: 30px;
 
-            @import './inheader';
+            .content-about__part-header {
+                display: inline-block;
+                @include font-bold(30px, normal, transparent);
+                text-wrap: wrap;
+                background: $gradient-regular_redtext;
+                background-clip: text;
+            }
 
-            & > p {
+            .content-about__txt {
                 @include font-regular (19px,normal,black);
                 line-height: 30px;
             }
@@ -242,6 +248,28 @@
 
         display: inline-block;
 
+    }
+
+    &__part2 {
+        @include flex (column);
+        padding: 30px;
+        gap: 30px;
+
+        .content-about__txt {
+            @include font-regular (19px,normal,black);
+            line-height: 30px;
+        }
+
+        .content-about__part-header {
+            display: inline-block;
+            @include font-bold(30px, normal, transparent);
+            text-wrap: wrap;
+            background: $gradient-regular_redtext;
+            background-clip: text;
+            
+        }
+
+        
     }
 }
 
@@ -541,7 +569,7 @@
         @include flex;
         justify-content: center;
         background: $color-grey_bg;
-    }
+}
 
 .publications-wrapper {
     @include flex (column);
@@ -754,10 +782,24 @@
 
     .content-about{
         
+
         &__part {
             padding: 60px;
-        }
 
+            &-wrapping {
+                gap: 60px;
+
+                .content-about__part-header {
+                    display: inline-block;
+                    @include font-bold(38px, normal, transparent);
+                    text-wrap: wrap;
+                    background: $gradient-regular_redtext;
+                    background-clip: text;
+                }
+
+            }
+        }
+        
         &__team {
             
             padding: 89px 0;
@@ -771,6 +813,10 @@
 
             
 
+        }
+
+        &__part2 {
+            padding: 60px;
         }
     }
 
@@ -1030,21 +1076,7 @@
         
     }
     .content-about{
-        
-        &__part {
-            @include flex (row);
-            padding: 60px;
-            
-
-            &-wrapping {
-                max-width: 486px;
-            }
-
-            .content-about__icons {
-                max-width: 388px;
-            }
-        }
-
+    
         &__team {
             
             padding: 89px 0;
@@ -1059,6 +1091,7 @@
             
 
         }
+
     }
     .photo {
         .photo-block {
@@ -1147,6 +1180,59 @@
 
 
 @media screen and (min-width:1024px) {
+
+    .content-about{
+        
+        &__part {
+            @include flex (row);
+            justify-content: center;
+            
+            
+
+            &-wrapping {
+                max-width: 486px;
+            }
+
+            
+
+            .content-about__icons {
+                max-width: 354px;
+            }
+
+            
+
+            
+        }
+
+        &__team {
+            
+            padding: 89px 0;
+            
+            & > span {
+                display: inline-block;
+                @include font-bold(46px, normal, white);
+                letter-spacing: 63px;
+                text-transform: uppercase;
+            }
+
+            
+
+        }
+
+        &__part2 {
+            @include flex (row);
+            justify-content: center;
+
+            .content-about__txt {
+                max-width: 486px;
+            }
+
+            .content-about__part-header {
+                padding-left: 30px;
+                max-width: 354px;
+            }
+        }
+    }
     
     .partners {
 
@@ -1224,6 +1310,45 @@
         }
     }
 
+    .content-about{
+        
+        &__part {
+            @include flex (row);
+            padding: 60px 180px;
+
+            &-wrapping {
+                max-width: 662px;
+            }
+            
+        }
+
+        &__team {
+            
+            padding: 89px 0;
+            
+            & > span {
+                display: inline-block;
+                @include font-bold(46px, normal, white);
+                letter-spacing: 63px;
+                text-transform: uppercase;
+            }
+
+            
+
+        }
+
+        &__part2 {
+            @include flex (row);
+            padding: 60px 180px;
+
+            .content-about__txt {
+                max-width: 662px;
+            }
+
+            
+        }
+    }
+
     .publications-wrapper {
         
         &__element {
@@ -1262,6 +1387,46 @@
         }
     }
 
+    .content-about{
+        
+        &__part {
+            @include flex (row);
+            justify-content: center;
+            padding: 60px 180px;
+            
+
+            &-wrapping {
+                max-width: 942px;
+            }
+ 
+        }
+
+        &__team {
+            
+            padding: 89px 0;
+            
+            & > span {
+                display: inline-block;
+                @include font-bold(46px, normal, white);
+                letter-spacing: 63px;
+                text-transform: uppercase;
+            }
+
+            
+
+        }
+
+        &__part2 {
+            @include flex (row);
+            justify-content: center;
+            padding: 60px 180px;
+
+            .content-about__txt {
+                max-width: 942px;
+            }
+
+        }
+    }
 
     .photo {
         max-width: 1600px;
