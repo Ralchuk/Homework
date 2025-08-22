@@ -1391,6 +1391,131 @@
   opacity: 0.2;
 }
 
+.team-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 30px 30px 60px;
+  width: 100%;
+  gap: 30px;
+}
+.team-content__header {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: normal;
+  color: transparent;
+  text-wrap: wrap;
+  background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.team-content__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+}
+.team-content__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 15px;
+}
+.team-content__item-Alexander_Alexandrovsky {
+  width: 100%;
+  height: 300px;
+  background-image: url(./images/team/alexander.png);
+  background-size: cover;
+  border-radius: 12px;
+}
+.team-content__item-Evgeny_Patrikov {
+  width: 100%;
+  height: 300px;
+  background-image: url(./images/team/Evgeny_Patrikov.png);
+  background-size: cover;
+  border-radius: 12px;
+}
+.team-content__item-Vladislav_Melnik {
+  width: 100%;
+  height: 300px;
+  background-image: url(./images/team/Vladislav_Melnik.png);
+  background-size: cover;
+  border-radius: 12px;
+}
+.team-content__item-Sergey_Binn {
+  width: 100%;
+  height: 300px;
+  background-image: url(./images/team/Sergey\ Binn.png);
+  background-size: cover;
+  border-radius: 12px;
+}
+.team-content__item-oksana {
+  width: 100%;
+  height: 300px;
+  background-image: url(./images/team/oksana.png);
+  background-size: cover;
+  border-radius: 12px;
+}
+.team-content__item-Julia_Wolk {
+  width: 100%;
+  height: 300px;
+  background-image: url(./images/team/Julia_Wolk.png);
+  background-size: cover;
+  border-radius: 12px;
+}
+.team-content__item-txt {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: start;
+}
+.team-content__item-name {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 5px;
+}
+.team-content__item-name > h2 {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: normal;
+  color: #323264;
+}
+.team-content__item-name > span {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: normal;
+  color: #B3B3BA;
+}
+.team-content__item-btn {
+  width: 32px;
+  height: 32px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='17' viewBox='0 0 10 17' fill='none'%3E%3Cpath d='M1.5 15.5L8.5 8.5L1.5 1.5' stroke='%2324A3FF' stroke-width='2'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #F5F5FA;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.team-content__item-btn:hover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23EDEDF7'/%3E%3Cpath d='M13.5 23.5L20.5 16.5L13.5 9.5' stroke='%23F0145A' stroke-width='2'/%3E%3C/svg%3E");
+  background-color: #EDEDF7;
+}
+
 .bg {
   display: flex;
   flex-direction: column;
