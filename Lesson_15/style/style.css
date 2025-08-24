@@ -1562,6 +1562,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 100%;
   align-items: start;
   gap: 15px;
 }
@@ -1586,6 +1587,7 @@
   line-height: 30px;
   padding-bottom: 30px;
   border-bottom: 4px solid #E6E6F0;
+  width: 100%;
 }
 .contact-content .facebook {
   display: flex;
@@ -1597,14 +1599,17 @@
 }
 .contact-content .facebook .contacts__svg {
   display: block;
-  width: 24px;
-  height: 24px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cg clip-path='url(%23clip0_22721_6715)'%3E%3Cpath d='M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z' fill='%23B3B3BA'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_22721_6715'%3E%3Crect width='24' height='24' fill='white' transform='translate(0 0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  width: 38px;
+  height: 38px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='38' height='38' viewBox='0 0 38 38' fill='none'%3E%3Cg clip-path='url(%23clip0_22724_6705)'%3E%3Cpath d='M38 19.1161C38 8.55857 29.4934 0 19 0C8.50658 0 0 8.55857 0 19.1161C0 28.6575 6.94803 36.5659 16.0312 38V24.6419H11.207V19.1161H16.0312V14.9046C16.0312 10.1136 18.8678 7.46723 23.2078 7.46723C25.2866 7.46723 27.4609 7.84059 27.4609 7.84059V12.545H25.0651C22.7048 12.545 21.9688 14.0185 21.9688 15.5302V19.1161H27.2383L26.3959 24.6419H21.9688V38C31.052 36.5659 38 28.6575 38 19.1161Z' fill='%2324A3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_22724_6705'%3E%3Crect width='38' height='38' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .contact-content .facebook .contacts__svg:hover {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 38px;
+  height: 38px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cg clip-path='url(%23clip0_173710_3321)'%3E%3Cpath d='M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z' fill='%23F0145A'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_173710_3321'%3E%3Crect width='24' height='24' fill='white' transform='translate(0 0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
 }
 .contact-content .facebook > span {
@@ -1730,7 +1735,7 @@
   transition: 0.5s;
 }
 .contact-content .form .form__btn:hover {
-  background-color: #0085FF;
+  background-color: #006CCF;
 }
 .contact-content .form .form__btn:focus {
   color: transparent;
@@ -2684,6 +2689,10 @@ footer {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23EDEDF7'/%3E%3Cpath d='M13.5 23.5L20.5 16.5L13.5 9.5' stroke='%23F0145A' stroke-width='2'/%3E%3C/svg%3E");
     background-color: #EDEDF7;
   }
+  .contact-content {
+    padding: 60px;
+    gap: 60px;
+  }
   .photo {
     padding: 60px;
   }
@@ -2958,6 +2967,20 @@ footer {
   .team-content__item {
     max-width: 261.33px;
   }
+  .contact-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px;
+    gap: 8%;
+  }
+  .contact-content__info {
+    max-width: 46%;
+  }
+  .contact-content .form {
+    max-width: 46%;
+  }
   .photo .photo-block {
     display: flex;
     flex-direction: row;
@@ -3171,6 +3194,20 @@ footer {
   .content-about__part2 .content-about__txt {
     max-width: 662px;
   }
+  .contact-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px 180px;
+    gap: 8%;
+  }
+  .contact-content__info {
+    max-width: 46%;
+  }
+  .contact-content .form {
+    max-width: 46%;
+  }
   .achivments-wrapper__img {
     display: flex;
     flex-direction: row;
@@ -3274,6 +3311,20 @@ footer {
   }
   .team-content__item {
     max-width: 493px;
+  }
+  .contact-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px 0;
+    gap: 60px;
+  }
+  .contact-content__info {
+    max-width: 650px;
+  }
+  .contact-content .form {
+    max-width: 650px;
   }
   .photo {
     max-width: 1600px;
