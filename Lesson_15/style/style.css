@@ -73,6 +73,10 @@
   position: relative;
   width: 100%;
 }
+.header-dark ul {
+  margin: 0;
+  padding: 0;
+}
 .header-dark .contacts {
   display: flex;
   flex-direction: row;
@@ -240,6 +244,10 @@
   flex-wrap: wrap;
   position: relative;
   width: 100%;
+}
+.header-white ul {
+  margin: 0;
+  padding: 0;
 }
 .header-white .contacts {
   display: flex;
@@ -808,6 +816,11 @@
   flex-wrap: wrap;
   width: 100%;
   position: relative;
+}
+
+.contact-btn {
+  font-size: 25px;
+  background-color: red;
 }
 
 .banner {
@@ -1667,6 +1680,9 @@
   padding: 15px;
   border-radius: 8px;
 }
+.contact-content .form__input-name:focus {
+  outline: 2px solid #24A3FF;
+}
 .contact-content .form__input-message {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
@@ -1680,6 +1696,9 @@
   border-radius: 8px;
   width: 100%;
   height: 130px;
+}
+.contact-content .form__input-message:focus {
+  outline: 2px solid #24A3FF;
 }
 .contact-content .form__feedback {
   display: flex;
@@ -1713,6 +1732,9 @@
   padding: 15px;
   border-radius: 8px;
 }
+.contact-content .form__feedback > input:focus {
+  outline: 2px solid #24A3FF;
+}
 .contact-content .form .form__btn {
   position: relative;
   display: flex;
@@ -1745,6 +1767,31 @@
   position: absolute;
   color: #323264;
   content: "Sent";
+}
+.contact-content .form .modal-body1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+.contact-content .form .modal-body1 > h2 {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: normal;
+  color: transparent;
+  text-wrap: wrap;
+  background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  text-align: center;
+  width: 100%;
 }
 
 .bg {
