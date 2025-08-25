@@ -158,6 +158,63 @@
             width: 32px;
             height: 32px;
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='33' viewBox='0 0 32 33' fill='none'%3E%3Cpath d='M7 10.5H25' stroke='white' stroke-width='2'/%3E%3Cpath d='M7 16.5H25' stroke='white' stroke-width='2'/%3E%3Cpath d='M7 22.5H25' stroke='white' stroke-width='2'/%3E%3C/svg%3E");
+
+            .menu__burger-content {
+                width: 100vw;
+                height: 100vh;
+                top: 25vh;
+                bottom: 0;
+                transform: translateY(100%);
+                transition: transform 0.5s ease-in-out;
+
+                .burger-body {
+                    @include flex (column);
+                    align-items: center;
+                    padding-top: 20px;
+                    padding-inline: 12px;
+
+                    &-ul {
+                        @include flex (column);
+                        align-items: center; 
+                        gap: 15px;
+                        width: 100%;
+
+                        &-item {
+                            display: inline-block;
+                            padding: 7px 0;
+                            width: 100%;
+                            text-align: center;
+                            background-color: $color-grey_bg;
+                            border-radius: 12px;
+                            
+                            & > a {
+                                @include font-bold (24px, normal, $color-active_regular);
+                                text-align: center;
+                                text-decoration: none;
+                            }
+                        }
+
+                        &-item--active {
+                            display: inline-block;
+                            padding: 7px 0;
+                            width: 100%;
+                            text-align: center;
+                            background-color: $color-grey_bg;
+                            border-radius: 12px;
+                            
+                            & > a {
+                                @include font-bold (24px, normal, #F0145A);
+                                text-align: center;
+                                text-decoration: none;
+                            }
+                        }
+
+                        &-item:focus {
+                            background-color: $color-grey_separator;
+                        }
+                    }
+                }
+            }
         }
 
         &__burger:hover {
@@ -330,6 +387,7 @@
             .menu__burger-content {
                 width: 100vw;
                 height: 100vh;
+                top: 25vh;
                 bottom: 0;
                 transform: translateY(100%);
                 transition: transform 0.5s ease-in-out;
@@ -381,8 +439,6 @@
                         }
                     }
                 }
-
-                
             }
         }
 
