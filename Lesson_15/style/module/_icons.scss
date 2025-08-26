@@ -44,7 +44,13 @@
 
                 &-header {
                     @include font-bold(22px, normal, $color-active_regular);
+                    cursor: pointer;
                     text-wrap: wrap;
+                    transition: .3s;
+                }
+
+                &-header:hover {
+                    @include font-bold(22px, normal, $color-accent);
                 }
 
                 &-p {

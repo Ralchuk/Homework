@@ -135,6 +135,7 @@
             width: fit-content;
             @include font-bold (30px, normal, $color-grey_text);
             text-wrap: nowrap;
+            cursor: pointer;
             transition: 0.5s;
 
             &--active {
