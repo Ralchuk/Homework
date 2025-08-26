@@ -1385,12 +1385,183 @@
   color: #323264;
   content: "Sent";
 }
+.content .icon-entry .modal-content {
+  padding: 30px;
+  max-width: 375px;
+  background-color: #F5F5FA;
+}
+.content .icon-entry .modal-headerc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.content .icon-entry .modal-headerc .modal-header-h1 {
+  text-align: start;
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: normal;
+  color: transparent;
+  background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  text-align: center;
+}
+.content .icon-entry .modal-headerc > .button {
+  padding: 5px;
+}
+.content .icon-entry .modal-body1 .form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  gap: 30px;
+}
+.content .icon-entry .modal-body1 .form__input {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 15px;
+}
+.content .icon-entry .modal-body1 .form__input-name {
+  width: 100%;
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: normal;
+  color: #B3B3BA;
+  line-height: 26px;
+  padding: 15px;
+  border-radius: 8px;
+}
+.content .icon-entry .modal-body1 .form__input-name:focus {
+  outline: 2px solid #24A3FF;
+}
+.content .icon-entry .modal-body1 .form__input-message {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: normal;
+  color: #B3B3BA;
+  line-height: 26px;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+  height: 130px;
+}
+.content .icon-entry .modal-body1 .form__input-message:focus {
+  outline: 2px solid #24A3FF;
+}
+.content .icon-entry .modal-body1 .form__feedback {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: start;
+  gap: 15px;
+}
+.content .icon-entry .modal-body1 .form__feedback > h2 {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: normal;
+  color: #B3B3BA;
+  text-wrap: wrap;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.content .icon-entry .modal-body1 .form__feedback > input {
+  width: 100%;
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: normal;
+  color: #B3B3BA;
+  line-height: 26px;
+  padding: 15px;
+  border-radius: 8px;
+}
+.content .icon-entry .modal-body1 .form__feedback > input:focus {
+  outline: 2px solid #24A3FF;
+}
+.content .icon-entry .modal-body1 .form .form__btn {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: normal;
+  color: white;
+  background-color: #24A3FF;
+  border-radius: 12px;
+  box-shadow: 0 0 20px 0 rgba(36, 163, 255, 0.5);
+  transition: 0.5s;
+}
+.content .icon-entry .modal-body1 .form .form__btn:hover {
+  background-color: #006CCF;
+}
+.content .icon-entry .modal-body1 .form .form__btn:focus {
+  color: transparent;
+  background-color: #EDEDF7;
+}
+.content .icon-entry .modal-body1 .form .form__btn:focus::after {
+  position: absolute;
+  color: #323264;
+  content: "Sent";
+}
+.content .icon-entry .modal-body1 .form .modal-body1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+.content .icon-entry .modal-body1 .form .modal-body1 > h2 {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px;
+  line-height: normal;
+  color: transparent;
+  text-wrap: wrap;
+  background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  text-align: center;
+  width: 100%;
+}
 .content .icon-txt-list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: start;
   gap: 30px;
+  border-top: 4px solid white;
+  padding-top: 30px;
 }
 .content .icon-txt-list__header {
   font-family: "Montserrat";
@@ -1411,6 +1582,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: start;
   gap: 15px;
   font-family: "Montserrat";
   src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
@@ -3169,6 +3341,135 @@ footer {
     padding-top: 0;
     padding-left: 60px;
   }
+  .content .icon-wrapper {
+    gap: 60px;
+  }
+  .content .icon-entry {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+  }
+  .content .icon-entry__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+  }
+  .content .icon-entry__item-img {
+    width: 92px;
+    height: 92px;
+    background-color: white;
+    border-radius: 24px;
+    position: relative;
+  }
+  .content .icon-entry__item-img > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .content .icon-entry__item-txt > h2 {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    line-height: normal;
+    color: transparent;
+    background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    text-align: center;
+  }
+  .content .icon-entry__pr {
+    text-align: center;
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+    line-height: normal;
+    color: white;
+    line-height: 30px;
+  }
+  .content .icon-entry .form__btn {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 208px;
+    height: 56px;
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: normal;
+    color: white;
+    background-color: #24A3FF;
+    border-radius: 12px;
+    box-shadow: 0 0 20px 0 rgba(36, 163, 255, 0.5);
+    transition: 0.5s;
+  }
+  .content .icon-entry .form__btn:hover {
+    background-color: #006CCF;
+  }
+  .content .icon-entry .form__btn:focus {
+    color: transparent;
+    background-color: #EDEDF7;
+  }
+  .content .icon-entry .form__btn:focus::after {
+    position: absolute;
+    color: #323264;
+    content: "Sent";
+  }
+  .content .icon-txt-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 30px;
+  }
+  .content .icon-txt-list__header {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 22px;
+    line-height: normal;
+    color: white;
+  }
+  .content .icon-txt-list__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5%;
+  }
+  .content .icon-txt-list__item-1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    max-width: 45%;
+    gap: 15px;
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: normal;
+    color: white;
+    line-height: 26px;
+    height: 100%;
+  }
   .content-about__team {
     padding: 89px 0;
   }
@@ -3443,6 +3744,10 @@ footer {
   .content .content-block {
     max-width: 1360px;
     padding-inline: 0;
+  }
+  .content .icon-wrapper {
+    max-width: 1600px;
+    gap: 60px;
   }
   .content-about__part {
     display: flex;

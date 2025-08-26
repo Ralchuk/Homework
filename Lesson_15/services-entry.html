@@ -126,12 +126,45 @@
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body1">
-                                <h2>Thank you!</h2>
-                            </div>
+                                <div class="modal-headerc">
+                                    <h1 class="modal-header-h1" >We would like to help you</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body1">
+                                    <div class="form">
+                                        
+                                        <div class="form__input">
+                                            <input class="form__input-name" type="text" name="name" placeholder="Name">
+                                            <textarea class="form__input-message" name="message" rows="5">Message 
+                                            </textarea>
+                                        </div>
+                                        <div class="form__feedback">
+                                            <h2>How to answer you?</h2>
+                                            <input  type="text" name="phone" placeholder="Name">
+                                            <input type="text" name="email" placeholder="Email">
+                                        </div>
+                                        <!-- Button trigger modal -->
+                                        <button type="button" class="form__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Send message
+                                        </button>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body1">
+                                                    <h2>Thank you!</h2>
+                                                </div>
+                                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                         
                             </div>
                         </div>

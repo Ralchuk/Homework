@@ -246,7 +246,148 @@
             position: absolute;
             color: $color-main;
             content: 'Sent';
+        }
+
+        .modal-content {
+            padding: 30px;
+            max-width: 375px;
+            background-color: $color-grey_bg;
             
+        }
+
+        .modal-headerc {
+
+            @include flex (row, nowrap);
+            justify-content: space-between;
+
+            .modal-header-h1 {
+                text-align: start;
+                @include font-bold (30px, normal, transparent);
+                background: $gradient-regular_redtext;
+                background-clip: text; 
+                text-align: center;
+            }
+
+            & > .button {
+                padding: 5px;
+            }
+        }
+
+        .modal-body1 {
+
+            .form {
+
+                @include flex (column);
+                align-content: center;
+                
+                
+                width: 100%;
+                gap: 30px;
+
+                &__input {
+                    @include flex(column);
+                    align-items: start;
+                    gap: 15px;
+
+                    &-name {
+                        width: 100%;
+                        @include font-regular(14px, normal, $color-grey_text);
+                        line-height: 26px;
+                        padding: 15px;
+                        border-radius: 8px;
+                    }
+
+                    &-name:focus {
+                        outline: 2px solid $color-active_regular;
+                    }
+
+                    &-message {
+                        @include font-regular(14px, normal, $color-grey_text);
+                        line-height: 26px;
+                        padding: 15px;
+                        border-radius: 8px;
+                        width: 100%;
+                        height: 130px;
+                    }  
+
+                    &-message:focus {
+                        outline: 2px solid $color-active_regular;
+                    }
+                }
+
+                &__feedback {
+                    @include flex (column);
+                    align-content: start;
+                    gap: 15px;
+
+                    & > h2 {
+                        @include font-bold (14px, normal, $color-grey_text);
+                        text-wrap: wrap;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                    }
+
+                    & > input {
+                        width: 100%;
+                        @include font-regular(14px, normal, $color-grey_text);
+                        line-height: 26px;
+                        padding: 15px;
+                        border-radius: 8px;
+                    }
+
+                    & > input:focus {
+                        outline: 2px solid $color-active_regular;
+                    }
+                }
+
+                .form__btn {
+                    position: relative;
+                    @include flex(row);
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 56px;
+                    @include font-bold (16px, normal, white);
+                    background-color: $color-active_regular;
+                    border-radius: 12px;
+                    box-shadow: 0 0 20px 0 rgba(36, 163, 255, 0.50);
+                    transition: 0.5s;
+                }
+
+                .form__btn:hover {
+                    background-color: $color-active_active;
+                }
+
+                .form__btn:focus {
+                    color: transparent;
+                    background-color: $color-grey_bgAlt;
+                }
+
+                .form__btn:focus::after {
+                    position: absolute;
+                    color: $color-main;
+                    content: 'Sent';
+                    
+                }
+
+                .modal-body1 {
+                    @include flex(row);
+                    width: 100%;
+                    height: 300px;
+                    text-align: center;
+                    justify-items: center;
+                    align-items: center;
+                }
+
+                .modal-body1 > h2 {
+                    @include font-bold (30px, normal, transparent);
+                    text-wrap: wrap;
+                    background: $gradient-regular_redtext;
+                    background-clip: text;
+                    text-align: center;
+                    width: 100%;
+                }
+            }
         }
     }
 
@@ -254,6 +395,8 @@
         @include flex (column);
         align-items: start;
         gap: 30px; 
+        border-top: 4px solid white;
+        padding-top: 30px;
 
         &__header {
             @include font-bold (22px, normal, white);
@@ -265,6 +408,7 @@
 
             &-1 {
                @include flex (column);
+               align-items: start;
                 gap: 15px; 
                 @include font-regular (18px, normal, white);
                 line-height: 26px;
@@ -1340,6 +1484,7 @@
         }
 
     }
+    
 
     .content-about{
         
@@ -1682,8 +1827,116 @@
             }
         }
 
-        
+        .icon-wrapper {
+        gap: 60px;
+        }
+
+        .icon-entry {
+            @include flex (column);
+            align-items: center;
+            gap: 30px;
+            padding: 30px;
+
+            &__item {
+                @include flex (column);
+                align-items: center;
+                gap: 30px;
+
+                &-img {
+                    width: 92px;
+                    height: 92px; 
+                    background-color: white;
+                    border-radius: 24px;
+                    position: relative;
+
+                    & > img{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                    }
+                }
+
+                &-txt {
+
+                    & > h2 {
+                        @include font-bold (30px, normal, transparent);
+                        background: $gradient-regular_redtext;
+                        background-clip: text; 
+                        text-align: center;
+                    }
+                    
+                }
+                
+            }
+
+            &__pr {
+                text-align: center;
+                @include font-regular (19px, normal, white);
+                line-height: 30px;
+            }
+
+            .form__btn {
+                position: relative;
+                @include flex(row);
+                justify-content: center;
+                align-items: center;
+                width: 208px;
+                height: 56px;
+                @include font-bold (16px, normal, white);
+                background-color: $color-active_regular;
+                border-radius: 12px;
+                box-shadow: 0 0 20px 0 rgba(36, 163, 255, 0.50);
+                transition: 0.5s;
+            }
+
+            .form__btn:hover {
+                background-color: $color-active_active;
+            }
+
+            .form__btn:focus {
+                color: transparent;
+                background-color: $color-grey_bgAlt;
+            }
+
+            .form__btn:focus::after {
+                position: absolute;
+                color: $color-main;
+                content: 'Sent';
+                
+            }
+        }
+
+        .icon-txt-list {
+            @include flex (column);
+            align-items: start;
+            gap: 30px; 
+
+            &__header {
+                @include font-bold (22px, normal, white);
+            }
+
+            &__item {
+                @include flex (row);
+                justify-content: space-between;
+                width: 100%;
+                gap: 5%;
+
+                &-1 {
+                    @include flex (column);
+                    align-items: start;
+                    max-width: 45%;
+                    gap: 15px; 
+                    @include font-regular (18px, normal, white);
+                    line-height: 26px;
+                    height: 100%;
+                }
+            }
+        }
     }
+
+    
+
     .content-about{
     
         &__team {
@@ -2061,6 +2314,11 @@
         .content-block {
             max-width: 1360px;
             padding-inline: 0;
+        }
+
+        .icon-wrapper {
+            max-width: 1600px;
+            gap: 60px;
         }
     }
 
