@@ -1674,12 +1674,22 @@
   cursor: pointer;
 }
 
+.contact-content-body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
 .contact-content {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: start;
   padding: 30px;
   gap: 30px;
+  width: 100%;
 }
 .contact-content__info {
   display: flex;
@@ -3149,6 +3159,7 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: start;
     padding: 60px;
     gap: 8%;
   }
@@ -3510,7 +3521,7 @@ footer {
   .partners {
     max-width: 1720px;
     margin: auto;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
   .publications-wrapper {
     max-width: 1600px;
