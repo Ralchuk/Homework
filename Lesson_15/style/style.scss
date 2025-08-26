@@ -169,6 +169,82 @@
 
     @import './module/icons';
 
+    .icon-entry {
+        @include flex (column);
+        align-items: center;
+        gap: 30px;
+        padding: 30px;
+
+        &__item {
+            @include flex (column);
+            align-items: center;
+            gap: 30px;
+
+            &-img {
+                width: 92px;
+                height: 92px; 
+                background-color: white;
+                border-radius: 24px;
+                position: relative;
+
+                & > img{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
+
+            &-txt {
+
+                & > h2 {
+                    @include font-bold (30px, normal, transparent);
+                    background: $gradient-regular_redtext;
+                    background-clip: text; 
+                    text-align: center;
+                }
+                
+            }
+             
+        }
+
+        &__pr {
+            text-align: center;
+            @include font-regular (19px, normal, white);
+            line-height: 30px;
+        }
+
+        .form__btn {
+            position: relative;
+            @include flex(row);
+            justify-content: center;
+            align-items: center;
+            width: 208px;
+            height: 56px;
+            @include font-bold (16px, normal, white);
+            background-color: $color-active_regular;
+            border-radius: 12px;
+            box-shadow: 0 0 20px 0 rgba(36, 163, 255, 0.50);
+            transition: 0.5s;
+        }
+
+        .form__btn:hover {
+            background-color: $color-active_active;
+        }
+
+        .form__btn:focus {
+            color: transparent;
+            background-color: $color-grey_bgAlt;
+        }
+
+        .form__btn:focus::after {
+            position: absolute;
+            color: $color-main;
+            content: 'Sent';
+            
+        }
+    }
+
 }
 .content-about{
     @include flex (column);

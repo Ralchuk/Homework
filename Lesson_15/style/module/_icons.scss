@@ -42,6 +42,10 @@
                 @include flex (column);
                 gap: 15px;
 
+                & > a {
+                    text-decoration: none;
+                }
+
                 &-header {
                     @include font-bold(22px, normal, $color-active_regular);
                     cursor: pointer;
