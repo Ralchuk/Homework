@@ -1425,97 +1425,13 @@
     .partners {
 
         &__block {
-
-            
-            &--hillel {
-                @include flex (row);
-                
-                width: 50%;
-                
-                height: 120px;
-                justify-content: center;
-                align-items: center;
-                background-color:  #1C4280;
-                background-image: url(./images/index/partners/7478508add86647f9076e594b2297edc8c32b9bd.png);
-                background-repeat: no-repeat;
-                background-position: center;
-            }
-
-            &--wannabiz {
-                @include flex (row);
-                
-                width: 50%;
-                
-                height: 120px;
-                justify-content: center;
-                align-items: center;
-                background-color:  #143646;
-                background-image: url(./images/index/partners/wannabiz.png);
-                background-repeat: no-repeat;
-                background-position: center;
-            }
-
-            &--tapgerine {
-                @include flex (row);
-                
-                width: 50%;
-                
-                height: 120px;
-                justify-content: center;
-                align-items: center;
-                background-color:  #F48B30;
-                background-image: url(./images/index/partners/tapgerine.png);
-                background-repeat: no-repeat;
-                background-position: center;
-            }
-
-            &--3dlook {
-                @include flex (row);
-                
-                width: 50%;
-                
-                height: 120px;
-                justify-content: center;
-                align-items: center;
-                background-color:  #9E4DC3;
-                background-image: url(./images/index/partners/3dlook.png);
-                background-repeat: no-repeat;
-                background-position: center;
-            }
-
-            &--orangear {
-                @include flex (row);
-                
-                width: 50%;
-                
-                height: 120px;
-                justify-content: center;
-                align-items: center;
-                background-color:  #F48B30;
-                background-image: url(./images/index/partners/orangear.png);
-                background-repeat: no-repeat;
-                background-position: center;
-            }
-
-            &--adtelligent {
-                @include flex (row);
-                
-                width: 50%;
-                
-                height: 120px;
-                justify-content: center;
-                align-items: center;
-                background-color:  #E2E2E4;
-                background-image: url(./images/index/partners/adtelligent.png);
-                background-repeat: no-repeat;
-                background-position: center;
-            }
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
 
              &--clickky {
                 @include flex (row);
-                flex-grow: 2;
-                width: 50%;
-                
+                width: 100%;
                 height: 120px;
                 justify-content: center;
                 align-items: center;
@@ -1527,9 +1443,7 @@
 
             &--ecolease {
                 @include flex (row);
-                flex-grow: 2;
-                width: 50%;
-                
+                width: 100%;
                 height: 120px;
                 justify-content: center;
                 align-items: center;
@@ -1541,9 +1455,7 @@
 
             &--infratek {
                 @include flex (row);
-                flex-grow: 2;
-                width: 50%;
-                
+                width: 100%;
                 height: 120px;
                 justify-content: center;
                 align-items: center;
@@ -1555,9 +1467,7 @@
 
             &--siti-park {
                 @include flex (row);
-                flex-grow: 2;
-                width: 50%;
-                
+                width: 100%;
                 height: 120px;
                 justify-content: center;
                 align-items: center;
@@ -1569,9 +1479,7 @@
 
             &--art-print{
                 @include flex (row);
-                flex-grow: 2;
-                width: 50%;
-                
+                width: 100%;
                 height: 120px;
                 justify-content: center;
                 align-items: center;
@@ -1583,9 +1491,7 @@
 
             &--ultimate-card {
                 @include flex (row);
-                flex-grow: 2;
-                width: 50%;
-                
+                width: 100%;
                 height: 120px;
                 justify-content: center;
                 align-items: center;
@@ -1768,56 +1674,9 @@
      .partners {
 
          &__block {
-
-            
-            &--hillel {
-                max-width: 33%;
-            }
-
-            &--wannabiz {
-                max-width: 33%;
-            }
-
-            &--tapgerine {
-                max-width: 33%;
-                
-            }
-
-            &--3dlook {
-               max-width: 33%;
-            }
-
-            &--orangear {
-               max-width: 33%;
-            }
-
-            &--adtelligent {
-               max-width: 33%;
-            }
-
-             &--clickky {
-               max-width: 33%;
-            }
-
-            &--ecolease {
-                max-width: 33%;
-            }    
-
-            &--infratek {
-                max-width: 33%;
-            }
-
-            &--siti-park {
-                max-width: 33%;
-            }
-
-            &--art-print{
-               max-width: 33%;
-            }
-
-            &--ultimate-card {
-                max-width: 33%;
-            }
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr); 
         }
     }
     .publications-wrapper {
@@ -1828,6 +1687,8 @@
             gap: 30px;
         }
     }
+
+    
 }
 
 @media screen and (min-width:1024px) {
@@ -1934,59 +1795,12 @@
 
    
     
-    .partners {
+     .partners {
 
          &__block {
-
-            
-            &--hillel {
-                width: 25%;
-            }
-
-            &--wannabiz {
-                width: 25%;
-            }
-
-            &--tapgerine {
-                width: 25%;
-                
-            }
-
-            &--3dlook {
-               width: 25%;
-            }
-
-            &--orangear {
-               width: 25%;
-            }
-
-            &--adtelligent {
-                width: 25%;
-            }
-
-             &--clickky {
-               width: 25%;
-            }
-
-            &--ecolease {
-            width: 25%;
-            }
-
-            &--infratek {
-                width: 25%;
-            }
-
-            &--siti-park {
-                width: 25%;
-            }
-
-            &--art-print{
-               width: 25%;
-            }
-
-            &--ultimate-card {
-                width: 25%;
-            }
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr); 
         }
     }
 
@@ -2225,9 +2039,14 @@
     }
 
     .partners {
-        max-width: 1720px;
-        margin: auto;
-        padding-bottom: 60px;
+
+         &__block {
+            max-width: 1600px;
+            padding-bottom: 60px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr); 
+        }
     }
 
     .publications-wrapper {
