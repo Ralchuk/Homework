@@ -169,6 +169,11 @@
 
     @import './module/icons';
 
+    .icon-wrapper {
+        @include flex (column);
+        gap: 30px;
+    }
+
     .icon-entry {
         @include flex (column);
         align-items: center;
@@ -242,6 +247,42 @@
             color: $color-main;
             content: 'Sent';
             
+        }
+    }
+
+    .icon-txt-list {
+        @include flex (column);
+        align-items: start;
+        gap: 30px; 
+
+        &__header {
+            @include font-bold (22px, normal, white);
+        }
+
+        &__item {
+            @include flex (column);
+            gap: 30px;
+
+            &-1 {
+               @include flex (column);
+                gap: 15px; 
+                @include font-regular (18px, normal, white);
+                line-height: 26px;
+                height: 100%;
+
+                & > li {
+                  @include flex (row, nowrap);  
+
+                }
+
+                & > li::before {
+                    display: block;
+                    content: url(./images/services/Dot\ separator.svg);
+                    height: 100%;
+                    padding-right: 8px;
+
+                }
+            }
         }
     }
 
