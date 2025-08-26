@@ -1267,37 +1267,28 @@
 }
 @media screen and (min-width: 375px) {
   .content .icons__wrapping {
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: 60px;
   }
-  .content .icons .icon-item {
-    max-width: 294px;
+}
+@media screen and (min-width: 768px) {
+  .content .icons__wrapping {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (min-width: 1024px) {
   .content .icons__wrapping {
-    justify-content: space-between;
-  }
-  .content .icons__wrapping .icon-item {
-    max-width: 291px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .content .icons__wrapping {
-    justify-content: space-between;
-  }
-  .content .icons__wrapping .icon-item {
-    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (min-width: 1920px) {
-  .content .icons {
+  .content .icons .icons__wrapping {
     max-width: 1600px;
-    margin: auto;
-    padding-inline: 0;
-  }
-  .content .icons__wrapping .icon-item {
-    max-width: 493px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
