@@ -252,6 +252,7 @@
             padding: 30px;
             max-width: 375px;
             background-color: $color-grey_bg;
+            gap: 30px;
             
         }
 
@@ -2143,6 +2144,18 @@
         .content-block {
             padding: 0 180px;
         }
+
+        .icon-wrapper {
+            .icon-entry {
+                .modal-content {
+                    padding: 30px;
+                    max-width: 650px;
+                    background-color: $color-grey_bg;
+                    gap: 30px;
+                    
+                }
+            }
+        }
     }
 
     .content-about{
@@ -2272,6 +2285,8 @@
             max-width: 1600px;
             gap: 60px;
         }
+
+        
     }
 
     .content-about{

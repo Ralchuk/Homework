@@ -1389,6 +1389,7 @@
   padding: 30px;
   max-width: 375px;
   background-color: #F5F5FA;
+  gap: 30px;
 }
 .content .icon-entry .modal-headerc {
   display: flex;
@@ -3589,6 +3590,12 @@ footer {
 @media screen and (min-width: 1440px) {
   .content .content-block {
     padding: 0 180px;
+  }
+  .content .icon-wrapper .icon-entry .modal-content {
+    padding: 30px;
+    max-width: 650px;
+    background-color: #F5F5FA;
+    gap: 30px;
   }
   .content-about__part {
     display: flex;
