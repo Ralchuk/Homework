@@ -344,6 +344,7 @@
   width: -moz-fit-content;
   width: fit-content;
   padding: 5px 7px;
+  cursor: pointer;
 }
 .header-white .contacts .lang__item--focused {
   display: inline-block;

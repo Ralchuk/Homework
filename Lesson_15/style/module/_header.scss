@@ -262,6 +262,7 @@
                 @include font-bold (12px, normal, $color-grey_text);
                 width: fit-content;
                 padding: 5px 7px;
+                cursor: pointer;
 
                 &--focused {
                     display: inline-block;
