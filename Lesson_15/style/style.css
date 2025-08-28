@@ -1998,6 +1998,128 @@
   cursor: pointer;
 }
 
+.team-entry {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 30px;
+}
+.team-entry__oksana-kobzar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.team-entry__oksana-kobzar-photo {
+  width: 100%;
+  height: 375px;
+  background-image: url(./images/team/oksana.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+.team-entry__oksana-kobzar-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+}
+.team-entry__oksana-kobzar-content-h1 {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 38px;
+  line-height: normal;
+  color: transparent;
+  text-wrap: wrap;
+  background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  padding-top: 30px;
+}
+.team-entry__oksana-kobzar-content-about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 10px;
+}
+.team-entry__oksana-kobzar-content-about-h2 {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: normal;
+  color: #B3B3BA;
+  line-height: 22px;
+}
+.team-entry__oksana-kobzar-content-about-email {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: normal;
+  color: #24A3FF;
+  line-height: normal;
+  cursor: pointer;
+}
+.team-entry__oksana-kobzar-content-about-linkedin {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: normal;
+  color: #24A3FF;
+  line-height: normal;
+  cursor: pointer;
+}
+.team-entry__oksana-kobzar-describe {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+  padding-top: 30px;
+  border-top: 4px solid #E6E6F0;
+  gap: 30px;
+}
+.team-entry__oksana-kobzar-describe > p {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: normal;
+  color: black;
+  line-height: 26px;
+}
+.team-entry__oksana-kobzar-describe-item-h3 {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: normal;
+  color: #323264;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.team-entry__oksana-kobzar-describe-item > p {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: normal;
+  color: black;
+  line-height: 26px;
+}
+
 .contact-content-body {
   display: flex;
   flex-direction: column;
@@ -3001,7 +3123,7 @@ footer {
   justify-content: space-between;
   width: 100%;
   gap: 30px;
-  padding: 0 30px 30px;
+  padding: 30px;
 }
 .footer-wrraper #point {
   width: 6px;
@@ -3015,6 +3137,7 @@ footer {
 .footer-wrraper .footer-line {
   height: 2px;
   background-color: #E6E6F0;
+  margin: 0;
 }
 .footer-wrraper .footer-content {
   display: flex;
@@ -3128,7 +3251,7 @@ footer {
 
 @media screen and (min-width: 375px) {
   .footer-wrraper {
-    padding: 0 60px 60px;
+    padding: 60px;
   }
   .footer-wrraper .footer-content {
     display: flex;
@@ -3312,6 +3435,84 @@ footer {
   }
   .team-content__item-Julia_Wolk {
     height: 400px;
+  }
+  .team-entry {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 60px;
+    gap: 30px;
+  }
+  .team-entry__oksana-kobzar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+  }
+  .team-entry__oksana-kobzar-photo {
+    width: 300px;
+    height: 375px;
+  }
+  .team-entry__oksana-kobzar-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+  }
+  .team-entry__oksana-kobzar-content-h1 {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+    line-height: normal;
+    color: transparent;
+    text-wrap: wrap;
+    background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+            background-clip: text;
+    padding-top: 0;
+  }
+  .team-entry__oksana-kobzar-describe {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    padding-top: 30px;
+    border-top: 4px solid #E6E6F0;
+    gap: 30px;
+  }
+  .team-entry__oksana-kobzar-describe > p {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: normal;
+    color: black;
+    line-height: 26px;
+  }
+  .team-entry__oksana-kobzar-describe-item-h3 {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: normal;
+    color: #323264;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .team-entry__oksana-kobzar-describe-item > p {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: normal;
+    color: black;
+    line-height: 26px;
   }
   .contact-content {
     padding: 60px;
@@ -3789,6 +3990,30 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+  .team-entry {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 60px 60px 60px 420px;
+  }
+  .team-entry__oksana-kobzar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+  }
+  .team-entry__oksana-kobzar-photo {
+    position: absolute;
+    left: 60px;
+    width: 300px;
+    height: 375px;
+  }
+  .team-entry__oksana-kobzar-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+  }
   .partners__block {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -3858,6 +4083,38 @@ footer {
   }
   .contact-content .form {
     max-width: 46%;
+  }
+  .team-entry {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 60px 180px 60px 640px;
+  }
+  .team-entry__oksana-kobzar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+  }
+  .team-entry__oksana-kobzar-photo {
+    position: absolute;
+    left: 180px;
+    width: 400px;
+    height: 500px;
+  }
+  .team-entry__oksana-kobzar-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: start;
+    align-items: start;
+  }
+  .team-entry__oksana-kobzar-content-about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: start;
+    align-items: start;
   }
   .achivments-wrapper__img {
     display: flex;
@@ -3964,6 +4221,38 @@ footer {
   .team-content__wrapper {
     max-width: 1600px;
     gap: 60px;
+  }
+  .team-entry {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 60px 280px 60px 740px;
+  }
+  .team-entry__oksana-kobzar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+  }
+  .team-entry__oksana-kobzar-photo {
+    position: absolute;
+    left: 280px;
+    width: 400px;
+    height: 500px;
+  }
+  .team-entry__oksana-kobzar-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: start;
+    align-items: start;
+  }
+  .team-entry__oksana-kobzar-content-about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: start;
+    align-items: start;
   }
   .contact-content {
     display: flex;
