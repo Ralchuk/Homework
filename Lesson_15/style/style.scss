@@ -1323,13 +1323,19 @@
         width: 100%;
         gap: 30px;
 
+        & > a {
+                text-decoration: none;
+            }
+
         .publications-cart {
+
             @include flex(column, wrap);
             gap: 0;
             width: 100%;
             flex-grow: 2;
             gap: 0;
             background-color: white;
+            cursor: pointer;
 
             &__img1 {
                 width: 100%;
@@ -1395,9 +1401,9 @@
                     transition: .5s;
                 }
 
-                & > h2:hover {
-                    @include font-bold (16px, normal, $color-accent);
-                }
+                // & > h2:hover {
+                //     @include font-bold (16px, normal, $color-accent);
+                // }
 
                 & > h4 {
                     display: inline-block;
@@ -1411,6 +1417,17 @@
                 & > p {
                     padding-top: 15px;
                     @include font-regular (14px, 22px, black);
+                }
+            }
+        }
+
+        .publications-cart:hover {
+           
+
+            .publications-cart__content {
+
+                & > h2 {
+                    @include font-bold (16px, normal, $color-accent);
                 }
             }
         }
@@ -2167,11 +2184,9 @@
     .publications-wrapper {
         
         &__element {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
 
-            .publications-cart {
-                width: 249px;
-            }
-            
         }
     }
 

@@ -2662,6 +2662,9 @@
   width: 100%;
   gap: 30px;
 }
+.publications-wrapper__element > a {
+  text-decoration: none;
+}
 .publications-wrapper__element .publications-cart {
   display: flex;
   flex-direction: column;
@@ -2671,6 +2674,7 @@
   flex-grow: 2;
   gap: 0;
   background-color: white;
+  cursor: pointer;
 }
 .publications-wrapper__element .publications-cart__img1 {
   width: 100%;
@@ -2734,15 +2738,6 @@
   color: #24A3FF;
   transition: 0.5s;
 }
-.publications-wrapper__element .publications-cart__content > h2:hover {
-  font-family: "Montserrat";
-  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
-  font-weight: 700;
-  font-style: normal;
-  font-size: 16px;
-  line-height: normal;
-  color: #F0145A;
-}
 .publications-wrapper__element .publications-cart__content > h4 {
   display: inline-block;
   padding-top: 15px;
@@ -2765,6 +2760,15 @@
   font-size: 14px;
   line-height: 22px;
   color: black;
+}
+.publications-wrapper__element .publications-cart:hover .publications-cart__content > h2 {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: normal;
+  color: #F0145A;
 }
 .publications-wrapper__btn {
   width: -moz-fit-content;
@@ -3690,8 +3694,9 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
-  .publications-wrapper__element .publications-cart {
-    width: 249px;
+  .publications-wrapper__element {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   .publications-entry__header-img {
     height: 500px;
