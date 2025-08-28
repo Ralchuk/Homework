@@ -1423,6 +1423,7 @@
     &__element {
         @include flex(row);
         justify-content: space-between;
+        align-items: stretch;
         width: 100%;
         gap: 30px;
 
@@ -1431,7 +1432,7 @@
             }
 
         .publications-cart {
-
+            height: 100%;
             @include flex(column, wrap);
             gap: 0;
             width: 100%;
@@ -1494,8 +1495,7 @@
 
             &__content {
                 @include flex(column);
-                
-                
+                flex-grow: 2;
                 padding: 30px;
                 gap: 0;
 
