@@ -2915,6 +2915,7 @@
   background-image: url(./images/publications/Illustration.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -3401,6 +3402,38 @@ footer {
   .publications-wrapper {
     padding-inline: 60px;
   }
+  .publications-entry {
+    padding: 60px;
+  }
+  .publications-entry__header {
+    padding-bottom: 30px;
+    border-bottom: 4px solid #E6E6F0;
+  }
+  .publications-entry__header-img {
+    height: 500px;
+  }
+  .publications-entry__header-h1 {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 38px;
+    line-height: normal;
+    color: #323264;
+  }
+  .publications-entry__body-h1 {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 38px;
+    line-height: normal;
+    color: transparent;
+  }
+  .publications-entry__body-img {
+    width: 100%;
+    height: 398px;
+  }
 }
 @media screen and (min-width: 768px) {
   .banner {
@@ -3660,6 +3693,14 @@ footer {
   .publications-wrapper__element .publications-cart {
     width: 249px;
   }
+  .publications-entry__header-img {
+    height: 500px;
+  }
+  .publications-entry__body-img {
+    max-width: 640px;
+    height: 398px;
+    margin-inline: auto;
+  }
 }
 @media screen and (min-width: 1024px) {
   .content-about__part {
@@ -3751,6 +3792,9 @@ footer {
   .publications-wrapper__element {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .publications-entry {
+    padding-inline: 180px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -3945,5 +3989,17 @@ footer {
     max-width: 1600px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+  .publications-entry {
+    align-content: center;
+  }
+  .publications-entry__header {
+    max-width: 1600px;
+  }
+  .publications-entry__body {
+    max-width: 1600px;
+  }
+  .publications-entry__footer {
+    max-width: 1600px;
   }
 }/*# sourceMappingURL=style.css.map */
