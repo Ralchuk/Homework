@@ -522,6 +522,7 @@
             .menu__nav {
                     @include  flex (row, wrap);
                     gap: 15px;
+                    
 
                     &-item {
 
@@ -529,17 +530,17 @@
                             display: inline-block;
                             text-decoration: none;
                             @include font-bold(16px,normal, white);
+                            line-height: normal;
                             padding-bottom: 5px;
+                            border-bottom: 2px solid transparent;
+                            transition: .4s;
                         }
                     }
 
                     &-item:hover {
 
                        & > a {
-                            display: inline-block;
-                            text-decoration: none;
                             @include font-bold(16px,normal, $color-accent);
-                            padding-bottom: 5px;
                             border-bottom: 2px solid $color-accent;
                         }
                     }
@@ -635,6 +636,8 @@
                             text-decoration: none;
                             @include font-bold(16px,normal, $color-active_regular);
                             padding-bottom: 5px;
+                            border-bottom: 2px solid transparent;
+                            transition: .4s;
                         }
                     }
 

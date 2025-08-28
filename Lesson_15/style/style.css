@@ -612,11 +612,12 @@
     font-size: 16px;
     line-height: normal;
     color: white;
+    line-height: normal;
     padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: 0.4s;
   }
   .header-dark .menu .menu__nav-item:hover > a {
-    display: inline-block;
-    text-decoration: none;
     font-family: "Montserrat";
     src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
     font-weight: 700;
@@ -624,7 +625,6 @@
     font-size: 16px;
     line-height: normal;
     color: #F0145A;
-    padding-bottom: 5px;
     border-bottom: 2px solid #F0145A;
   }
   .header-dark .menu .menu__nav-item--active > a {
@@ -712,6 +712,8 @@
     line-height: normal;
     color: #24A3FF;
     padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: 0.4s;
   }
   .header-white .menu .menu__nav-item:hover > a {
     display: inline-block;
