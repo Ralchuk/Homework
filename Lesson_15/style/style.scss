@@ -1471,6 +1471,7 @@
         & > p {
             @include font-regular (16px, normal, black);
             line-height: 26px;
+            margin: 0;
         }
 
         &-h1 {
@@ -1518,6 +1519,39 @@
             }
 
             
+        }
+
+        &-img {
+            width: 100%;
+            height: 195.891px;
+            background-image: url(./images/publications/Illustration.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        &-h2 {
+            display: inline-block;
+            @include font-bold (16px, normal, $color-main);
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__footer {
+        @include flex (row);
+        padding-top: 30px;
+        justify-items: start;
+        gap: 10px;
+
+        & > svg {
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            background-color: $color-grey_separator;
+            padding: 9px;
+            cursor: pointer;
         }
     }
 }

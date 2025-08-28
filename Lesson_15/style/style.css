@@ -2837,6 +2837,7 @@
   line-height: normal;
   color: black;
   line-height: 26px;
+  margin: 0;
 }
 .publications-entry__body-h1 {
   font-family: "Montserrat";
@@ -2907,6 +2908,43 @@
   line-height: normal;
   color: #F0145A;
   line-height: 26px;
+}
+.publications-entry__body-img {
+  width: 100%;
+  height: 195.891px;
+  background-image: url(./images/publications/Illustration.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.publications-entry__body-h2 {
+  display: inline-block;
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat_Plus_Jakarta_Sans/Montserrat/static/Montserrat-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: normal;
+  color: #323264;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.publications-entry__footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  justify-items: start;
+  gap: 10px;
+}
+.publications-entry__footer > svg {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background-color: #E6E6F0;
+  padding: 9px;
+  cursor: pointer;
 }
 
 * {
