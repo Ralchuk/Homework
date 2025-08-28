@@ -2668,7 +2668,7 @@
   flex-wrap: wrap;
   gap: 0;
   width: 100%;
-  flex-grow: 1;
+  flex-grow: 2;
   gap: 0;
   background-color: white;
 }
@@ -3492,10 +3492,8 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
-  .publications-wrapper__element {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+  .publications-wrapper__element .publications-cart {
+    width: 249px;
   }
 }
 @media screen and (min-width: 1024px) {

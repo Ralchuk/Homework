@@ -1327,8 +1327,7 @@
             @include flex(column, wrap);
             gap: 0;
             width: 100%;
-            
-            flex-grow: 1;
+            flex-grow: 2;
             gap: 0;
             background-color: white;
 
@@ -2003,9 +2002,11 @@
     .publications-wrapper {
         
         &__element {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
+
+            .publications-cart {
+                width: 249px;
+            }
+            
         }
     }
 
