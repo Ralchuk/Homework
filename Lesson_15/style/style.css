@@ -1886,6 +1886,9 @@
   width: 100%;
   gap: 30px;
 }
+.team-content__wrapper > a {
+  text-decoration: none;
+}
 .team-content__item {
   display: flex;
   flex-direction: column;

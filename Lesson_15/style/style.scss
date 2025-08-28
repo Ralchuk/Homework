@@ -661,6 +661,8 @@
     width: 100%;
     gap: 30px;
 
+    
+
     &__header {
         @include font-bold (30px, normal, transparent);
         text-wrap: wrap;
@@ -672,6 +674,10 @@
         @include flex (column);
         width: 100%;
         gap: 30px;
+
+        & > a {
+            text-decoration: none;
+        }
     }
 
     &__item {
@@ -770,7 +776,7 @@
     &__item:hover {
 
         .team-content__item-txt {
-            
+
             .team-content__item-name {
                 & > h2 {
                     @include font-bold(16px,normal, $color-accent);
